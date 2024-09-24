@@ -70,13 +70,25 @@ git checkout main
 ## Preview slides
 
 ### Dependencies
+* quarto installation (Reference https://quarto.org/docs/download/tarball.html).
 ```
-sudo apt install npm
-npm install reveal.js
+mkdir -p ~/opt && cd ~/opt
+wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.57/quarto-1.5.57-linux-amd64.tar.gz
+tar -C ~/opt -xvzf quarto-1.5.57-linux-amd64.tar.gz
+mkdir -p ~/.local/bin
+ln -s ~/opt/quarto-1.5.57/bin/quarto ~/.local/bin/quarto
+( echo "# local/bin/quarto from ln -s /opt/quarto*"; echo 'export PATH=$PATH:~/.local/bin' ; echo "" ) >> ~/.bashrc
+source ~/.bashrc
+quarto check
+
 ```
 
 ### Preview slices
 ```
-npm start
-npm stars -- --port=8001
+quarto preview index.qmd
 ```
+
+## References
+* https://quarto.org/docs/presentations/revealjs/
+* https://quarto.org/docs/presentations/revealjs/advanced.html
+

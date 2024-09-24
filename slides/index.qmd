@@ -8,6 +8,9 @@ format:
     chalkboard: 
       buttons: true
     controls: false
+    width: 1280 #1440 #1920 #1050
+    height: 720
+    margin: 0.025
     controls-layout: bottom-right
     preview-links: auto
     logo: favicon.svg
@@ -23,11 +26,11 @@ format:
 # {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
 
 ::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
-<span style="color:#939393; font-size:1.5em; font-weight: bold;">Real-time AI for surgery with NVIDIA-Holoscan platform</span>  
+<span style="color:#939393; font-size:1.5em; font-weight: bold;">Title of the talk</span>  
 <span style="color:#777777; font-size:1.2em; font-weight: bold;"></span>  
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
 [{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, PhD     
-[[[{{< fa brands github >}} `mxochicale/`](https://github.com/mxochicale/)]{style="border-bottom: 0.5px solid #00ccff;"}`{`[[`github-repo`](https://github.com/mxochicale/real-time-ai-for-surgery-with-NVIDIA-Holoscan-platform)]{style="border-bottom: 0.5px solid #00ccff;"}`}`]{style="font-size:0.8em;"}
+[[[{{< fa brands github >}} `mxochicale/`](https://github.com/mxochicale/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`open-healthcare-slides`](https://github.com/mxochicale/open-healthcare-slides)]{style="border-bottom: 0.5px solid #00ccff;"}]{style="font-size:0.8em;"}
 :::
 
 ::: footer
@@ -35,17 +38,27 @@ format:
 :::
 
 
-# Overview
-1. [overview](#sec-ov)
-4. [demos](#sec-demos)
-5. [aob](#sec-aob)
+# Overview {style="font-size: 90%;"} 
 
-## Template for figures 
-::: {#sec-hp}
-![](figures/00_template-vector-images/drawing-v00.svg)
+* [overview](#sec-ov)
+* background
+* [demos](#sec-demos)
+* Uses cases:
+  * Fetal Ultrasound Image Synthesis
+  * Real-time AI diagnosis: 
+    * Endoscopy-based video 
+    * eye movement disorders
+* [aob](#sec-aob)
+
+
+
+## :medical_symbol: Template for figures
+
+::: {#sec-hp style="margin-top: 30px; font-size: 50%;"} 
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align="center" width="100%"}
 :::
 
-## Template for tabsets
+## Scripts {{< fa brands github >}} [`code.py`]()
 
 ::: {.panel-tabset}
 
@@ -60,3 +73,18 @@ Content for `Tab B`
 :::
 
 
+## :hospital: Case A
+
+## :hospital: Case B
+
+## :wrench: Hackathon
+
+## :recycle: Model verification
+1. AI
+2. Code
+3. ...
+
+
+## :school_satchel: Education
+* A
+* B 
