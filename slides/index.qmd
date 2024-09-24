@@ -1,0 +1,62 @@
+---
+title: "Title of the talk"
+subtitle: ""
+
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    controls: false
+    controls-layout: bottom-right
+    preview-links: auto
+    logo: favicon.svg
+    theme: dark
+    #css:
+      #- css/default.css
+      #- css/callouts-html.css
+    #footer: <https://quarto.org>
+  gfm:
+    author: Miguel Xochicale
+---
+
+# {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
+
+::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
+<span style="color:#939393; font-size:1.5em; font-weight: bold;">Real-time AI for surgery with NVIDIA-Holoscan platform</span>  
+<span style="color:#777777; font-size:1.2em; font-weight: bold;"></span>  
+[<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
+[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, PhD     
+[[[{{< fa brands github >}} `mxochicale/`](https://github.com/mxochicale/)]{style="border-bottom: 0.5px solid #00ccff;"}`{`[[`github-repo`](https://github.com/mxochicale/real-time-ai-for-surgery-with-NVIDIA-Holoscan-platform)]{style="border-bottom: 0.5px solid #00ccff;"}`}`]{style="font-size:0.8em;"}
+:::
+
+::: footer
+[2024-04-20 @ [Link for grid-worms-animation 2023](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+:::
+
+
+# Overview
+1. [overview](#sec-ov)
+4. [demos](#sec-demos)
+5. [aob](#sec-aob)
+
+## Template for figures 
+::: {#sec-hp}
+![](figures/00_template-vector-images/drawing-v00.svg)
+:::
+
+## Template for tabsets
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
+

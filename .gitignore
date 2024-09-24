@@ -1,0 +1,4 @@
+## vim temporal files
+**/*.swp
+.vscode
+.npm

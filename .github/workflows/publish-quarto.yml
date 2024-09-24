@@ -1,0 +1,30 @@
+name: Quarto Publish Slides
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    if: "contains(github.event.head_commit.message, 'CI')"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - run: |
+          quarto --version
+
+      - name: Publish to GitHub Pages t00
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          path: slides
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
