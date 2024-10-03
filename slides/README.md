@@ -80,7 +80,14 @@ ln -s ~/opt/quarto-1.5.57/bin/quarto ~/.local/bin/quarto
 ( echo "# local/bin/quarto from ln -s /opt/quarto*"; echo 'export PATH=$PATH:~/.local/bin' ; echo "" ) >> ~/.bashrc
 source ~/.bashrc
 quarto check
+```
 
+### Quarto extensions
+```
+quarto list extensions
+quarto add parmsam/quarto-subtitles
+quarto remove parmsam/subtitles
+#https://github.com/parmsam/quarto-subtitles
 ```
 
 ### Preview slices

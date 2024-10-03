@@ -2,7 +2,7 @@
 <svg
    width="1200"
    height="560"
-   viewBox="0 0 317.50002 148.16667"
+   viewBox="0 0 317.50002 148.16668"
    version="1.1"
    id="svg8"
    inkscape:version="1.2.1 (1:1.2.1+202210291243+9c6d41e410)"
@@ -45,9 +45,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.53168651"
-     inkscape:cx="284.00194"
-     inkscape:cy="604.67963"
+     inkscape:zoom="1.1376817"
+     inkscape:cx="520.35642"
+     inkscape:cy="249.19095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,75 +80,93 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-86.999983)">
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000eff;stroke-width:5.49513;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
-       id="rect113"
-       width="355.74628"
-       height="230.11946"
-       x="-10.326466"
-       y="73.556793" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:0.237617px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0445533"
-       x="58.711567"
-       y="111.43028"
-       id="text47"><tspan
-         sodipodi:role="line"
-         id="tspan45"
-         x="58.711567"
-         y="111.43028"
-         style="stroke-width:0.0445533">De</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11205px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0370419"
-       x="14.022503"
-       y="61.714668"
-       id="text51"><tspan
-         sodipodi:role="line"
-         x="14.022503"
-         y="61.714668"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0370419"
-         id="tspan838">v00</tspan></text>
     <text
        id="text55"
        y="175.73384"
        x="-350.09747"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000eff;stroke-width:5.97111;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect113-3"
+       width="394.32874"
+       height="245.1261"
+       x="-38.430214"
+       y="56.268562" />
     <text
-       id="text844"
-       y="157.17383"
-       x="40.034321"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:0.237617px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0445533"
+       x="58.555992"
+       y="147.8403"
+       id="text47-6"><tspan
+         sodipodi:role="line"
+         id="tspan45-7"
+         x="58.555992"
+         y="147.8403"
+         style="stroke-width:0.0445533">De</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11205px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0370419"
+       x="-4.4827023"
+       y="73.90509"
+       id="text51-5"><tspan
+         sodipodi:role="line"
+         x="-4.4827023"
+         y="73.90509"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.0370419"
+         id="tspan838-3">v00</tspan></text>
+    <text
+       id="text844-5"
+       y="126.72707"
+       x="5.5706391"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.4905px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.106721"
        xml:space="preserve"><tspan
-         id="tspan842"
+         id="tspan842-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.3621px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.106721"
-         y="157.17383"
-         x="40.034321"
+         y="126.72707"
+         x="5.5706391"
          sodipodi:role="line">A</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.4905px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.106721"
-       x="164.25366"
-       y="180.06326"
-       id="text850"><tspan
+       x="282.44513"
+       y="226.84921"
+       id="text850-2"><tspan
          sodipodi:role="line"
-         x="164.25366"
-         y="180.06326"
+         x="282.44513"
+         y="226.84921"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.3621px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.106721"
-         id="tspan848">B</tspan></text>
+         id="tspan848-9">B</tspan></text>
     <text
-       id="text871"
-       y="218.71204"
-       x="20.043608"
+       id="text871-1"
+       y="226.99792"
+       x="9.1912756"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11205px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0370419"
        xml:space="preserve"><tspan
-         id="tspan869"
+         id="tspan869-2"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16.0919px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';stroke-width:0.0370419"
-         y="218.71204"
-         x="20.043608"
+         y="226.99792"
+         x="9.1912756"
          sodipodi:role="line"><tspan
-           id="tspan867"
+           id="tspan867-7"
            style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light Italic';stroke-width:0.0370419">Description for Routine Mode</tspan></tspan></text>
+    <rect
+       y="88.264229"
+       x="1.2051775"
+       height="146.09134"
+       width="315.21979"
+       id="rect829"
+       style="fill:none;fill-opacity:1;stroke:#000eff;stroke-width:1.41664;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.41664, 1.41664;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11205px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0370419"
+       x="70.910362"
+       y="178.76459"
+       id="text835"><tspan
+         sodipodi:role="line"
+         x="70.910362"
+         y="178.76459"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.0919px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#000080;stroke-width:0.0370419"
+         id="tspan833">1200 width X 560 height</tspan></text>
   </g>
 </svg>

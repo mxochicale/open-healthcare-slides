@@ -21,6 +21,8 @@ format:
     #footer: <https://quarto.org>
   gfm:
     author: Miguel Xochicale
+#revealjs-plugins:
+#    - subtitles
 ---
 
 # {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
@@ -40,23 +42,200 @@ format:
 
 # Overview {style="font-size: 90%;"} 
 
-* [overview](#sec-ov)
-* background
-* [demos](#sec-demos)
+* [My trajectory](#sec-mt)
 * Uses cases:
   * Fetal Ultrasound Image Synthesis
   * Real-time AI diagnosis: 
     * Endoscopy-based video 
     * eye movement disorders
 * [aob](#sec-aob)
+* [demos](#sec-demos)
 
+## My trajectory
+
+::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
+![](figures/mx.svg){fig-align="center" width="100%"}
+:::
 
 
 ## :medical_symbol: Template for figures
 
-::: {#sec-hp style="margin-top: 30px; font-size: 50%;"} 
+::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/00_template-vector-images/drawing-v00.svg){fig-align="center" width="100%"}
 :::
+
+
+## Dating Ultrasound Scan (12 week scan)
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/12-week-scan.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+Wright-Gilbertson M. 2014 in PhD thesis; https://en.wikipedia.org/wiki/Gestational_age; National-Health-Service 2021. Screening for down’s syndrome,
+edwards’ syndrome and patau’s syndrome. https://www.nhs.uk/pregnancy/your- pregnancy- care
+:::
+
+
+## Challenges of US biometric measurements
+
+* Operator dependant,
+* Clinical system dependant,
+* Fetal position,
+* Similar morphological and echogenic characteristics in the US,
+* Few public datasets are available (we have only found two)
+
+::: {style="font-size: 30%;"}
+Sciortino et al. in Computers in Biology and Medicine 2017 https://doi.org/10.1016/j.compbiomed.2017.01.008; He et al. in Front. Med. 2021
+https://doi.org/10.3389/fmed.2021.729978
+:::
+
+
+## TransThalamic
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransCerebellum Plain
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransVentricular Plane
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## Research Questions 
+
+* Investigate and implement deep-learning methods for synthetic fetal ultrasound imaging of normal and abnormal cases, and
+* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
+
+## GAN-based fetal imaging
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
+https://github.com/budai4medtech/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
+Synthesis” https://arxiv.org/abs/2101.04775
+:::
+
+
+## AI/ML pipeline
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/ai-pipeline-gans-based-pipeline-fetal-imaging.svg){fig-align="center" width="100%"}
+:::
+
+
+## Image Quality Assessment
+
+Quaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance 
+between distributions of synthetised and original images (Heusel et al., 2017).
+
+The lower the FID number is, the more similar the synthetised images are to the original ones. 
+FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).
+
+::: {style="font-size: 30%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+:::
+
+
+## Methods
+
+Diffusion-Super-Resolution-GAN (DSR-GAN)
+Transformer-based-GAN
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/methods-diffusion-Super-Resolution-GAN-transformer-based-GAN.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+:::
+
+
+## Experiments: Design and results
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/results-only-images.svg){fig-align="center" width="100%"}
+:::
+
+
+::: {style="font-size: 30%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+:::
+
+
+
+## Experiments: Design and results
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/results-plots.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+:::
+
+
+## {{< fa brands github >}} github.com/budai4medtech/midl2023
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/github-repository.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+:::
+
+
+## Fetal US imaging with Diffusion models
+
+::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
+![](figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 30%;"}
+(a) Ho et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239 
+(b) Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260
+:::
+
+
+## xfetus -- A library for ultrasound fetal imaging synthesis using techniques from GANs, transformers, and diffusion models.
+
+::: {.notes}
+TODO:
+* Resolve PRs https://github.com/budai4medtech/xfetus/pulls
+* Show emojis in the main README 
+:::
+
+## Open-Source Software for Surgical Technologies
+
+
 
 ## Scripts {{< fa brands github >}} [`code.py`]()
 
@@ -88,3 +267,7 @@ Content for `Tab B`
 ## :school_satchel: Education
 * A
 * B 
+
+
+## Key takeaways
+
