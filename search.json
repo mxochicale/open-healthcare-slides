@@ -1,0 +1,177 @@
+[
+  {
+    "objectID": "index.html#my-trajectory",
+    "href": "index.html#my-trajectory",
+    "title": "",
+    "section": "My trajectory",
+    "text": "My trajectory"
+  },
+  {
+    "objectID": "index.html#dating-ultrasound-scan-12-week-scan",
+    "href": "index.html#dating-ultrasound-scan-12-week-scan",
+    "title": "",
+    "section": "Dating Ultrasound Scan (12 week scan)",
+    "text": "Dating Ultrasound Scan (12 week scan)\n\n\n\n\n\n\n\n\nWright-Gilbertson M. 2014 in PhD thesis; https://en.wikipedia.org/wiki/Gestational_age; National-Health-Service 2021. Screening for down’s syndrome, edwards’ syndrome and patau’s syndrome. https://www.nhs.uk/pregnancy/your- pregnancy- care"
+  },
+  {
+    "objectID": "index.html#challenges-of-us-biometric-measurements",
+    "href": "index.html#challenges-of-us-biometric-measurements",
+    "title": "",
+    "section": "Challenges of US biometric measurements",
+    "text": "Challenges of US biometric measurements\n\nOperator dependant,\nClinical system dependant,\nFetal position,\nSimilar morphological and echogenic characteristics in the US,\nFew public datasets are available (we have only found two)\n\n\nSciortino et al. in Computers in Biology and Medicine 2017 https://doi.org/10.1016/j.compbiomed.2017.01.008; He et al. in Front. Med. 2021 https://doi.org/10.3389/fmed.2021.729978"
+  },
+  {
+    "objectID": "index.html#transthalamic",
+    "href": "index.html#transthalamic",
+    "title": "",
+    "section": "TransThalamic",
+    "text": "TransThalamic\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
+  },
+  {
+    "objectID": "index.html#transcerebellum-plain",
+    "href": "index.html#transcerebellum-plain",
+    "title": "",
+    "section": "TransCerebellum Plain",
+    "text": "TransCerebellum Plain\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
+  },
+  {
+    "objectID": "index.html#transventricular-plane",
+    "href": "index.html#transventricular-plane",
+    "title": "",
+    "section": "TransVentricular Plane",
+    "text": "TransVentricular Plane\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
+  },
+  {
+    "objectID": "index.html#research-questions",
+    "href": "index.html#research-questions",
+    "title": "",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nResearch and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases,\nPropose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis."
+  },
+  {
+    "objectID": "index.html#gan-based-fetal-imaging",
+    "href": "index.html#gan-based-fetal-imaging",
+    "title": "",
+    "section": "GAN-based fetal imaging",
+    "text": "GAN-based fetal imaging\n\n\n\n\n\n\n\n\n\nBautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA https://github.com/budai4medtech/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775"
+  },
+  {
+    "objectID": "index.html#aiml-pipeline",
+    "href": "index.html#aiml-pipeline",
+    "title": "",
+    "section": "AI/ML pipeline",
+    "text": "AI/ML pipeline"
+  },
+  {
+    "objectID": "index.html#image-quality-assessment",
+    "href": "index.html#image-quality-assessment",
+    "title": "",
+    "section": "Image Quality Assessment",
+    "text": "Image Quality Assessment\nQuaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance between distributions of synthetised and original images (Heusel et al., 2017).\nThe lower the FID number is, the more similar the synthetised images are to the original ones. FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+  },
+  {
+    "objectID": "index.html#methods",
+    "href": "index.html#methods",
+    "title": "",
+    "section": "Methods",
+    "text": "Methods\nDiffusion-Super-Resolution-GAN (DSR-GAN) Transformer-based-GAN\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+  },
+  {
+    "objectID": "index.html#experiments-design-and-results",
+    "href": "index.html#experiments-design-and-results",
+    "title": "",
+    "section": "Experiments: Design and results",
+    "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+  },
+  {
+    "objectID": "index.html#experiments-design-and-results-1",
+    "href": "index.html#experiments-design-and-results-1",
+    "title": "",
+    "section": "Experiments: Design and results",
+    "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+  },
+  {
+    "objectID": "index.html#github.combudai4medtechmidl2023",
+    "href": "index.html#github.combudai4medtechmidl2023",
+    "title": "",
+    "section": " github.com/budai4medtech/midl2023",
+    "text": "github.com/budai4medtech/midl2023\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+  },
+  {
+    "objectID": "index.html#fetal-us-imaging-with-diffusion-models",
+    "href": "index.html#fetal-us-imaging-with-diffusion-models",
+    "title": "",
+    "section": "Fetal US imaging with Diffusion models",
+    "text": "Fetal US imaging with Diffusion models\n\n\n\n\n\n\n\n\n\nHo et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239\nFiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260"
+  },
+  {
+    "objectID": "index.html#xfetus",
+    "href": "index.html#xfetus",
+    "title": "",
+    "section": "xfetus 👶 🧠 🤖",
+    "text": "xfetus 👶 🧠 🤖\nA library for ultrasound fetal imaging synthesis using:\n\nGANs,\n\ntransformers, and\n\ndiffusion models.\n\n\n https://github.com/budai4medtech/xfetus\n\n\nTODO: * Resolve PRs https://github.com/budai4medtech/xfetus/pulls * Show emojis in the main README"
+  },
+  {
+    "objectID": "index.html#open-source-software-for-surgical-technologies",
+    "href": "index.html#open-source-software-for-surgical-technologies",
+    "title": "",
+    "section": "Open-Source Software for Surgical Technologies",
+    "text": "Open-Source Software for Surgical Technologies"
+  },
+  {
+    "objectID": "index.html#scripts-code.py",
+    "href": "index.html#scripts-code.py",
+    "title": "",
+    "section": "Scripts  code.py",
+    "text": "Scripts  code.py\n\nTab ATab B\n\n\nContent for Tab A\n\n\nContent for Tab B"
+  },
+  {
+    "objectID": "index.html#case-a",
+    "href": "index.html#case-a",
+    "title": "",
+    "section": "🏥 Case A",
+    "text": "🏥 Case A"
+  },
+  {
+    "objectID": "index.html#case-b",
+    "href": "index.html#case-b",
+    "title": "",
+    "section": "🏥 Case B",
+    "text": "🏥 Case B"
+  },
+  {
+    "objectID": "index.html#hackathon",
+    "href": "index.html#hackathon",
+    "title": "",
+    "section": "🔧 Hackathon",
+    "text": "🔧 Hackathon"
+  },
+  {
+    "objectID": "index.html#model-verification",
+    "href": "index.html#model-verification",
+    "title": "",
+    "section": "♻️ Model verification",
+    "text": "♻️ Model verification\n\nAI\nCode\n…"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "",
+    "section": "🎒 Education",
+    "text": "🎒 Education\n\nA\nB"
+  },
+  {
+    "objectID": "index.html#template-for-figures",
+    "href": "index.html#template-for-figures",
+    "title": "",
+    "section": "⚕️ Template for figures",
+    "text": "⚕️ Template for figures"
+  },
+  {
+    "objectID": "index.html#key-takeaways",
+    "href": "index.html#key-takeaways",
+    "title": "",
+    "section": "Key takeaways",
+    "text": "Key takeaways"
+  }
+]
