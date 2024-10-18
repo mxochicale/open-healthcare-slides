@@ -92,6 +92,7 @@ quarto remove parmsam/subtitles
 
 ### Preview slices
 ```
+cd slides
 quarto preview index.qmd
 ```
 
