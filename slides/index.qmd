@@ -49,7 +49,7 @@ format:
   * Real-time AI diagnosis: 
     * Endoscopy-based video 
     * eye movement disorders
-* Key Takeaways
+* Takeaways
 
 ## My trajectory
 
