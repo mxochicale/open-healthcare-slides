@@ -49,6 +49,7 @@ format:
   * Real-time AI diagnosis: 
     * Endoscopy-based video 
     * eye movement disorders
+* Software as a Medical Device (SaMD)
 * Takeaways
 
 ## My trajectory
@@ -57,6 +58,8 @@ format:
 ![](figures/mx.svg){fig-align="center" width="100%"}
 :::
 
+
+# Fetal Ultrasound Image Synthesis
 
 ## Dating Ultrasound Scan (12 week scan)
 
@@ -236,7 +239,58 @@ TODO:
 * Show emojis in the main README 
 :::
 
-## Open-Source Software for Surgical Technologies
+
+# Software as a Medical Device (SaMD)
+
+## Regulation vs innovation in MedTech
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/balance-between-regulation-innovation.svg){fig-align="center" width="100%"}
+:::
+
+
+
+## IEC 62304 standard for  software
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/iec62304.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+https://www.iso.org/standard/38421.html
+:::
+
+
+## Good ML practices by FDA
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/goodALMLFDA.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper 
+:::
+
+::: {.notes}
+Regulatory Framework for Modifications to
+(AI/ML)-Based Software as a Medical Device (SaMD)
+:::
+
+
+## FDA-approved AI-based Medical Devices
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/fda-approved-ai-based-med-devs.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online
+database. npj Digit. Med. 3, 118 (2020). 
+:::
+
+
+
+# Open-Source Software for Surgical Technologies
 
 
 
@@ -272,12 +326,12 @@ Content for `Tab B`
 * B 
 
 
+
+# Key takeaways
+
 ## :medical_symbol: Template for figures
 
 ::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/00_template-vector-images/drawing-v00.svg){fig-align="center" width="100%"}
 :::
-
-
-## Key takeaways
 
