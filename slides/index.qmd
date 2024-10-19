@@ -44,12 +44,12 @@ format:
 # Overview {style="font-size: 90%;"} 
 
 * [My trajectory](#sec-mt)
+* Software as a Medical Device (SaMD)
 * Uses cases
   * [Fetal Ultrasound Image Synthesis](#sec-fus)
   * Real-time AI diagnosis: 
     * Endoscopy-based video 
     * eye movement disorders
-* Software as a Medical Device (SaMD)
 * Takeaways
 
 ## My trajectory
@@ -57,6 +57,56 @@ format:
 ::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/mx.svg){fig-align="center" width="100%"}
 :::
+
+
+# Software as a Medical Device (SaMD)
+
+## Regulation vs innovation in MedTech
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/balance-between-regulation-innovation.svg){fig-align="center" width="100%"}
+:::
+
+## IEC 62304 standard for  software
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/iec62304.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+https://www.iso.org/standard/38421.html
+:::
+
+
+## Good ML practices by FDA
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/goodALMLFDA.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper 
+:::
+
+::: {.notes}
+Regulatory Framework for Modifications to
+(AI/ML)-Based Software as a Medical Device (SaMD)
+:::
+
+
+## FDA-approved AI-based Medical Devices
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/fda-approved-ai-based-med-devs.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online
+database. npj Digit. Med. 3, 118 (2020). 
+:::
+
+
+
 
 
 # Fetal Ultrasound Image Synthesis
@@ -240,53 +290,6 @@ TODO:
 :::
 
 
-# Software as a Medical Device (SaMD)
-
-## Regulation vs innovation in MedTech
-
-::: { style="margin-top: 0px; font-size: 50%;"} 
-![](figures/regulation-innovation/balance-between-regulation-innovation.svg){fig-align="center" width="100%"}
-:::
-
-
-
-## IEC 62304 standard for  software
-
-::: { style="margin-top: 0px; font-size: 50%;"} 
-![](figures/regulation-innovation/iec62304.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-https://www.iso.org/standard/38421.html
-:::
-
-
-## Good ML practices by FDA
-
-::: { style="margin-top: 0px; font-size: 50%;"} 
-![](figures/regulation-innovation/goodALMLFDA.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper 
-:::
-
-::: {.notes}
-Regulatory Framework for Modifications to
-(AI/ML)-Based Software as a Medical Device (SaMD)
-:::
-
-
-## FDA-approved AI-based Medical Devices
-
-::: { style="margin-top: 0px; font-size: 50%;"} 
-![](figures/regulation-innovation/fda-approved-ai-based-med-devs.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online
-database. npj Digit. Med. 3, 118 (2020). 
-:::
 
 
 # Developing real-time AI applications for diagnosis
@@ -743,6 +746,8 @@ Speaker notes go here.
 
 # Open-Source Software for Surgical Technologies
 
+## {background-image="figures/oss4surgtech/oss4st-hsmr24-p00.svg"}
+
 
 
 ## Scripts {{< fa brands github >}} [`code.py`]()
@@ -786,3 +791,13 @@ Content for `Tab B`
 ![](figures/00_template-vector-images/drawing-v00.svg){fig-align="center" width="100%"}
 :::
 
+## 🙌 Acknowledgements
+
+* Diego Kaski
+  * UCL Queen Square Institute of Neurology
+* Zhehua Mao, Sophia Bano and Matt Clarkson
+  * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS)
+* Steve Thompson
+  * Advanced Research Computing Centre (ARC)
+* Mikael Brudfors and Nadim Daher
+  * NVIDIA Healthcare AI
