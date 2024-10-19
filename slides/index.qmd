@@ -289,6 +289,457 @@ database. npj Digit. Med. 3, 118 (2020).
 :::
 
 
+# Developing real-time AI applications for diagnosis
+
+## :medical_symbol: Endoscopic Pituitary Surgery
+
+{{< video https://www.youtube.com/embed/EwlRdxokdGk
+    start="11"
+    width="85%" 
+    height="85%"
+>}}
+
+::: {.notes}
+94,961 views  20 Nov 2012
+Barrow Neurological Institute Neurosurgeon Andrew S. Little, MD, demonstrates the process of removing a tumor of the pituitary gland using minimally-invasive endoscopic neurosurgery.
+https://www.youtube.com/watch?app=desktop&v=EwlRdxokdGk
+
+553,519 views  28 May 2017
+The pituitary gland is located at the bottom of your brain and above the inside of your nose. Endoscopic pituitary surgery (also called transsphenoidal endoscopic surgery) is a minimally invasive surgery performed through the nose and sphenoid sinus to remove pituitary tumors.
+https://www.youtube.com/watch?v=lwmgNLwt_ts
+
+Mao, Zhehua, Adrito Das, Mobarakol Islam, Danyal Z. Khan, Simon C. Williams, John G. Hanrahan, Anouk Borg et al. "PitSurgRT: real-time localization of critical anatomical structures in endoscopic pituitary surgery." International Journal of Computer Assisted Radiology and Surgery (2024): 1-8.
+:::
+
+
+## Real-time AI Applications for Surgery
+::: {#fig-template}
+::: { style="margin-top: 0px; font-size: 80%;"} 
+![](figures/holoscan-platform/rtai4spipeline.svg){fig-align="center" width="100%"}
+:::
+Development and deployment pipeline for real-time AI apps for surgery
+:::
+
+::: {.notes}
+Pipeline with development and deployment of real-time AI apps for surgery
+
+{fig-align=center}
+{fig-pos='b'}
+b(bottom)
+h(here)
+p(page)
+t(top)
+:::
+
+
+
+## NVIDIA Holoscan platform
+:::: {.columns}
+
+::: {.column width="50%"}
+Holoscan-SDK
+
+![](figures/holoscan-platform/holohub.svg)
+
+[{{< fa brands github >}} `holoscan-sdk`](
+https://github.com/nvidia-holoscan/holoscan-sdk/tree/main
+)
+
+[{{< fa brands github >}} `holohub`](
+https://github.com/nvidia-holoscan/holohub
+)
+
+:::
+
+::: {.column width="50%"}
+Clara-AGX
+
+![](figures/holoscan-platform/clara_agx_dev_kit_components.svg)
+
+[{{< fa brands github >}} `Clara-AGX DevKit`](
+https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/clara-agx/clara_agx_user_guide.md
+)
+
+[{{< fa brands github >}} `Orin-IGX DevKit`](
+https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/nvidia-igx-orin/nvidia_igx_orin_user_guide.md
+)
+
+:::
+
+::::
+
+::: {.notes}
+Holoscan platform
+:::
+
+
+
+## Holoscan Core Concepts
+::: {#fig-template}
+
+![](figures/holoscan-platform/holoscan_core_concepts.svg){fig-align=center}
+
+Operator: An operator is the most basic unit of work in this framework.
+:::
+
+::: {.notes}
+
+https://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.html
+:::
+
+
+
+
+
+
+## Bring Your Own Model (BYOM) {.scrollable}
+::: {.panel-tabset}
+
+### Workflow
+::: {#fig-template}
+
+![](figures/holoscan-platform/byom.svg){fig-align=center}
+
+Connecting Operators
+:::
+
+### Python
+
+```{.python}
+import os
+from argparse import ArgumentParser
+
+from holoscan.core import Application
+
+from holoscan.operators import (
+    FormatConverterOp,
+    HolovizOp,
+    InferenceOp,
+    SegmentationPostprocessorOp,
+    VideoStreamReplayerOp,
+)
+from holoscan.resources import UnboundedAllocator
+
+
+class BYOMApp(Application):
+    def __init__(self, data):
+        """Initialize the application
+
+Parameters
+----------
+data : Location to the data
+"""
+
+        super().__init__()
+
+        # set name
+        self.name = "BYOM App"
+
+        if data == "none":
+            data = os.environ.get("HOLOSCAN_INPUT_PATH", "../data")
+
+        self.sample_data_path = data
+
+        self.model_path = os.path.join(os.path.dirname(__file__), "../model")
+        self.model_path_map = {
+            "byom_model": os.path.join(self.model_path, "identity_model.onnx"),
+        }
+
+        self.video_dir = os.path.join(self.sample_data_path, "racerx")
+        if not os.path.exists(self.video_dir):
+            raise ValueError(f"Could not find video data:{self.video_dir=}")
+
+# Define the workflow
+        self.add_flow(source, viz, {("output", "receivers")})
+        self.add_flow(source, preprocessor, {("output", "source_video")})
+        self.add_flow(preprocessor, inference, {("tensor", "receivers")})
+        self.add_flow(inference, postprocessor, {("transmitter", "in_tensor")})
+        self.add_flow(postprocessor, viz, {("out_tensor", "receivers")})
+
+
+def main(config_file, data):
+    app = BYOMApp(data=data)
+    # if the --config command line argument was provided, it will override this config_file
+    app.config(config_file)
+    app.run()
+
+
+if __name__ == "__main__":
+    # Parse args
+    parser = ArgumentParser(description="BYOM demo application.")
+    parser.add_argument(
+        "-d",
+        "--data",
+        default="none",
+        help=("Set the data path"),
+    )
+
+    args = parser.parse_args()
+    config_file = os.path.join(os.path.dirname(__file__), "byom.yaml")
+    main(config_file=config_file, data=args.data)
+
+```
+
+### YAML
+
+```{.python}
+%YAML 1.2
+replayer:  # VideoStreamReplayer
+  basename: "racerx"
+  frame_rate: 0 # as specified in timestamps
+  repeat: true # default: false
+  realtime: true # default: true
+  count: 0 # default: 0 (no frame count restriction)
+
+preprocessor:  # FormatConverter
+  out_tensor_name: source_video
+  out_dtype: "float32"
+  resize_width: 512
+  resize_height: 512
+
+inference:  # Inference
+  backend: "trt"
+  pre_processor_map:
+    "byom_model": ["source_video"]
+  inference_map:
+    "byom_model": ["output"]
+
+postprocessor:  # SegmentationPostprocessor
+  in_tensor_name: output
+  # network_output_type: None
+  data_format: nchw
+
+viz:  # Holoviz
+  width: 854
+  height: 480
+  color_lut: [
+    [0.65, 0.81, 0.89, 0.1],
+    ]
+```
+
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+## {{< fa brands github >}} `real-time-ai-for-surgery`
+### Getting started docs
+::: {#fig-template}
+
+![](figures/real-time-ai-for-surgery/getting-started.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow. 
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+## {{< fa brands github >}} `real-time-ai-for-surgery`
+### 🏥 Endoscopic pituitary surgery
+::: {.panel-tabset}
+
+
+### 👃 Multi-head Model
+
+![](figures/real-time-ai-for-surgery/eps-mhm.svg){fig-align=center}
+
+### 🌓 PhaseNet Model
+
+![](figures/real-time-ai-for-surgery/eps-pnm.svg){fig-align=center}
+
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+## {{< fa brands github >}} `real-time-ai-for-surgery` {.scrollable}
+### 🏥 Endoscopic pituitary surgery
+::: {.panel-tabset}
+
+### 🔱 Multi AI models (python)
+
+```{.python filename="multi-ai.py"}
+
+...
+
+        # Define the workflow
+        if is_v4l2:
+            self.add_flow(source, viz, {("signal", "receivers")})
+            self.add_flow(source, preprocessor_v4l2, {("signal", "source_video")})
+            self.add_flow(source, preprocessor_phasenet_v4l2, {("signal", "source_video")})
+            for op in [preprocessor_v4l2, preprocessor_phasenet_v4l2]:
+                self.add_flow(op, multi_ai_inference_v4l2, {("", "receivers")})
+            ### connect infereceOp to postprocessors
+            self.add_flow(
+                multi_ai_inference_v4l2, multiheadOp, {("transmitter", "in_tensor_postproOp")}
+            )
+            self.add_flow(multi_ai_inference_v4l2, segpostprocessor, {("transmitter", "")})
+            self.add_flow(multi_ai_inference_v4l2, phasenetOp, {("", "in")})
+
+        else:
+            self.add_flow(source, viz, {("", "receivers")})
+            self.add_flow(source, preprocessor_replayer, {("output", "source_video")})
+            self.add_flow(source, preprocessor_phasenet_replayer, {("output", "source_video")})
+            for op in [preprocessor_replayer, preprocessor_phasenet_replayer]:
+                self.add_flow(op, multi_ai_inference_replayer, {("", "receivers")})
+            ### connect infereceOp to postprocessors
+            self.add_flow(
+                multi_ai_inference_replayer, multiheadOp, {("transmitter", "in_tensor_postproOp")}
+            )
+            self.add_flow(multi_ai_inference_replayer, segpostprocessor, {("transmitter", "")})
+            self.add_flow(multi_ai_inference_replayer, phasenetOp, {("", "in")})
+
+        ## connect postprocessors outputs for visualisation with holoviz
+        self.add_flow(multiheadOp, viz, {("out_tensor_postproOp", "receivers")})
+        self.add_flow(segpostprocessor, viz, {("", "receivers")})
+        self.add_flow(phasenetOp, viz, {("out", "receivers")})
+        self.add_flow(phasenetOp, viz, {("output_specs", "input_specs")})
+
+...
+
+```
+
+
+### 🔱 Multi AI models (YAML)
+```{.python filename="multi-ai.yaml"}
+
+...
+
+ multi_ai_inference_v4l2:
+  #
+  #
+  # Multi-AI Inference Operator InferenceOp()
+  #
+  #
+  backend: "trt"
+  pre_processor_map:
+    "pit_surg_model": ["prepro_v4l2"]
+    "phasenet_model": ["prepro_PNv4l2"]
+  inference_map:
+    "pit_surg_model": ["segmentation_masks", "landmarks"]
+    "phasenet_model": ["out"]
+  enable_fp16: False
+  parallel_inference: true # optional param, default to true
+  infer_on_cpu: false # optional param, default to false
+  input_on_cuda: true # optional param, default to true
+  output_on_cuda: true # optional param, default to true
+  transmit_on_cuda: true # optional param, default to true
+  is_engine_path: false # optional param, default to false
+
+multi_ai_inference_replayer:
+  #
+  #
+  # Multi-AI Inference Operator InferenceOp()
+  #
+  #
+  backend: "trt"
+  pre_processor_map:
+    "pit_surg_model": ["prepro_replayer"]
+    "phasenet_model": ["prepro_PNreplayer"]
+  inference_map:
+    "pit_surg_model": ["segmentation_masks", "landmarks"]
+    "phasenet_model": ["out"]
+  enable_fp16: False
+  parallel_inference: true # optional param, default to true
+  infer_on_cpu: false # optional param, default to false
+  input_on_cuda: true # optional param, default to true
+  output_on_cuda: true # optional param, default to true
+  transmit_on_cuda: true # optional param, default to true
+  is_engine_path: false # optional param, default to false
+
+...
+
+```
+
+:::
+
+::: {.notes}
+Speaker notes go here.
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+```{.python filename="unit-test-example.py" code-line-numbers="|30-36"}
+:::
+
+
+## {{< fa brands github >}} `real-time-ai-for-surgery`
+### 🤝 Contributing
+::: {#fig-template}
+
+![](figures/real-time-ai-for-surgery/contributing.svg){fig-align=center}
+
+real-time-ai-for-surgery follows the Contributor Covenant Code of Conduct. Contributions, issues and feature requests are welcome. 
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+## {{< fa brands github >}} `real-time-ai-for-surgery` {.scrollable}
+### GitHub templates 
+::: {.panel-tabset}
+
+### 🎒 new users
+![](figures/real-time-ai-for-surgery/gh_templates_new_users.svg){fig-align=center}
+
+### 🔩 new models
+![](figures/real-time-ai-for-surgery/gh_templates_new_models.svg){fig-align=center}
+
+### :recycle: PRs
+![](figures/real-time-ai-for-surgery/gh_templates_PRs.svg){fig-align=center}
+
+
+:::
+
+::: {.notes}
+Speaker notes go here.
+{.scrollable}
+:::
+
+
+
+
+
+## {{< fa brands github >}} `real-time-ai-for-surgery` {.scrollable}
+### Release version summaries
+::: {.panel-tabset}
+
+### v0.1.0
+![](figures/real-time-ai-for-surgery/v0.1.0-rtai4s.svg){fig-align=center}
+
+### v0.2.0
+![](figures/real-time-ai-for-surgery/v0.2.0-rtai4s.svg){fig-align=center}
+
+### v0.3.0
+![](figures/real-time-ai-for-surgery/v0.3.0-rtai4s.svg){fig-align=center}
+
+### v0.4.0
+![](figures/real-time-ai-for-surgery/v0.4.0-rtai4s.svg){fig-align=center}
+
+### v0.5.0
+![](figures/real-time-ai-for-surgery/v0.5.0-rtai4s.svg){fig-align=center}
+
+:::
+
+::: {.notes}
+Speaker notes go here.
+{.scrollable}
+:::
+
+
+
+
+
 
 # Open-Source Software for Surgical Technologies
 
