@@ -7,6 +7,34 @@
     "text": "My trajectory"
   },
   {
+    "objectID": "index.html#regulation-vs-innovation-in-medtech",
+    "href": "index.html#regulation-vs-innovation-in-medtech",
+    "title": "",
+    "section": "Regulation vs innovation in MedTech",
+    "text": "Regulation vs innovation in MedTech"
+  },
+  {
+    "objectID": "index.html#iec-62304-standard-for-software",
+    "href": "index.html#iec-62304-standard-for-software",
+    "title": "",
+    "section": "IEC 62304 standard for software",
+    "text": "IEC 62304 standard for software\n\n\n\n\n\n\n\n\nhttps://www.iso.org/standard/38421.html"
+  },
+  {
+    "objectID": "index.html#good-ml-practices-by-fda",
+    "href": "index.html#good-ml-practices-by-fda",
+    "title": "",
+    "section": "Good ML practices by FDA",
+    "text": "Good ML practices by FDA\n\n\n\n\n\n\n\n\nUS-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper\n\n\nRegulatory Framework for Modifications to (AI/ML)-Based Software as a Medical Device (SaMD)"
+  },
+  {
+    "objectID": "index.html#fda-approved-ai-based-medical-devices",
+    "href": "index.html#fda-approved-ai-based-medical-devices",
+    "title": "",
+    "section": "FDA-approved AI-based Medical Devices",
+    "text": "FDA-approved AI-based Medical Devices\n\n\n\n\n\n\n\n\nBenjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. npj Digit. Med. 3, 118 (2020)."
+  },
+  {
     "objectID": "index.html#dating-ultrasound-scan-12-week-scan",
     "href": "index.html#dating-ultrasound-scan-12-week-scan",
     "title": "",
@@ -112,11 +140,109 @@
     "text": "xfetus 👶 🧠 🤖\nA library for ultrasound fetal imaging synthesis using:\n\nGANs,\n\ntransformers, and\n\ndiffusion models.\n\n\n https://github.com/budai4medtech/xfetus\n\n\nTODO: * Resolve PRs https://github.com/budai4medtech/xfetus/pulls * Show emojis in the main README"
   },
   {
-    "objectID": "index.html#open-source-software-for-surgical-technologies",
-    "href": "index.html#open-source-software-for-surgical-technologies",
+    "objectID": "index.html#real-time-ai-applications-for-surgery",
+    "href": "index.html#real-time-ai-applications-for-surgery",
     "title": "",
-    "section": "Open-Source Software for Surgical Technologies",
-    "text": "Open-Source Software for Surgical Technologies"
+    "section": "Real-time AI Applications for Surgery",
+    "text": "Real-time AI Applications for Surgery\n\n\nFigure 1: Development and deployment pipeline for real-time AI apps for surgery\n\nPipeline with development and deployment of real-time AI apps for surgery\n{fig-align=center} {fig-pos=‘b’} b(bottom) h(here) p(page) t(top)"
+  },
+  {
+    "objectID": "index.html#nvidia-holoscan-platform",
+    "href": "index.html#nvidia-holoscan-platform",
+    "title": "",
+    "section": "NVIDIA Holoscan platform",
+    "text": "NVIDIA Holoscan platform\n\n\nHoloscan-SDK\n\n holoscan-sdk\n holohub\n\nClara-AGX\n\n Clara-AGX DevKit\n Orin-IGX DevKit\n\n\nHoloscan platform"
+  },
+  {
+    "objectID": "index.html#holoscan-core-concepts",
+    "href": "index.html#holoscan-core-concepts",
+    "title": "",
+    "section": "Holoscan Core Concepts",
+    "text": "Holoscan Core Concepts\n\n\nFigure 2: Operator: An operator is the most basic unit of work in this framework.\n\nhttps://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.html"
+  },
+  {
+    "objectID": "index.html#bring-your-own-model-byom",
+    "href": "index.html#bring-your-own-model-byom",
+    "title": "",
+    "section": "Bring Your Own Model (BYOM)",
+    "text": "Bring Your Own Model (BYOM)\n\nWorkflowPythonYAML\n\n\n\n\n\n\n\n\nFigure 3: Connecting Operators\n\n\n\n\n\nimport os\nfrom argparse import ArgumentParser\n\nfrom holoscan.core import Application\n\nfrom holoscan.operators import (\n    FormatConverterOp,\n    HolovizOp,\n    InferenceOp,\n    SegmentationPostprocessorOp,\n    VideoStreamReplayerOp,\n)\nfrom holoscan.resources import UnboundedAllocator\n\n\nclass BYOMApp(Application):\n    def __init__(self, data):\n        \"\"\"Initialize the application\n\nParameters\n----------\ndata : Location to the data\n\"\"\"\n\n        super().__init__()\n\n        # set name\n        self.name = \"BYOM App\"\n\n        if data == \"none\":\n            data = os.environ.get(\"HOLOSCAN_INPUT_PATH\", \"../data\")\n\n        self.sample_data_path = data\n\n        self.model_path = os.path.join(os.path.dirname(__file__), \"../model\")\n        self.model_path_map = {\n            \"byom_model\": os.path.join(self.model_path, \"identity_model.onnx\"),\n        }\n\n        self.video_dir = os.path.join(self.sample_data_path, \"racerx\")\n        if not os.path.exists(self.video_dir):\n            raise ValueError(f\"Could not find video data:{self.video_dir=}\")\n\n# Define the workflow\n        self.add_flow(source, viz, {(\"output\", \"receivers\")})\n        self.add_flow(source, preprocessor, {(\"output\", \"source_video\")})\n        self.add_flow(preprocessor, inference, {(\"tensor\", \"receivers\")})\n        self.add_flow(inference, postprocessor, {(\"transmitter\", \"in_tensor\")})\n        self.add_flow(postprocessor, viz, {(\"out_tensor\", \"receivers\")})\n\n\ndef main(config_file, data):\n    app = BYOMApp(data=data)\n    # if the --config command line argument was provided, it will override this config_file\n    app.config(config_file)\n    app.run()\n\n\nif __name__ == \"__main__\":\n    # Parse args\n    parser = ArgumentParser(description=\"BYOM demo application.\")\n    parser.add_argument(\n        \"-d\",\n        \"--data\",\n        default=\"none\",\n        help=(\"Set the data path\"),\n    )\n\n    args = parser.parse_args()\n    config_file = os.path.join(os.path.dirname(__file__), \"byom.yaml\")\n    main(config_file=config_file, data=args.data)\n\n\n%YAML 1.2\nreplayer:  # VideoStreamReplayer\n  basename: \"racerx\"\n  frame_rate: 0 # as specified in timestamps\n  repeat: true # default: false\n  realtime: true # default: true\n  count: 0 # default: 0 (no frame count restriction)\n\npreprocessor:  # FormatConverter\n  out_tensor_name: source_video\n  out_dtype: \"float32\"\n  resize_width: 512\n  resize_height: 512\n\ninference:  # Inference\n  backend: \"trt\"\n  pre_processor_map:\n    \"byom_model\": [\"source_video\"]\n  inference_map:\n    \"byom_model\": [\"output\"]\n\npostprocessor:  # SegmentationPostprocessor\n  in_tensor_name: output\n  # network_output_type: None\n  data_format: nchw\n\nviz:  # Holoviz\n  width: 854\n  height: 480\n  color_lut: [\n    [0.65, 0.81, 0.89, 0.1],\n    ]\n\n\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#endoscopic-pituitary-surgery",
+    "href": "index.html#endoscopic-pituitary-surgery",
+    "title": "",
+    "section": "⚕️ Endoscopic Pituitary Surgery",
+    "text": "⚕️ Endoscopic Pituitary Surgery\n\n\n94,961 views 20 Nov 2012 Barrow Neurological Institute Neurosurgeon Andrew S. Little, MD, demonstrates the process of removing a tumor of the pituitary gland using minimally-invasive endoscopic neurosurgery. https://www.youtube.com/watch?app=desktop&v=EwlRdxokdGk\n553,519 views 28 May 2017 The pituitary gland is located at the bottom of your brain and above the inside of your nose. Endoscopic pituitary surgery (also called transsphenoidal endoscopic surgery) is a minimally invasive surgery performed through the nose and sphenoid sinus to remove pituitary tumors. https://www.youtube.com/watch?v=lwmgNLwt_ts\nMao, Zhehua, Adrito Das, Mobarakol Islam, Danyal Z. Khan, Simon C. Williams, John G. Hanrahan, Anouk Borg et al. “PitSurgRT: real-time localization of critical anatomical structures in endoscopic pituitary surgery.” International Journal of Computer Assisted Radiology and Surgery (2024): 1-8."
+  },
+  {
+    "objectID": "index.html#real-time-ai-for-surgery",
+    "href": "index.html#real-time-ai-for-surgery",
+    "title": "",
+    "section": " real-time-ai-for-surgery",
+    "text": "real-time-ai-for-surgery\nGetting started docs\n\n\nFigure 4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#real-time-ai-for-surgery-1",
+    "href": "index.html#real-time-ai-for-surgery-1",
+    "title": "",
+    "section": " real-time-ai-for-surgery",
+    "text": "real-time-ai-for-surgery\n🏥 Endoscopic pituitary surgery\n\n👃 Multi-head Model🌓 PhaseNet Model\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#real-time-ai-for-surgery-2",
+    "href": "index.html#real-time-ai-for-surgery-2",
+    "title": "",
+    "section": " real-time-ai-for-surgery",
+    "text": "real-time-ai-for-surgery\n🏥 Endoscopic pituitary surgery\n\n🔱 Multi AI models (python)🔱 Multi AI models (YAML)\n\n\n\n\nmulti-ai.py\n\n\n...\n\n        # Define the workflow\n        if is_v4l2:\n            self.add_flow(source, viz, {(\"signal\", \"receivers\")})\n            self.add_flow(source, preprocessor_v4l2, {(\"signal\", \"source_video\")})\n            self.add_flow(source, preprocessor_phasenet_v4l2, {(\"signal\", \"source_video\")})\n            for op in [preprocessor_v4l2, preprocessor_phasenet_v4l2]:\n                self.add_flow(op, multi_ai_inference_v4l2, {(\"\", \"receivers\")})\n            ### connect infereceOp to postprocessors\n            self.add_flow(\n                multi_ai_inference_v4l2, multiheadOp, {(\"transmitter\", \"in_tensor_postproOp\")}\n            )\n            self.add_flow(multi_ai_inference_v4l2, segpostprocessor, {(\"transmitter\", \"\")})\n            self.add_flow(multi_ai_inference_v4l2, phasenetOp, {(\"\", \"in\")})\n\n        else:\n            self.add_flow(source, viz, {(\"\", \"receivers\")})\n            self.add_flow(source, preprocessor_replayer, {(\"output\", \"source_video\")})\n            self.add_flow(source, preprocessor_phasenet_replayer, {(\"output\", \"source_video\")})\n            for op in [preprocessor_replayer, preprocessor_phasenet_replayer]:\n                self.add_flow(op, multi_ai_inference_replayer, {(\"\", \"receivers\")})\n            ### connect infereceOp to postprocessors\n            self.add_flow(\n                multi_ai_inference_replayer, multiheadOp, {(\"transmitter\", \"in_tensor_postproOp\")}\n            )\n            self.add_flow(multi_ai_inference_replayer, segpostprocessor, {(\"transmitter\", \"\")})\n            self.add_flow(multi_ai_inference_replayer, phasenetOp, {(\"\", \"in\")})\n\n        ## connect postprocessors outputs for visualisation with holoviz\n        self.add_flow(multiheadOp, viz, {(\"out_tensor_postproOp\", \"receivers\")})\n        self.add_flow(segpostprocessor, viz, {(\"\", \"receivers\")})\n        self.add_flow(phasenetOp, viz, {(\"out\", \"receivers\")})\n        self.add_flow(phasenetOp, viz, {(\"output_specs\", \"input_specs\")})\n\n...\n\n\n\n\n\nmulti-ai.yaml\n\n\n...\n\n multi_ai_inference_v4l2:\n  #\n  #\n  # Multi-AI Inference Operator InferenceOp()\n  #\n  #\n  backend: \"trt\"\n  pre_processor_map:\n    \"pit_surg_model\": [\"prepro_v4l2\"]\n    \"phasenet_model\": [\"prepro_PNv4l2\"]\n  inference_map:\n    \"pit_surg_model\": [\"segmentation_masks\", \"landmarks\"]\n    \"phasenet_model\": [\"out\"]\n  enable_fp16: False\n  parallel_inference: true # optional param, default to true\n  infer_on_cpu: false # optional param, default to false\n  input_on_cuda: true # optional param, default to true\n  output_on_cuda: true # optional param, default to true\n  transmit_on_cuda: true # optional param, default to true\n  is_engine_path: false # optional param, default to false\n\nmulti_ai_inference_replayer:\n  #\n  #\n  # Multi-AI Inference Operator InferenceOp()\n  #\n  #\n  backend: \"trt\"\n  pre_processor_map:\n    \"pit_surg_model\": [\"prepro_replayer\"]\n    \"phasenet_model\": [\"prepro_PNreplayer\"]\n  inference_map:\n    \"pit_surg_model\": [\"segmentation_masks\", \"landmarks\"]\n    \"phasenet_model\": [\"out\"]\n  enable_fp16: False\n  parallel_inference: true # optional param, default to true\n  infer_on_cpu: false # optional param, default to false\n  input_on_cuda: true # optional param, default to true\n  output_on_cuda: true # optional param, default to true\n  transmit_on_cuda: true # optional param, default to true\n  is_engine_path: false # optional param, default to false\n\n...\n\n\n\n\n\nSpeaker notes go here.\n ```{.python filename=“unit-test-example.py” code-line-numbers=“|30-36”}"
+  },
+  {
+    "objectID": "index.html#real-time-ai-for-surgery-3",
+    "href": "index.html#real-time-ai-for-surgery-3",
+    "title": "",
+    "section": " real-time-ai-for-surgery",
+    "text": "real-time-ai-for-surgery\n🤝 Contributing\n\n\nFigure 5: real-time-ai-for-surgery follows the Contributor Covenant Code of Conduct. Contributions, issues and feature requests are welcome.\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#real-time-ai-for-surgery-4",
+    "href": "index.html#real-time-ai-for-surgery-4",
+    "title": "",
+    "section": " real-time-ai-for-surgery",
+    "text": "real-time-ai-for-surgery\nGitHub templates\n\n🎒 new users🔩 new models♻️ PRs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpeaker notes go here. {.scrollable}"
+  },
+  {
+    "objectID": "index.html#real-time-ai-for-surgery-5",
+    "href": "index.html#real-time-ai-for-surgery-5",
+    "title": "",
+    "section": " real-time-ai-for-surgery",
+    "text": "real-time-ai-for-surgery\nRelease version summaries\n\nv0.1.0v0.2.0v0.3.0v0.4.0v0.5.0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpeaker notes go here. {.scrollable}"
+  },
+  {
+    "objectID": "index.html#ai-in-ophthalmic-imaging-modalities",
+    "href": "index.html#ai-in-ophthalmic-imaging-modalities",
+    "title": "",
+    "section": "🤖 👀 AI in ophthalmic imaging modalities",
+    "text": "🤖 👀 AI in ophthalmic imaging modalities\n\n\nFigure 6: Practical application of AI in all common ophthalmic imaging modalities\n\nLi, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).\n\n\nNystagmus {.scrollable}"
+  },
+  {
+    "objectID": "index.html#eye-movement-disorders",
+    "href": "index.html#eye-movement-disorders",
+    "title": "",
+    "section": "🤖 👀 Eye movement disorders",
+    "text": "🤖 👀 Eye movement disorders\n\n\n\nNystagmus is an eye movement disorder characterized by involunatry eye oscillations.​\nPathologic nystagmus is estimated to be 24 per 10,000 with a slight predilection toward European ancestry [1]​.\n\n\n\n\n\n[1] Sarvananthan, Nagini, Mylvaganam Surendran, Eryl O. Roberts, Sunila Jain, Shery Thomas, Nitant Shah, Frank A. Proudlock et al. “The prevalence of nystagmus: the Leicestershire nystagmus survey.” Investigative ophthalmology & visual science 50, no. 11 (2009): 5201-5206.​\n\n\nNystagmus {.scrollable}"
+  },
+  {
+    "objectID": "index.html#real-time-ai-diagnosis-for-nystagmus",
+    "href": "index.html#real-time-ai-diagnosis-for-nystagmus",
+    "title": "",
+    "section": "🤖 👀 Real-time AI Diagnosis for Nystagmus",
+    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\n\n\nDemo {.scrollable}"
+  },
+  {
+    "objectID": "index.html#real-time-ai-diagnosis-for-nystagmus-1",
+    "href": "index.html#real-time-ai-diagnosis-for-nystagmus-1",
+    "title": "",
+    "section": "🤖 👀 Real-time AI Diagnosis for Nystagmus",
+    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\n\nReal-time AI guidance for high-quality images (Liu et al. 2023) \n\n\n\nImplement UNET-Visual Transformer models (Yao et al. 2022)\n\n\n\n\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\n\n\nPlans {.scrollable}"
   },
   {
     "objectID": "index.html#scripts-code.py",
@@ -158,20 +284,13 @@
     "href": "index.html#education",
     "title": "",
     "section": "🎒 Education",
-    "text": "🎒 Education\n\nA\nB"
+    "text": "🎒 Education\n\nA5* B"
   },
   {
-    "objectID": "index.html#template-for-figures",
-    "href": "index.html#template-for-figures",
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
     "title": "",
-    "section": "⚕️ Template for figures",
-    "text": "⚕️ Template for figures"
-  },
-  {
-    "objectID": "index.html#key-takeaways",
-    "href": "index.html#key-takeaways",
-    "title": "",
-    "section": "Key takeaways",
-    "text": "Key takeaways"
+    "section": "🙌 Acknowledgements",
+    "text": "🙌 Acknowledgements\n\nDiego Kaski\n\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022. * UCL Queen Square Institute of Neurology * Zhehua Mao, Sophia Bano and Matt Clarkson * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) * Steve Thompson * Advanced Research Computing Centre (ARC) * Mikael Brudfors and Nadim Daher * NVIDIA Healthcare AI"
   }
 ]
