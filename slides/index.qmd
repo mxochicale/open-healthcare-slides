@@ -47,9 +47,9 @@ format:
 * Software as a Medical Device (SaMD)
 * Uses cases
   * [Fetal Ultrasound Image Synthesis](#sec-fus)
-  * Real-time AI diagnosis: 
+  * Real-time AI diagnosis
     * Endoscopy-based video 
-    * eye movement disorders
+    * Eye movement disorders
 * Takeaways
 
 ## My trajectory
@@ -294,25 +294,6 @@ TODO:
 
 # Developing real-time AI applications for diagnosis
 
-## :medical_symbol: Endoscopic Pituitary Surgery
-
-{{< video https://www.youtube.com/embed/EwlRdxokdGk
-    start="11"
-    width="85%" 
-    height="85%"
->}}
-
-::: {.notes}
-94,961 views  20 Nov 2012
-Barrow Neurological Institute Neurosurgeon Andrew S. Little, MD, demonstrates the process of removing a tumor of the pituitary gland using minimally-invasive endoscopic neurosurgery.
-https://www.youtube.com/watch?app=desktop&v=EwlRdxokdGk
-
-553,519 views  28 May 2017
-The pituitary gland is located at the bottom of your brain and above the inside of your nose. Endoscopic pituitary surgery (also called transsphenoidal endoscopic surgery) is a minimally invasive surgery performed through the nose and sphenoid sinus to remove pituitary tumors.
-https://www.youtube.com/watch?v=lwmgNLwt_ts
-
-Mao, Zhehua, Adrito Das, Mobarakol Islam, Danyal Z. Khan, Simon C. Williams, John G. Hanrahan, Anouk Borg et al. "PitSurgRT: real-time localization of critical anatomical structures in endoscopic pituitary surgery." International Journal of Computer Assisted Radiology and Surgery (2024): 1-8.
-:::
 
 
 ## Real-time AI Applications for Surgery
@@ -527,6 +508,28 @@ Speaker notes go here.
 :::
 
 
+# Use cases: Real-time AI diagnosis for endoscopic pituitary surgery
+
+## :medical_symbol: Endoscopic Pituitary Surgery
+
+{{< video https://www.youtube.com/embed/EwlRdxokdGk
+    start="11"
+    width="85%" 
+    height="85%"
+>}}
+
+::: {.notes}
+94,961 views  20 Nov 2012
+Barrow Neurological Institute Neurosurgeon Andrew S. Little, MD, demonstrates the process of removing a tumor of the pituitary gland using minimally-invasive endoscopic neurosurgery.
+https://www.youtube.com/watch?app=desktop&v=EwlRdxokdGk
+
+553,519 views  28 May 2017
+The pituitary gland is located at the bottom of your brain and above the inside of your nose. Endoscopic pituitary surgery (also called transsphenoidal endoscopic surgery) is a minimally invasive surgery performed through the nose and sphenoid sinus to remove pituitary tumors.
+https://www.youtube.com/watch?v=lwmgNLwt_ts
+
+Mao, Zhehua, Adrito Das, Mobarakol Islam, Danyal Z. Khan, Simon C. Williams, John G. Hanrahan, Anouk Borg et al. "PitSurgRT: real-time localization of critical anatomical structures in endoscopic pituitary surgery." International Journal of Computer Assisted Radiology and Surgery (2024): 1-8.
+:::
+
 
 ## {{< fa brands github >}} `real-time-ai-for-surgery`
 ### Getting started docs
@@ -740,8 +743,93 @@ Speaker notes go here.
 :::
 
 
+# Use cases: Real-time AI diagnosis for eye movement disorders
+
+## :robot: :eyes: AI in ophthalmic imaging modalities
+
+::: {#fig-template}
+![](figures/ophthalmology/li2023-fig2.jpg){fig-align=center}
+
+Practical application of AI in all common ophthalmic imaging modalities
+:::
+
+::: {style="font-size: 40%;"}
+Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. "Artificial intelligence in ophthalmology: The path to the real-world clinic." Cell Reports Medicine 4, no. 7 (2023).
+:::
+
+::: {.notes}
+Nystagmus
+{.scrollable}
+:::
+
+## :robot: :eyes: Eye movement disorders
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Nystagmus is an eye movement disorder characterized by involunatry eye oscillations.​
+* Pathologic nystagmus is estimated to be 24 per 10,000 with a slight predilection toward European ancestry [1]​.
+
+:::
+
+::: {.column width="50%"}
+
+![](figures/ophthalmology/nystagmus.gif)
+
+:::
+
+::::
 
 
+::: {style="font-size: 40%;"}
+[1] Sarvananthan, Nagini, Mylvaganam Surendran, Eryl O. Roberts, Sunila Jain, Shery Thomas, Nitant Shah, Frank A. Proudlock et al. "The prevalence of nystagmus: the Leicestershire nystagmus survey." Investigative ophthalmology & visual science 50, no. 11 (2009): 5201-5206.​
+:::
+
+::: {.notes}
+Nystagmus
+{.scrollable}
+:::
+
+## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
+
+![](figures/nystagmus/animation-2024-09-13 16-45.gif){fig-align=center}
+
+::: {.notes}
+Demo
+{.scrollable}
+:::
+
+
+## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
+Future work
+
+:::: {.columns}
+
+::: {.column width="50%"}
+* Real-time AI guidance for high-quality images (Liu et al. 2023)
+![](figures/ophthalmology/liu_2023_graphical_abstract.jpg){fig-align="center" width="50%"}
+
+:::
+
+::: {.column width="50%"}
+* Implement UNET-Visual Transformer models (Yao et al. 2022)   
+![](figures/ophthalmology/yao2022_fig1.png){fig-align="center" width="80%"}
+
+:::
+
+::::
+
+::: {style="font-size: 40%;"}
+Liu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).
+
+Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. "Transclaw u-net: claw u-net with transformers for medical image segmentation." In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022. 
+:::
+
+::: {.notes}
+Plans
+{.scrollable}
+:::
 
 
 # Open-Source Software for Surgical Technologies
@@ -778,14 +866,14 @@ Content for `Tab B`
 
 
 ## :school_satchel: Education
-* A
-* B 
+* A5* B 
 
 
 
 # Key takeaways
+* Implement UNET-Visual Transformer models (Yao et al. 2022)
+## :medi* A5* B cal_symbol: Template for figures
 
-## :medical_symbol: Template for figures
 
 ::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/00_template-vector-images/drawing-v00.svg){fig-align="center" width="100%"}
@@ -794,6 +882,8 @@ Content for `Tab B`
 ## 🙌 Acknowledgements
 
 * Diego Kaski
+
+Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. "Transclaw u-net: claw u-net with transformers for medical image segmentation." In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022. 
   * UCL Queen Square Institute of Neurology
 * Zhehua Mao, Sophia Bano and Matt Clarkson
   * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS)
