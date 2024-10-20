@@ -412,7 +412,7 @@
 <span style="font-size:0.8em;"><span style="border-bottom: 0.5px solid #00ccff;"><a href="https://github.com/mxochicale/"><i class="fa-brands fa-github"></i> <code>mxochicale/</code></a></span><span style="border-bottom: 0.5px solid #00ccff;"><a href="https://github.com/mxochicale/open-healthcare-slides"><code>open-healthcare-slides</code></a></span></span></p>
 </div>
 <div class="footer">
-<p><span class="dim-text" style="&quot;text-align:left;'">2024-04-20 @ <a href="https://github.com/saforem2/grid-worms-animation/">Link for grid-worms-animation 2023</a></span></p>
+<p><span class="dim-text" style="&quot;text-align:left;'">20-Oct-2024 @ <a href="https://github.com/saforem2/grid-worms-animation/">grid-worms-animation 2023</a></span></p>
 </div>
 </section>
 
@@ -421,17 +421,18 @@
 <h1>Overview</h1>
 <ul>
 <li><a href="#/my-trajectory">My trajectory</a></li>
-<li>Software as a Medical Device (SaMD)</li>
+<li><a href="#/sec-b2b">From bench to bedside</a></li>
 <li>Uses cases
 <ul>
-<li><a href="#/dating-ultrasound-scan-12-week-scan">Fetal Ultrasound Image Synthesis</a></li>
-<li>Real-time AI diagnosis
+<li><a href="#/sec-fus">Fetal Ultrasound Image Synthesis</a></li>
+<li><a href="#/sec-rtai">Real-time AI diagnosis</a>
 <ul>
-<li>Endoscopy-based video</li>
-<li>Eye movement disorders</li>
+<li><a href="#/sec-ps">Endoscopy-based video</a></li>
+<li><a href="#/sec-ed">Eye movement disorders</a></li>
 </ul></li>
 </ul></li>
-<li>Takeaways</li>
+<li><a href="#/sec-ossh">Open-Source Software in Healthcare</a></li>
+<li><a href="#/sec-ta">Takeaways</a></li>
 </ul>
 </section>
 <section id="my-trajectory" class="slide level2">
@@ -445,8 +446,8 @@
 </div>
 </section></section>
 <section>
-<section id="software-as-a-medical-device-samd" class="title-slide slide level1 center">
-<h1>Software as a Medical Device (SaMD)</h1>
+<section id="sec-b2b" class="title-slide slide level1 center">
+<h1><span class="emoji" data-emoji="wrench">🔧</span> <span class="emoji" data-emoji="hospital">🏥</span> From bench to bedside</h1>
 
 </section>
 <section id="regulation-vs-innovation-in-medtech" class="slide level2">
@@ -510,15 +511,37 @@
 <div style="font-size: 40%;">
 <p>Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. npj Digit. Med. 3, 118 (2020).</p>
 </div>
+</section>
+<section id="challenges-in-the-ai-clinical-translation" class="slide level2">
+<h2><span class="emoji" data-emoji="hospital">🏥</span> Challenges in the AI clinical translation</h2>
+
+<img data-src="figures/regulation-innovation/li2023-fig3.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p class="caption">
+Figure&nbsp;1: Medical AI translational challenges between system development and routine clinical application
+</p><div style="font-size: 40%;">
+<p>Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).</p>
+</div>
+<aside class="notes">
+<p><span class="emoji" data-emoji="wrench">🔧</span> <span class="emoji" data-emoji="recycle">♻️</span> <span class="emoji" data-emoji="hospital">🏥</span> Software as a Medical Device (SaMD)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="fetal-ultrasound-image-synthesis" class="title-slide slide level1 center">
-<h1>Fetal Ultrasound Image Synthesis</h1>
+<section id="sec-fus" class="title-slide slide level1 center">
+<h1>Use cases: Fetal Ultrasound Image Synthesis</h1>
 
 </section>
 <section id="dating-ultrasound-scan-12-week-scan" class="slide level2">
 <h2>Dating Ultrasound Scan (12 week scan)</h2>
-<div id="sec-fus" style="margin-top: 0px; font-size: 10%;">
+<div style="margin-top: 0px; font-size: 10%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="figures/fetal-ultrasound-image-synthesis/12-week-scan.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
@@ -721,7 +744,7 @@
       }</style></aside>
 </section></section>
 <section>
-<section id="developing-real-time-ai-applications-for-diagnosis" class="title-slide slide level1 center">
+<section id="sec-rtai" class="title-slide slide level1 center">
 <h1>Developing real-time AI applications for diagnosis</h1>
 
 </section>
@@ -729,7 +752,7 @@
 <h2>Real-time AI Applications for Surgery</h2>
 
 <img data-src="figures/holoscan-platform/rtai4spipeline.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><p class="caption">
-Figure&nbsp;1: Development and deployment pipeline for real-time AI apps for surgery
+Figure&nbsp;2: Development and deployment pipeline for real-time AI apps for surgery
 </p><aside class="notes">
 <p>Pipeline with development and deployment of real-time AI apps for surgery</p>
 <p>{fig-align=center} {fig-pos=‘b’} b(bottom) h(here) p(page) t(top)</p>
@@ -777,7 +800,7 @@ Figure&nbsp;1: Development and deployment pipeline for real-time AI apps for sur
 <h2>Holoscan Core Concepts</h2>
 
 <img data-src="figures/holoscan-platform/holoscan_core_concepts.svg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">
-Figure&nbsp;2: Operator: An operator is the most basic unit of work in this framework.
+Figure&nbsp;3: Operator: An operator is the most basic unit of work in this framework.
 </p><aside class="notes">
 <p>https://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.html</p>
 <style type="text/css">
@@ -804,7 +827,7 @@ Figure&nbsp;2: Operator: An operator is the most basic unit of work in this fram
 <img data-src="figures/holoscan-platform/byom.svg" class="quarto-figure quarto-figure-center">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Connecting Operators
+Figure&nbsp;4: Connecting Operators
 </figcaption>
 </figure>
 </div>
@@ -933,7 +956,7 @@ Figure&nbsp;3: Connecting Operators
       }</style></aside>
 </section></section>
 <section>
-<section id="use-cases-real-time-ai-diagnosis-for-endoscopic-pituitary-surgery" class="title-slide slide level1 center">
+<section id="sec-ps" class="title-slide slide level1 center">
 <h1>Use cases: Real-time AI diagnosis for endoscopic pituitary surgery</h1>
 
 </section>
@@ -961,7 +984,7 @@ Figure&nbsp;3: Connecting Operators
 <h3 id="getting-started-docs">Getting started docs</h3>
 
 <img data-src="figures/real-time-ai-for-surgery/getting-started.svg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">
-Figure&nbsp;4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
+Figure&nbsp;5: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
 <style type="text/css">
@@ -1137,7 +1160,7 @@ Figure&nbsp;4: Getting started documentation provide with a range of links to se
 <h3 id="contributing">🤝 Contributing</h3>
 
 <img data-src="figures/real-time-ai-for-surgery/contributing.svg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">
-Figure&nbsp;5: real-time-ai-for-surgery follows the Contributor Covenant Code of Conduct. Contributions, issues and feature requests are welcome.
+Figure&nbsp;6: real-time-ai-for-surgery follows the Contributor Covenant Code of Conduct. Contributions, issues and feature requests are welcome.
 </p><aside class="notes">
 <p>Speaker notes go here.</p>
 <style type="text/css">
@@ -1253,7 +1276,7 @@ Figure&nbsp;5: real-time-ai-for-surgery follows the Contributor Covenant Code of
       }</style></aside>
 </section></section>
 <section>
-<section id="use-cases-real-time-ai-diagnosis-for-eye-movement-disorders" class="title-slide slide level1 center">
+<section id="sec-ed" class="title-slide slide level1 center">
 <h1>Use cases: Real-time AI diagnosis for eye movement disorders</h1>
 
 </section>
@@ -1261,7 +1284,7 @@ Figure&nbsp;5: real-time-ai-for-surgery follows the Contributor Covenant Code of
 <h2><span class="emoji" data-emoji="robot">🤖</span> <span class="emoji" data-emoji="eyes">👀</span> AI in ophthalmic imaging modalities</h2>
 
 <img data-src="figures/ophthalmology/li2023-fig2.jpg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">
-Figure&nbsp;6: Practical application of AI in all common ophthalmic imaging modalities
+Figure&nbsp;7: Practical application of AI in all common ophthalmic imaging modalities
 </p><div style="font-size: 40%;">
 <p>Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).</p>
 </div>
@@ -1357,70 +1380,80 @@ Figure&nbsp;6: Practical application of AI in all common ophthalmic imaging moda
       }</style></aside>
 </section></section>
 <section>
-<section id="open-source-software-for-surgical-technologies" class="title-slide slide level1 center">
-<h1>Open-Source Software for Surgical Technologies</h1>
+<section id="sec-ossh" class="title-slide slide level1 center">
+<h1>Open-Source Software in Healthcare</h1>
 
 </section>
 <section id="section-1" class="slide level2" data-background-image="figures/oss4surgtech/oss4st-hsmr24-p00.svg">
 <h2></h2>
 </section>
-<section id="scripts-code.py" class="slide level2">
-<h2>Scripts <i class="fa-brands fa-github"></i> <a href=""><code>code.py</code></a></h2>
-<div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Tab A</a></li><li><a href="#tabset-6-2">Tab B</a></li></ul>
-<div class="tab-content">
-<div id="tabset-6-1">
-<p>Content for <code>Tab A</code></p>
-</div>
-<div id="tabset-6-2">
-<p>Content for <code>Tab B</code></p>
-</div>
-</div>
-</div>
-</section>
-<section id="case-a" class="slide level2">
-<h2><span class="emoji" data-emoji="hospital">🏥</span> Case A</h2>
-</section>
-<section id="case-b" class="slide level2">
-<h2><span class="emoji" data-emoji="hospital">🏥</span> Case B</h2>
-</section>
-<section id="hackathon" class="slide level2">
-<h2><span class="emoji" data-emoji="wrench">🔧</span> Hackathon</h2>
-</section>
-<section id="model-verification" class="slide level2">
-<h2><span class="emoji" data-emoji="recycle">♻️</span> Model verification</h2>
-<ol type="1">
-<li>AI</li>
-<li>Code</li>
-<li>…</li>
-</ol>
-</section>
-<section id="education" class="slide level2">
-<h2><span class="emoji" data-emoji="school_satchel">🎒</span> Education</h2>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p>The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm</p>
 <ul>
-<li>A5* B</li>
+<li>In 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.</li>
+<li>By late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.</li>
+<li>After 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.</li>
 </ul>
+<div style="font-size: 40%;">
+<p>Braune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory clearance of an open-source automated insulin delivery algorithm.” Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.</p>
+<p>https://www.tidepool.org/open</p>
+<p>https://github.com/tidepool-org</p>
+<p>https://github.com/LoopKit</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Food and Drug Administration (FDA</li>
+<li>The #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than industry and regulators can currently offer. {.scrollable}</li>
+<li>Other examples Reimagining Public Healthcare with AI https://ohc.network/</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="key-takeaways" class="title-slide slide level1 center">
-<h1>Key takeaways</h1>
+<section id="sec-ta" class="title-slide slide level1 center">
+<h1>Key Takeaways</h1>
 <ul>
-<li>Implement UNET-Visual Transformer models (Yao et al.&nbsp;2022) ## :medi* A5* B cal_symbol: Template for figures</li>
+<li><span class="emoji" data-emoji="wrench">🔧</span> <span class="emoji" data-emoji="hospital">🏥</span> Challenges in translating research from bench to bedside.</li>
+<li><span class="emoji" data-emoji="robot">🤖</span> <span class="emoji" data-emoji="recycle">♻️</span> Use cases for synthetic data and real-time AI-driven diagnosis.</li>
 </ul>
-<div id="sec-hp" style="margin-top: 0px; font-size: 50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/00_template-vector-images/drawing-v00.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
-</figure>
-</div>
+<div class="fragment">
+<p><strong>YES!</strong> <em>We can Revolutionise Healthcare with Open-Source Software!!!</em></p>
+<ul>
+<li><span class="emoji" data-emoji="school_satchel">🎒</span> Contribute to the creation of high-quality educational and training materials.</li>
+<li><i class="fa-brands fa-github"></i> Release open-source code, data, and models in alignment with quality standards.</li>
+</ul>
 </div>
 </section>
 <section id="acknowledgements" class="slide level2">
 <h2>🙌 Acknowledgements</h2>
 <ul>
-<li>Diego Kaski</li>
+<li>Diego Kaski
+<ul>
+<li>UCL Queen Square Institute of Neurology</li>
+</ul></li>
+<li>Zhehua Mao, Sophia Bano and Matt Clarkson
+<ul>
+<li>Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) at UCL</li>
+</ul></li>
+<li>Mikael Brudfors and Nadim Daher
+<ul>
+<li>NVIDIA Healthcare AI</li>
+</ul></li>
+<li>Steve Thompson et al.
+<ul>
+<li>Advanced Research Computing Centre (ARC) at UCL</li>
+</ul></li>
 </ul>
-<p>Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp.&nbsp;280-284. IEEE, 2022. * UCL Queen Square Institute of Neurology * Zhehua Mao, Sophia Bano and Matt Clarkson * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) * Steve Thompson * Advanced Research Computing Centre (ARC) * Mikael Brudfors and Nadim Daher * NVIDIA Healthcare AI</p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="favicon.svg" class="slide-logo"></p>

@@ -35,6 +35,13 @@
     "text": "FDA-approved AI-based Medical Devices\n\n\n\n\n\n\n\n\nBenjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. npj Digit. Med. 3, 118 (2020)."
   },
   {
+    "objectID": "index.html#challenges-in-the-ai-clinical-translation",
+    "href": "index.html#challenges-in-the-ai-clinical-translation",
+    "title": "",
+    "section": "🏥 Challenges in the AI clinical translation",
+    "text": "🏥 Challenges in the AI clinical translation\n\n\nFigure 1: Medical AI translational challenges between system development and routine clinical application\n\nLi, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).\n\n\n🔧 ♻️ 🏥 Software as a Medical Device (SaMD)"
+  },
+  {
     "objectID": "index.html#dating-ultrasound-scan-12-week-scan",
     "href": "index.html#dating-ultrasound-scan-12-week-scan",
     "title": "",
@@ -144,7 +151,7 @@
     "href": "index.html#real-time-ai-applications-for-surgery",
     "title": "",
     "section": "Real-time AI Applications for Surgery",
-    "text": "Real-time AI Applications for Surgery\n\n\nFigure 1: Development and deployment pipeline for real-time AI apps for surgery\n\nPipeline with development and deployment of real-time AI apps for surgery\n{fig-align=center} {fig-pos=‘b’} b(bottom) h(here) p(page) t(top)"
+    "text": "Real-time AI Applications for Surgery\n\n\nFigure 2: Development and deployment pipeline for real-time AI apps for surgery\n\nPipeline with development and deployment of real-time AI apps for surgery\n{fig-align=center} {fig-pos=‘b’} b(bottom) h(here) p(page) t(top)"
   },
   {
     "objectID": "index.html#nvidia-holoscan-platform",
@@ -158,14 +165,14 @@
     "href": "index.html#holoscan-core-concepts",
     "title": "",
     "section": "Holoscan Core Concepts",
-    "text": "Holoscan Core Concepts\n\n\nFigure 2: Operator: An operator is the most basic unit of work in this framework.\n\nhttps://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.html"
+    "text": "Holoscan Core Concepts\n\n\nFigure 3: Operator: An operator is the most basic unit of work in this framework.\n\nhttps://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.html"
   },
   {
     "objectID": "index.html#bring-your-own-model-byom",
     "href": "index.html#bring-your-own-model-byom",
     "title": "",
     "section": "Bring Your Own Model (BYOM)",
-    "text": "Bring Your Own Model (BYOM)\n\nWorkflowPythonYAML\n\n\n\n\n\n\n\n\nFigure 3: Connecting Operators\n\n\n\n\n\nimport os\nfrom argparse import ArgumentParser\n\nfrom holoscan.core import Application\n\nfrom holoscan.operators import (\n    FormatConverterOp,\n    HolovizOp,\n    InferenceOp,\n    SegmentationPostprocessorOp,\n    VideoStreamReplayerOp,\n)\nfrom holoscan.resources import UnboundedAllocator\n\n\nclass BYOMApp(Application):\n    def __init__(self, data):\n        \"\"\"Initialize the application\n\nParameters\n----------\ndata : Location to the data\n\"\"\"\n\n        super().__init__()\n\n        # set name\n        self.name = \"BYOM App\"\n\n        if data == \"none\":\n            data = os.environ.get(\"HOLOSCAN_INPUT_PATH\", \"../data\")\n\n        self.sample_data_path = data\n\n        self.model_path = os.path.join(os.path.dirname(__file__), \"../model\")\n        self.model_path_map = {\n            \"byom_model\": os.path.join(self.model_path, \"identity_model.onnx\"),\n        }\n\n        self.video_dir = os.path.join(self.sample_data_path, \"racerx\")\n        if not os.path.exists(self.video_dir):\n            raise ValueError(f\"Could not find video data:{self.video_dir=}\")\n\n# Define the workflow\n        self.add_flow(source, viz, {(\"output\", \"receivers\")})\n        self.add_flow(source, preprocessor, {(\"output\", \"source_video\")})\n        self.add_flow(preprocessor, inference, {(\"tensor\", \"receivers\")})\n        self.add_flow(inference, postprocessor, {(\"transmitter\", \"in_tensor\")})\n        self.add_flow(postprocessor, viz, {(\"out_tensor\", \"receivers\")})\n\n\ndef main(config_file, data):\n    app = BYOMApp(data=data)\n    # if the --config command line argument was provided, it will override this config_file\n    app.config(config_file)\n    app.run()\n\n\nif __name__ == \"__main__\":\n    # Parse args\n    parser = ArgumentParser(description=\"BYOM demo application.\")\n    parser.add_argument(\n        \"-d\",\n        \"--data\",\n        default=\"none\",\n        help=(\"Set the data path\"),\n    )\n\n    args = parser.parse_args()\n    config_file = os.path.join(os.path.dirname(__file__), \"byom.yaml\")\n    main(config_file=config_file, data=args.data)\n\n\n%YAML 1.2\nreplayer:  # VideoStreamReplayer\n  basename: \"racerx\"\n  frame_rate: 0 # as specified in timestamps\n  repeat: true # default: false\n  realtime: true # default: true\n  count: 0 # default: 0 (no frame count restriction)\n\npreprocessor:  # FormatConverter\n  out_tensor_name: source_video\n  out_dtype: \"float32\"\n  resize_width: 512\n  resize_height: 512\n\ninference:  # Inference\n  backend: \"trt\"\n  pre_processor_map:\n    \"byom_model\": [\"source_video\"]\n  inference_map:\n    \"byom_model\": [\"output\"]\n\npostprocessor:  # SegmentationPostprocessor\n  in_tensor_name: output\n  # network_output_type: None\n  data_format: nchw\n\nviz:  # Holoviz\n  width: 854\n  height: 480\n  color_lut: [\n    [0.65, 0.81, 0.89, 0.1],\n    ]\n\n\n\n\nSpeaker notes go here."
+    "text": "Bring Your Own Model (BYOM)\n\nWorkflowPythonYAML\n\n\n\n\n\n\n\n\nFigure 4: Connecting Operators\n\n\n\n\n\nimport os\nfrom argparse import ArgumentParser\n\nfrom holoscan.core import Application\n\nfrom holoscan.operators import (\n    FormatConverterOp,\n    HolovizOp,\n    InferenceOp,\n    SegmentationPostprocessorOp,\n    VideoStreamReplayerOp,\n)\nfrom holoscan.resources import UnboundedAllocator\n\n\nclass BYOMApp(Application):\n    def __init__(self, data):\n        \"\"\"Initialize the application\n\nParameters\n----------\ndata : Location to the data\n\"\"\"\n\n        super().__init__()\n\n        # set name\n        self.name = \"BYOM App\"\n\n        if data == \"none\":\n            data = os.environ.get(\"HOLOSCAN_INPUT_PATH\", \"../data\")\n\n        self.sample_data_path = data\n\n        self.model_path = os.path.join(os.path.dirname(__file__), \"../model\")\n        self.model_path_map = {\n            \"byom_model\": os.path.join(self.model_path, \"identity_model.onnx\"),\n        }\n\n        self.video_dir = os.path.join(self.sample_data_path, \"racerx\")\n        if not os.path.exists(self.video_dir):\n            raise ValueError(f\"Could not find video data:{self.video_dir=}\")\n\n# Define the workflow\n        self.add_flow(source, viz, {(\"output\", \"receivers\")})\n        self.add_flow(source, preprocessor, {(\"output\", \"source_video\")})\n        self.add_flow(preprocessor, inference, {(\"tensor\", \"receivers\")})\n        self.add_flow(inference, postprocessor, {(\"transmitter\", \"in_tensor\")})\n        self.add_flow(postprocessor, viz, {(\"out_tensor\", \"receivers\")})\n\n\ndef main(config_file, data):\n    app = BYOMApp(data=data)\n    # if the --config command line argument was provided, it will override this config_file\n    app.config(config_file)\n    app.run()\n\n\nif __name__ == \"__main__\":\n    # Parse args\n    parser = ArgumentParser(description=\"BYOM demo application.\")\n    parser.add_argument(\n        \"-d\",\n        \"--data\",\n        default=\"none\",\n        help=(\"Set the data path\"),\n    )\n\n    args = parser.parse_args()\n    config_file = os.path.join(os.path.dirname(__file__), \"byom.yaml\")\n    main(config_file=config_file, data=args.data)\n\n\n%YAML 1.2\nreplayer:  # VideoStreamReplayer\n  basename: \"racerx\"\n  frame_rate: 0 # as specified in timestamps\n  repeat: true # default: false\n  realtime: true # default: true\n  count: 0 # default: 0 (no frame count restriction)\n\npreprocessor:  # FormatConverter\n  out_tensor_name: source_video\n  out_dtype: \"float32\"\n  resize_width: 512\n  resize_height: 512\n\ninference:  # Inference\n  backend: \"trt\"\n  pre_processor_map:\n    \"byom_model\": [\"source_video\"]\n  inference_map:\n    \"byom_model\": [\"output\"]\n\npostprocessor:  # SegmentationPostprocessor\n  in_tensor_name: output\n  # network_output_type: None\n  data_format: nchw\n\nviz:  # Holoviz\n  width: 854\n  height: 480\n  color_lut: [\n    [0.65, 0.81, 0.89, 0.1],\n    ]\n\n\n\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#endoscopic-pituitary-surgery",
@@ -179,7 +186,7 @@
     "href": "index.html#real-time-ai-for-surgery",
     "title": "",
     "section": " real-time-ai-for-surgery",
-    "text": "real-time-ai-for-surgery\nGetting started docs\n\n\nFigure 4: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "text": "real-time-ai-for-surgery\nGetting started docs\n\n\nFigure 5: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#real-time-ai-for-surgery-1",
@@ -200,7 +207,7 @@
     "href": "index.html#real-time-ai-for-surgery-3",
     "title": "",
     "section": " real-time-ai-for-surgery",
-    "text": "real-time-ai-for-surgery\n🤝 Contributing\n\n\nFigure 5: real-time-ai-for-surgery follows the Contributor Covenant Code of Conduct. Contributions, issues and feature requests are welcome.\n\nSpeaker notes go here."
+    "text": "real-time-ai-for-surgery\n🤝 Contributing\n\n\nFigure 6: real-time-ai-for-surgery follows the Contributor Covenant Code of Conduct. Contributions, issues and feature requests are welcome.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#real-time-ai-for-surgery-4",
@@ -221,7 +228,7 @@
     "href": "index.html#ai-in-ophthalmic-imaging-modalities",
     "title": "",
     "section": "🤖 👀 AI in ophthalmic imaging modalities",
-    "text": "🤖 👀 AI in ophthalmic imaging modalities\n\n\nFigure 6: Practical application of AI in all common ophthalmic imaging modalities\n\nLi, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).\n\n\nNystagmus {.scrollable}"
+    "text": "🤖 👀 AI in ophthalmic imaging modalities\n\n\nFigure 7: Practical application of AI in all common ophthalmic imaging modalities\n\nLi, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).\n\n\nNystagmus {.scrollable}"
   },
   {
     "objectID": "index.html#eye-movement-disorders",
@@ -245,52 +252,17 @@
     "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\n\nReal-time AI guidance for high-quality images (Liu et al. 2023) \n\n\n\nImplement UNET-Visual Transformer models (Yao et al. 2022)\n\n\n\n\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\n\n\nPlans {.scrollable}"
   },
   {
-    "objectID": "index.html#scripts-code.py",
-    "href": "index.html#scripts-code.py",
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
     "title": "",
-    "section": "Scripts  code.py",
-    "text": "Scripts  code.py\n\nTab ATab B\n\n\nContent for Tab A\n\n\nContent for Tab B"
-  },
-  {
-    "objectID": "index.html#case-a",
-    "href": "index.html#case-a",
-    "title": "",
-    "section": "🏥 Case A",
-    "text": "🏥 Case A"
-  },
-  {
-    "objectID": "index.html#case-b",
-    "href": "index.html#case-b",
-    "title": "",
-    "section": "🏥 Case B",
-    "text": "🏥 Case B"
-  },
-  {
-    "objectID": "index.html#hackathon",
-    "href": "index.html#hackathon",
-    "title": "",
-    "section": "🔧 Hackathon",
-    "text": "🔧 Hackathon"
-  },
-  {
-    "objectID": "index.html#model-verification",
-    "href": "index.html#model-verification",
-    "title": "",
-    "section": "♻️ Model verification",
-    "text": "♻️ Model verification\n\nAI\nCode\n…"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "",
-    "section": "🎒 Education",
-    "text": "🎒 Education\n\nA5* B"
+    "section": "",
+    "text": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm\n\nIn 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.\nBy late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.\nAfter 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.\n\n\nBraune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory clearance of an open-source automated insulin delivery algorithm.” Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.\nhttps://www.tidepool.org/open\nhttps://github.com/tidepool-org\nhttps://github.com/LoopKit\n\n\n\nFood and Drug Administration (FDA\nThe #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than industry and regulators can currently offer. {.scrollable}\nOther examples Reimagining Public Healthcare with AI https://ohc.network/"
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
     "title": "",
     "section": "🙌 Acknowledgements",
-    "text": "🙌 Acknowledgements\n\nDiego Kaski\n\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022. * UCL Queen Square Institute of Neurology * Zhehua Mao, Sophia Bano and Matt Clarkson * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) * Steve Thompson * Advanced Research Computing Centre (ARC) * Mikael Brudfors and Nadim Daher * NVIDIA Healthcare AI"
+    "text": "🙌 Acknowledgements\n\nDiego Kaski\n\nUCL Queen Square Institute of Neurology\n\nZhehua Mao, Sophia Bano and Matt Clarkson\n\nWellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) at UCL\n\nMikael Brudfors and Nadim Daher\n\nNVIDIA Healthcare AI\n\nSteve Thompson et al.\n\nAdvanced Research Computing Centre (ARC) at UCL"
   }
 ]

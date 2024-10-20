@@ -18,8 +18,8 @@ Healthcare?</span>
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">2024-04-20 @
-[Link for grid-worms-animation
+<span class="dim-text" style="&quot;text-align:left;'">20-Oct-2024 @
+[grid-worms-animation
 2023](https://github.com/saforem2/grid-worms-animation/)</span>
 
 </div>
@@ -27,13 +27,14 @@ Healthcare?</span>
 # Overview
 
 - [My trajectory](#sec-mt)
-- Software as a Medical Device (SaMD)
+- [From bench to bedside](#sec-b2b)
 - Uses cases
   - [Fetal Ultrasound Image Synthesis](#sec-fus)
-  - Real-time AI diagnosis
-    - Endoscopy-based video
-    - Eye movement disorders
-- Takeaways
+  - [Real-time AI diagnosis](#sec-rtai)
+    - [Endoscopy-based video](#sec-ps)
+    - [Eye movement disorders](#sec-ed)
+- [Open-Source Software in Healthcare](#sec-ossh)
+- [Takeaways](#sec-ta)
 
 ## My trajectory
 
@@ -44,7 +45,7 @@ data-fig-align="center" />
 
 </div>
 
-# Software as a Medical Device (SaMD)
+# :wrench: :hospital: From bench to bedside
 
 ## Regulation vs innovation in MedTech
 
@@ -111,11 +112,39 @@ online database. npj Digit. Med. 3, 118 (2020).
 
 </div>
 
-# Fetal Ultrasound Image Synthesis
+## :hospital: Challenges in the AI clinical translation
+
+<div id="fig-template">
+
+<img src="figures/regulation-innovation/li2023-fig3.jpg"
+style="width:100.0%" data-fig-align="center" />
+
+
+Figure 1: Medical AI translational challenges between system development
+and routine clinical application
+
+</div>
+
+<div style="font-size: 40%;">
+
+Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie,
+Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial
+intelligence in ophthalmology: The path to the real-world clinic.” Cell
+Reports Medicine 4, no. 7 (2023).
+
+</div>
+
+<div class="notes">
+
+:wrench: :recycle: :hospital: Software as a Medical Device (SaMD)
+
+</div>
+
+# Use cases: Fetal Ultrasound Image Synthesis
 
 ## Dating Ultrasound Scan (12 week scan)
 
-<div id="sec-fus" style="margin-top: 0px; font-size: 10%;">
+<div style="margin-top: 0px; font-size: 10%;">
 
 <img src="figures/fetal-ultrasound-image-synthesis/12-week-scan.svg"
 style="width:100.0%" data-fig-align="center" />
@@ -383,7 +412,7 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-Figure 1: Development and deployment pipeline for real-time AI apps for
+Figure 2: Development and deployment pipeline for real-time AI apps for
 surgery
 
 </div>
@@ -444,7 +473,7 @@ Holoscan platform
 data-fig-align="center" />
 
 
-Figure 2: Operator: An operator is the most basic unit of work in this
+Figure 3: Operator: An operator is the most basic unit of work in this
 framework.
 
 </div>
@@ -466,7 +495,7 @@ https://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.ht
 <img src="figures/holoscan-platform/byom.svg" data-fig-align="center" />
 
 
-Figure 3: Connecting Operators
+Figure 4: Connecting Operators
 
 </div>
 
@@ -628,7 +657,7 @@ Surgery (2024): 1-8.
 data-fig-align="center" />
 
 
-Figure 4: Getting started documentation provide with a range of links to
+Figure 5: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -796,7 +825,7 @@ filename=“unit-test-example.py” code-line-numbers=“\|30-36”}
 data-fig-align="center" />
 
 
-Figure 5: real-time-ai-for-surgery follows the Contributor Covenant Code
+Figure 6: real-time-ai-for-surgery follows the Contributor Covenant Code
 of Conduct. Contributions, issues and feature requests are welcome.
 
 </div>
@@ -885,7 +914,7 @@ Speaker notes go here. {.scrollable}
 data-fig-align="center" />
 
 
-Figure 6: Practical application of AI in all common ophthalmic imaging
+Figure 7: Practical application of AI in all common ophthalmic imaging
 modalities
 
 </div>
@@ -997,62 +1026,71 @@ Plans {.scrollable}
 
 </div>
 
-# Open-Source Software for Surgical Technologies
+# Open-Source Software in Healthcare
 
 ## 
 
-## Scripts  [`code.py`]()
+## 
 
-<div class="panel-tabset">
+The First Regulatory Clearance of an Open-Source Automated Insulin
+Delivery Algorithm
 
-### Tab A
+- In 2018, Tidepool launched the Tidepool Loop initiative to generate
+  real-world evidence and seek regulatory clearance for Loop.
+- By late 2020, Tidepool submitted an application to the FDA for an
+  interoperable automated glycemic controller (iAGC) based on Loop.
+- After 2 years, the FDA approved the Tidepool Loop iAGC on January 23,
+  2023.
 
-Content for `Tab A`
+<div style="font-size: 40%;">
 
-### Tab B
+Braune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory
+clearance of an open-source automated insulin delivery algorithm.”
+Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
 
-Content for `Tab B`
+https://www.tidepool.org/open
+
+https://github.com/tidepool-org
+
+https://github.com/LoopKit
+
+</div>
+
+<div class="notes">
+
+- Food and Drug Administration (FDA
+- The \#WeAreNotWaiting diabetes movement continues demanding safety and
+  innovation at a faster pace than industry and regulators can currently
+  offer. {.scrollable}
+- Other examples Reimagining Public Healthcare with AI
+  https://ohc.network/
 
 </div>
 
-## :hospital: Case A
+# Key Takeaways
 
-## :hospital: Case B
+- :wrench: :hospital: Challenges in translating research from bench to
+  bedside.
+- :robot: :recycle: Use cases for synthetic data and real-time AI-driven
+  diagnosis.
 
-## :wrench: Hackathon
+. . .
 
-## :recycle: Model verification
+**YES!** *We can Revolutionise Healthcare with Open-Source Software!!!*
 
-1.  AI
-2.  Code
-3.  …
-
-## :school_satchel: Education
-
-- A5\* B
-
-# Key takeaways
-
-- Implement UNET-Visual Transformer models (Yao et al. 2022) \## :medi\*
-  A5\* B cal_symbol: Template for figures
-
-<div id="sec-hp" style="margin-top: 0px; font-size: 50%;">
-
-<img src="figures/00_template-vector-images/drawing-v00.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
+- :school_satchel: Contribute to the creation of high-quality
+  educational and training materials.
+-  Release open-source code, data, and models in alignment with quality
+  standards.
 
 ## 🙌 Acknowledgements
 
 - Diego Kaski
-
-Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang.
-“Transclaw u-net: claw u-net with transformers for medical image
-segmentation.” In 2022 5th International Conference on Information
-Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.
-\* UCL Queen Square Institute of Neurology \* Zhehua Mao, Sophia Bano
-and Matt Clarkson \* Wellcome / EPSRC Centre for Interventional and
-Surgical Sciences (WEISS) \* Steve Thompson \* Advanced Research
-Computing Centre (ARC) \* Mikael Brudfors and Nadim Daher \* NVIDIA
-Healthcare AI
+  - UCL Queen Square Institute of Neurology
+- Zhehua Mao, Sophia Bano and Matt Clarkson
+  - Wellcome / EPSRC Centre for Interventional and Surgical Sciences
+    (WEISS) at UCL
+- Mikael Brudfors and Nadim Daher
+  - NVIDIA Healthcare AI
+- Steve Thompson et al.
+  - Advanced Research Computing Centre (ARC) at UCL
