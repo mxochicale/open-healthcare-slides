@@ -18,9 +18,9 @@ Healthcare?</span>
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">20-Oct-2024 @
-[grid-worms-animation
-2023](https://github.com/saforem2/grid-worms-animation/)</span>
+<span class="dim-text" style="&quot;text-align:left;'">20-Oct-2024
+[(grid-worms-animation 2023 by
+saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 
 </div>
 
@@ -1030,10 +1030,14 @@ Plans {.scrollable}
 
 ## 
 
-## 
+<div class="footer">
 
-The First Regulatory Clearance of an Open-Source Automated Insulin
-Delivery Algorithm
+[
+https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-for-surgtech/workshop-hamlyn2024)
+
+</div>
+
+## The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm
 
 - In 2018, Tidepool launched the Tidepool Loop initiative to generate
   real-world evidence and seek regulatory clearance for Loop.
@@ -1047,12 +1051,14 @@ Delivery Algorithm
 Braune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory
 clearance of an open-source automated insulin delivery algorithm.”
 Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
+[DOI](https://journals.sagepub.com/doi/10.1177/19322968231164166)
+[Citations](https://scholar.google.com/scholar?cites=11792880181049903500&as_sdt=2005&sciodt=0,5&hl=en)
 
-https://www.tidepool.org/open
+<https://www.tidepool.org/open>
 
-https://github.com/tidepool-org
+<https://github.com/tidepool-org>
 
-https://github.com/LoopKit
+<https://github.com/LoopKit>
 
 </div>
 

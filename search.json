@@ -252,11 +252,18 @@
     "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\n\nReal-time AI guidance for high-quality images (Liu et al. 2023) \n\n\n\nImplement UNET-Visual Transformer models (Yao et al. 2022)\n\n\n\n\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\n\n\nPlans {.scrollable}"
   },
   {
-    "objectID": "index.html#section-2",
-    "href": "index.html#section-2",
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
     "title": "",
     "section": "",
-    "text": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm\n\nIn 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.\nBy late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.\nAfter 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.\n\n\nBraune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory clearance of an open-source automated insulin delivery algorithm.” Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.\nhttps://www.tidepool.org/open\nhttps://github.com/tidepool-org\nhttps://github.com/LoopKit\n\n\n\nFood and Drug Administration (FDA\nThe #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than industry and regulators can currently offer. {.scrollable}\nOther examples Reimagining Public Healthcare with AI https://ohc.network/"
+    "text": "https://github.com/oss-for-surgtech/workshop-hamlyn2024"
+  },
+  {
+    "objectID": "index.html#the-first-regulatory-clearance-of-an-open-source-automated-insulin-delivery-algorithm",
+    "href": "index.html#the-first-regulatory-clearance-of-an-open-source-automated-insulin-delivery-algorithm",
+    "title": "",
+    "section": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm",
+    "text": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm\n\nIn 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.\nBy late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.\nAfter 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.\n\n\nBraune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory clearance of an open-source automated insulin delivery algorithm.” Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141. DOI Citations\nhttps://www.tidepool.org/open\nhttps://github.com/tidepool-org\nhttps://github.com/LoopKit\n\n\n\nFood and Drug Administration (FDA\nThe #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than industry and regulators can currently offer. {.scrollable}\nOther examples Reimagining Public Healthcare with AI https://ohc.network/"
   },
   {
     "objectID": "index.html#acknowledgements",
