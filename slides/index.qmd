@@ -37,7 +37,7 @@ format:
 :::
 
 ::: footer
-[20-Oct-2024 @ [grid-worms-animation 2023](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+[20-Oct-2024 [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
 :::
 
 
@@ -874,13 +874,14 @@ Plans
 
 # Open-Source Software in Healthcare {#sec-ossh}
 
-## {background-image="figures/oss4surgtech/oss4st-hsmr24-p00.svg"}
+## {background-image="figures/oss4surgtech/oss4st-hsmr24-p00.svg" background-size="cover"  }  
 
-##
+::: footer
+[{{< fa brands github >}} https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-for-surgtech/workshop-hamlyn2024)
+:::
 
-The First Regulatory Clearance of an
-Open-Source Automated Insulin
-Delivery Algorithm
+
+## The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm
 
 * In 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.
 * By late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.
@@ -888,13 +889,16 @@ Delivery Algorithm
 
 
 ::: {style="font-size: 40%;"}
-Braune, Katarina, Sufyan Hussain, and Rayhan Lal. "The first regulatory clearance of an open-source automated insulin delivery algorithm." Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
+Braune, Katarina, Sufyan Hussain, and Rayhan Lal. "The first regulatory clearance of an open-source automated insulin delivery algorithm." 
+Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141. 
+[DOI](https://journals.sagepub.com/doi/10.1177/19322968231164166) 
+[Citations](https://scholar.google.com/scholar?cites=11792880181049903500&as_sdt=2005&sciodt=0,5&hl=en)
 
-https://www.tidepool.org/open  
+[https://www.tidepool.org/open](https://www.tidepool.org/open)
 
-https://github.com/tidepool-org
+[https://github.com/tidepool-org](https://github.com/tidepool-org)
 
-https://github.com/LoopKit 
+[https://github.com/LoopKit](https://github.com/LoopKit)
 :::
 
 ::: {.notes}
