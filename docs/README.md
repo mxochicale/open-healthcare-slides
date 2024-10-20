@@ -8,4 +8,13 @@ Open-source software has been a powerful catalyst for innovation in computer eng
 ### Short-bio
 Miguel is currently a Senior Research Engineer at University College London, UK, where he leads pioneering advancements in data-centric AI tools for Medical Imaging, MedTech, SurgTech, Biomechanics, and Clinical Translation. His work focuses on driving innovation and delivering impact in several critical areas: Real-time AI for surgery, eye movement disorders, and echocardiography, Sensor fusion data integrating wearable trackers with medical imaging, Generative models for fetal imaging, and Child-robot interaction in low-resource countries. By harnessing these cutting-edge technologies, he is dedicated to transforming healthcare through AI and making a lasting impact on patient care and medical research.
 
+### Date, time and links
+Languate Undersanding Laborarory
+Dr Ye Kyaw Thu, Lab leader
+October 20, 2024 (Sunday)
+8:00-- 9:00am (UK time)
+14:00 --15:00 pm (Thailand Time)
+meet.google.com/xbc-bgco-pii
+
+### Posters
 ![poster](poster.png)
