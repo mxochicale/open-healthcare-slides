@@ -37,20 +37,21 @@ format:
 :::
 
 ::: footer
-[2024-04-20 @ [Link for grid-worms-animation 2023](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+[20-Oct-2024 @ [grid-worms-animation 2023](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
 :::
 
 
 # Overview {style="font-size: 90%;"} 
 
 * [My trajectory](#sec-mt)
-* Software as a Medical Device (SaMD)
+* [From bench to bedside](#sec-b2b)
 * Uses cases
   * [Fetal Ultrasound Image Synthesis](#sec-fus)
-  * Real-time AI diagnosis
-    * Endoscopy-based video 
-    * Eye movement disorders
-* Takeaways
+  * [Real-time AI diagnosis](#sec-rtai)
+    * [Endoscopy-based video](#sec-ps) 
+    * [Eye movement disorders](#sec-ed)
+* [Open-Source Software in Healthcare](#sec-ossh)
+* [Takeaways](#sec-ta)
 
 ## My trajectory
 
@@ -59,7 +60,7 @@ format:
 :::
 
 
-# Software as a Medical Device (SaMD)
+# :wrench: :hospital: From bench to bedside {#sec-b2b}
 
 ## Regulation vs innovation in MedTech
 
@@ -107,13 +108,33 @@ database. npj Digit. Med. 3, 118 (2020).
 
 
 
+## :hospital: Challenges in the AI clinical translation
+
+::: {#fig-template}
+![](figures/regulation-innovation/li2023-fig3.jpg){fig-align="center" width="100%"}
+
+Medical AI translational challenges between system development and routine clinical application
+:::
+
+::: {style="font-size: 40%;"}
+Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. "Artificial intelligence in ophthalmology: The path to the real-world clinic." Cell Reports Medicine 4, no. 7 (2023).
+:::
 
 
-# Fetal Ultrasound Image Synthesis
+::: {.notes}
+:wrench:  :recycle: :hospital:
+Software as a Medical Device (SaMD)
+:::
+
+
+
+
+
+# Use cases: Fetal Ultrasound Image Synthesis {#sec-fus}
 
 ## Dating Ultrasound Scan (12 week scan)
 
-::: {#sec-fus style="margin-top: 0px; font-size: 10%;"} 
+::: {style="margin-top: 0px; font-size: 10%;"} 
 ![](figures/fetal-ultrasound-image-synthesis/12-week-scan.svg){fig-align="center" width="100%"}
 :::
 
@@ -292,7 +313,16 @@ TODO:
 
 
 
-# Developing real-time AI applications for diagnosis
+
+
+
+
+
+
+
+
+
+# Developing real-time AI applications for diagnosis {#sec-rtai}
 
 
 
@@ -508,7 +538,12 @@ Speaker notes go here.
 :::
 
 
-# Use cases: Real-time AI diagnosis for endoscopic pituitary surgery
+
+
+
+
+
+# Use cases: Real-time AI diagnosis for endoscopic pituitary surgery {#sec-ps}
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
 
@@ -743,7 +778,12 @@ Speaker notes go here.
 :::
 
 
-# Use cases: Real-time AI diagnosis for eye movement disorders
+
+
+
+
+
+# Use cases: Real-time AI diagnosis for eye movement disorders {#sec-ed}
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
@@ -832,62 +872,62 @@ Plans
 :::
 
 
-# Open-Source Software for Surgical Technologies
+# Open-Source Software in Healthcare {#sec-ossh}
 
 ## {background-image="figures/oss4surgtech/oss4st-hsmr24-p00.svg"}
 
+##
+
+The First Regulatory Clearance of an
+Open-Source Automated Insulin
+Delivery Algorithm
+
+* In 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.
+* By late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.
+* After 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.
 
 
-## Scripts {{< fa brands github >}} [`code.py`]()
+::: {style="font-size: 40%;"}
+Braune, Katarina, Sufyan Hussain, and Rayhan Lal. "The first regulatory clearance of an open-source automated insulin delivery algorithm." Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
 
-::: {.panel-tabset}
+https://www.tidepool.org/open  
 
-### Tab A
+https://github.com/tidepool-org
 
-Content for `Tab A`
+https://github.com/LoopKit 
+:::
 
-### Tab B
-
-Content for `Tab B`
-
+::: {.notes}
+* Food and Drug Administration (FDA
+* The #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than
+industry and regulators can currently offer.
+{.scrollable}
+* Other examples Reimagining Public Healthcare with AI https://ohc.network/ 
 :::
 
 
-## :hospital: Case A
+# Key Takeaways{#sec-ta}
 
-## :hospital: Case B
+*  :wrench: :hospital: Challenges in translating research from bench to bedside.
+* :robot: :recycle: Use cases for synthetic data and real-time AI-driven diagnosis.
 
-## :wrench: Hackathon
-
-## :recycle: Model verification
-1. AI
-2. Code
-3. ...
+. . .
 
 
-## :school_satchel: Education
-* A5* B 
+**YES!**
+*We can Revolutionise Healthcare with Open-Source Software!!!*
 
+* :school_satchel: Contribute to the creation of high-quality educational and training materials.
+* {{< fa brands github >}} Release open-source code, data, and models in alignment with quality standards.
 
-
-# Key takeaways
-* Implement UNET-Visual Transformer models (Yao et al. 2022)
-## :medi* A5* B cal_symbol: Template for figures
-
-
-::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align="center" width="100%"}
-:::
 
 ## 🙌 Acknowledgements
 
 * Diego Kaski
-
-Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. "Transclaw u-net: claw u-net with transformers for medical image segmentation." In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022. 
   * UCL Queen Square Institute of Neurology
 * Zhehua Mao, Sophia Bano and Matt Clarkson
-  * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS)
-* Steve Thompson
-  * Advanced Research Computing Centre (ARC)
+  * Wellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) at UCL
 * Mikael Brudfors and Nadim Daher
   * NVIDIA Healthcare AI
+* Steve Thompson et al.
+  * Advanced Research Computing Centre (ARC) at UCL
