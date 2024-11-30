@@ -1,6 +1,7 @@
 # Free and Open source Software Developers' European Meeting (FOSDEM) 
 
 ## CFP Open Research devroom
+https://lists.fosdem.org/pipermail/fosdem/2024q4/003603.html 
 
 ### 1. Important dates:
 - Proposal Deadline: 1 Dec 2024 23:59 CET
