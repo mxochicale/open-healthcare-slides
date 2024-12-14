@@ -1,7 +1,10 @@
 # Free and Open source Software Developers' European Meeting (FOSDEM) 
 
-## CFP Open Research devroom
-https://lists.fosdem.org/pipermail/fosdem/2024q4/003603.html 
+### Important links
+* CFP Open Research devroom: https://lists.fosdem.org/pipermail/fosdem/2024q4/003603.html 
+* Edit and view your proposal: https://pretalx.fosdem.org/fosdem-2025/cfp
+* Talk: https://fosdem.org/2025/schedule/track/research/
+* Prensentation on Saturday 1-Feb-2024 at 14:40 to 15:05 at Room: AW1.126
 
 ### 1. Important dates:
 - Proposal Deadline: 1 Dec 2024 23:59 CET
@@ -38,7 +41,7 @@ Apache-2.0 license
 Miguel Xochicale   
 m.xochicale@ucl.ac.uk
 
-Miguel is a Senior Research Engineer at University College London, UK, where he leads pioneering advancements in data-centric AI tools for Medical Imaging, MedTech, SurgTech, Biomechanics, and Clinical Translation. His work focuses on driving innovation and delivering impact in several critical areas: Real-time AI for surgery, eye movement disorders, and echocardiography, Sensor fusion data integrating wearable trackers with medical imaging, Generative models for fetal imaging, and Child-robot interaction in low-resource countries. By harnessing these cutting-edge technologies, he is dedicated to transforming healthcare through AI and making a lasting impact on patient care and medical research.
+Miguel is a Senior Research Engineer at University College London, UK, leading pioneering advancements in open-source and data-centric AI tools across Medical Imaging, MedTech, SurgTech, Biomechanics, and Clinical Translation. His work focuses on driving innovation and delivering impact in several critical areas: Real-time AI for surgery, eye movement disorders, and echocardiography, sensor fusion data integrating wearable trackers with medical imaging, generative models for fetal imaging, and child-robot interaction in low-resource countries. By harnessing these cutting-edge technologies, he is dedicated to transforming healthcare through AI and making a lasting impact on patient care and medical research.
 
 -tag-slug (optional)
 "Short version of the title, used in the url if your talk is published. Use only lower case and hypen (-) to separate words. If not specified, the title will be slugified Please write at most 50 characters."   
