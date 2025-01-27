@@ -4,10 +4,10 @@ Miguel Xochicale
 
 <div style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;">
 
-<span style="color:#939393; font-size:1.5em; font-weight: bold;">Can
-Open-Source Software</span>  
-<span style="color:#939393; font-size:1.5em; font-weight: bold;">Revolutionise
-Healthcare?</span>
+<span style="color:#939393; font-size:1.5em; font-weight: bold;">How
+Open-Source Software is</span>  
+<span style="color:#939393; font-size:1.5em; font-weight: bold;">Shapping
+the Future of Healthcare?</span>
 
 <span style="padding-bottom: 0.5rem;"><br> </span>  
 [](http://mxochicale.github.io/) Miguel Xochicale, PhD  
@@ -26,7 +26,6 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 
 # Overview
 
-- [My trajectory](#sec-mt)
 - [From bench to bedside](#sec-b2b)
 - Uses cases
   - [Fetal Ultrasound Image Synthesis](#sec-fus)
@@ -36,18 +35,9 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 - [Open-Source Software in Healthcare](#sec-ossh)
 - [Takeaways](#sec-ta)
 
-## My trajectory
-
-<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
-
-<img src="figures/mx.svg" style="width:100.0%"
-data-fig-align="center" />
-
-</div>
-
 # :wrench: :hospital: From bench to bedside
 
-## Regulation vs innovation in MedTech
+## Regulation vs innovation in Surg/Med/AI Tech
 
 <div style="margin-top: 0px; font-size: 50%;">
 
@@ -66,7 +56,7 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-<div style="font-size: 40%;">
+<div style="font-size: 30%;">
 
 https://www.iso.org/standard/38421.html
 
@@ -81,9 +71,10 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-<div style="font-size: 40%;">
+<div style="font-size: 30%;">
 
-US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper
+US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper:
+https://www.fda.gov/files/medical%20devices/published/US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper.pdf
 
 </div>
 
@@ -119,7 +110,6 @@ online database. npj Digit. Med. 3, 118 (2020).
 <img src="figures/regulation-innovation/li2023-fig3.jpg"
 style="width:100.0%" data-fig-align="center" />
 
-
 Figure 1: Medical AI translational challenges between system development
 and routine clinical application
 
@@ -137,6 +127,28 @@ Reports Medicine 4, no. 7 (2023).
 <div class="notes">
 
 :wrench: :recycle: :hospital: Software as a Medical Device (SaMD)
+
+</div>
+
+## ISO/IEC quality standards in the AI landscape
+
+<div id="fig-template">
+
+<img src="figures/regulation-innovation/ai-standarization-landscape.svg"
+style="width:100.0%" data-fig-align="center" />
+
+Figure 2: AI standarisation landscape
+
+</div>
+
+<div style="font-size: 30%;">
+
+Janaćković, G., Vasović, D. and Vasović, B., 2024. ARTIFICIAL
+INTELLIGENCE STANDARDISATION EFFORTS. ENGINEERING MANAGEMENT AND
+COMPETITIVENESS (EMC 2024), p.250.  
+Oviedo, Jesús, Moisés Rodriguez, Andrea Trenta, Dino Cannas, Domenico
+Natale, and Mario Piattini. “ISO/IEC quality standards for AI
+engineering.” Computer Science Review 54 (2024): 100681.
 
 </div>
 
@@ -412,7 +424,7 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-Figure 2: Development and deployment pipeline for real-time AI apps for
+Figure 3: Development and deployment pipeline for real-time AI apps for
 surgery
 
 </div>
@@ -472,8 +484,7 @@ Holoscan platform
 <img src="figures/holoscan-platform/holoscan_core_concepts.svg"
 data-fig-align="center" />
 
-
-Figure 3: Operator: An operator is the most basic unit of work in this
+Figure 4: Operator: An operator is the most basic unit of work in this
 framework.
 
 </div>
@@ -494,8 +505,7 @@ https://docs.nvidia.com/holoscan/sdk-user-guide/holoscan_operators_extensions.ht
 
 <img src="figures/holoscan-platform/byom.svg" data-fig-align="center" />
 
-
-Figure 4: Connecting Operators
+Figure 5: Connecting Operators
 
 </div>
 
@@ -656,8 +666,7 @@ Surgery (2024): 1-8.
 <img src="figures/real-time-ai-for-surgery/getting-started.svg"
 data-fig-align="center" />
 
-
-Figure 5: Getting started documentation provide with a range of links to
+Figure 6: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
 
 </div>
@@ -824,8 +833,7 @@ filename=“unit-test-example.py” code-line-numbers=“\|30-36”}
 <img src="figures/real-time-ai-for-surgery/contributing.svg"
 data-fig-align="center" />
 
-
-Figure 6: real-time-ai-for-surgery follows the Contributor Covenant Code
+Figure 7: real-time-ai-for-surgery follows the Contributor Covenant Code
 of Conduct. Contributions, issues and feature requests are welcome.
 
 </div>
@@ -913,8 +921,7 @@ Speaker notes go here. {.scrollable}
 <img src="figures/ophthalmology/li2023-fig2.jpg"
 data-fig-align="center" />
 
-
-Figure 7: Practical application of AI in all common ophthalmic imaging
+Figure 8: Practical application of AI in all common ophthalmic imaging
 modalities
 
 </div>
@@ -1100,3 +1107,12 @@ Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
   - NVIDIA Healthcare AI
 - Steve Thompson et al.
   - Advanced Research Computing Centre (ARC) at UCL
+
+## My trajectory
+
+<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
+
+<img src="figures/mx.svg" style="width:100.0%"
+data-fig-align="center" />
+
+</div>
