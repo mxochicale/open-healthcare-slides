@@ -1082,6 +1082,8 @@ Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
 
 # Key Takeaways
 
+. . .
+
 - :wrench: :hospital: Challenges in translating research from bench to
   bedside.
 - :robot: :recycle: Use cases for synthetic data and real-time AI-driven
@@ -1089,7 +1091,9 @@ Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
 
 . . .
 
-**YES!** *We can Revolutionise Healthcare with Open-Source Software!!!*
+How to shape the future of Healthcare using Open-Source Software!!!\*
+
+. . .
 
 - :school_satchel: Contribute to the creation of high-quality
   educational and training materials.
@@ -1107,6 +1111,8 @@ Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
   - NVIDIA Healthcare AI
 - Steve Thompson et al.
   - Advanced Research Computing Centre (ARC) at UCL
+
+# Additional slides
 
 ## My trajectory
 
