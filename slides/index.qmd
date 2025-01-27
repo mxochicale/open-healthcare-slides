@@ -921,14 +921,16 @@ industry and regulators can currently offer.
 
 # Key Takeaways{#sec-ta}
 
+. . .
+
 *  :wrench: :hospital: Challenges in translating research from bench to bedside.
 * :robot: :recycle: Use cases for synthetic data and real-time AI-driven diagnosis.
 
 . . .
 
+How to shape the future of Healthcare using Open-Source Software!!!*
 
-**YES!**
-*We can Revolutionise Healthcare with Open-Source Software!!!*
+. . .
 
 * :school_satchel: Contribute to the creation of high-quality educational and training materials.
 * {{< fa brands github >}} Release open-source code, data, and models in alignment with quality standards.
@@ -945,6 +947,8 @@ industry and regulators can currently offer.
 * Steve Thompson et al.
   * Advanced Research Computing Centre (ARC) at UCL
 
+
+# Additional slides
 
 ## My trajectory
 
