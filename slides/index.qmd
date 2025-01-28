@@ -44,7 +44,7 @@ format:
 # Overview {style="font-size: 90%;"} 
 
 * [From bench to bedside](#sec-b2b)
-* Uses cases
+* Use cases
   * [Fetal Ultrasound Image Synthesis](#sec-fus)
   * [Real-time AI diagnosis](#sec-rtai)
     * [Endoscopy-based video](#sec-ps) 
@@ -55,12 +55,12 @@ format:
 
 # :wrench: :hospital: From bench to bedside {#sec-b2b}
 
-## Regulation vs innovation in Surg/Med/AI Tech
+## Regulation vs innovation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
 
 ::: { style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/regulation-innovation/balance-between-regulation-innovation.svg){fig-align="center" width="100%"}
 :::
-
+<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
 ## IEC 62304 standard for software
 
 ::: { style="margin-top: 0px; font-size: 50%;"} 
@@ -140,6 +140,7 @@ Oviedo, Jesús, Moisés Rodriguez, Andrea Trenta, Dino Cannas, Domenico Natale, 
 
 
 # Use cases: Fetal Ultrasound Image Synthesis {#sec-fus}
+<!-- this section (up to slide 25) seems very sciency and not very open - source softwarey. i.e. theres a lot of experiments and results, but it doesn't seem to be about open source software until you get to the last slide (xfetus). I think the audience at FOSDEM will be more interested in the software than the application. Can you simplify the science and significantly expand on the software? -->
 
 ## Dating Ultrasound Scan (12 week scan)
 
@@ -241,7 +242,7 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 
 
 ## Methods
-
+<!-- this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
 Diffusion-Super-Resolution-GAN (DSR-GAN)
 Transformer-based-GAN
 
@@ -332,7 +333,9 @@ TODO:
 
 
 # Developing real-time AI applications for diagnosis {#sec-rtai}
-
+<!-- can you expand on the open source ecosystem around Holoscan here? 
+Do you have any videos or results you could show for real time diagnoses?
+-->
 
 
 ## Real-time AI Applications for Surgery
@@ -555,7 +558,9 @@ Speaker notes go here.
 # Use cases: Real-time AI diagnosis for endoscopic pituitary surgery {#sec-ps}
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
-
+<!-- how much of this video to you plan to show? Is you talk only 20 minutes? in which case this video would take a significant chunk out of it.
+-->
+<!-- the slides in this section have a lot of text, I'm not sure your audience will know what to look at -->
 {{< video https://www.youtube.com/embed/EwlRdxokdGk
     start="11"
     width="85%" 
@@ -841,7 +846,7 @@ Nystagmus
 :::
 
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
-
+<!-- I like the animations here -->
 ![](figures/nystagmus/animation-2024-09-13 16-45.gif){fig-align=center}
 
 ::: {.notes}
