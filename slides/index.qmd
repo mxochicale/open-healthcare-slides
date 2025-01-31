@@ -139,7 +139,7 @@ Oviedo, Jesús, Moisés Rodriguez, Andrea Trenta, Dino Cannas, Domenico Natale, 
 
 
 
-# Use cases: Fetal Ultrasound Image Synthesis {#sec-fus}
+# Use case: Fetal Ultrasound Image Synthesis {#sec-fus}
 <!-- this section (up to slide 25) seems very sciency and not very open - source softwarey. i.e. theres a lot of experiments and results, but it doesn't seem to be about open source software until you get to the last slide (xfetus). I think the audience at FOSDEM will be more interested in the software than the application. Can you simplify the science and significantly expand on the software? -->
 
 ## Dating Ultrasound Scan (12 week scan)
@@ -555,7 +555,7 @@ Speaker notes go here.
 
 
 
-# Use cases: Real-time AI diagnosis for endoscopic pituitary surgery {#sec-ps}
+# Use case: Real-time AI diagnosis for endoscopic pituitary surgery {#sec-ps}
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
 <!-- how much of this video to you plan to show? Is you talk only 20 minutes? in which case this video would take a significant chunk out of it.
@@ -797,7 +797,7 @@ Speaker notes go here.
 
 
 
-# Use cases: Real-time AI diagnosis for eye movement disorders {#sec-ed}
+# Use case: Real-time AI diagnosis for eye movement disorders {#sec-ed}
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
