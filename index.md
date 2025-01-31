@@ -27,7 +27,7 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 # Overview
 
 - [From bench to bedside](#sec-b2b)
-- Uses cases
+- Use cases
   - [Fetal Ultrasound Image Synthesis](#sec-fus)
   - [Real-time AI diagnosis](#sec-rtai)
     - [Endoscopy-based video](#sec-ps)
@@ -37,7 +37,7 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 
 # :wrench: :hospital: From bench to bedside
 
-## Regulation vs innovation in Surg/Med/AI Tech
+## Regulation vs innovation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
 
 <div style="margin-top: 0px; font-size: 50%;">
 
@@ -46,6 +46,8 @@ src="figures/regulation-innovation/balance-between-regulation-innovation.svg"
 style="width:100.0%" data-fig-align="center" />
 
 </div>
+
+<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
 
 ## IEC 62304 standard for software
 
@@ -152,7 +154,9 @@ engineering.” Computer Science Review 54 (2024): 100681.
 
 </div>
 
-# Use cases: Fetal Ultrasound Image Synthesis
+# Use case: Fetal Ultrasound Image Synthesis
+
+<!-- this section (up to slide 25) seems very sciency and not very open - source softwarey. i.e. theres a lot of experiments and results, but it doesn't seem to be about open source software until you get to the last slide (xfetus). I think the audience at FOSDEM will be more interested in the software than the application. Can you simplify the science and significantly expand on the software? -->
 
 ## Dating Ultrasound Scan (12 week scan)
 
@@ -304,6 +308,8 @@ Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023
 
 ## Methods
 
+<!-- this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
+
 Diffusion-Super-Resolution-GAN (DSR-GAN) Transformer-based-GAN
 
 <div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
@@ -412,6 +418,10 @@ Show emojis in the main README
 </div>
 
 # Developing real-time AI applications for diagnosis
+
+<!-- can you expand on the open source ecosystem around Holoscan here? 
+Do you have any videos or results you could show for real time diagnoses?
+-->
 
 ## Real-time AI Applications for Surgery
 
@@ -630,9 +640,14 @@ Speaker notes go here.
 
 </div>
 
-# Use cases: Real-time AI diagnosis for endoscopic pituitary surgery
+# Use case: Real-time AI diagnosis for endoscopic pituitary surgery
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
+
+<!-- how much of this video to you plan to show? Is you talk only 20 minutes? in which case this video would take a significant chunk out of it.
+-->
+
+<!-- the slides in this section have a lot of text, I'm not sure your audience will know what to look at -->
 
 <https://www.youtube.com/embed/EwlRdxokdGk>
 
@@ -912,7 +927,7 @@ Speaker notes go here. {.scrollable}
 
 </div>
 
-# Use cases: Real-time AI diagnosis for eye movement disorders
+# Use case: Real-time AI diagnosis for eye movement disorders
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
@@ -979,6 +994,8 @@ Nystagmus {.scrollable}
 </div>
 
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
+
+<!-- I like the animations here -->
 
 <img src="figures/nystagmus/animation-2024-09-13%2016-45.gif"
 data-fig-align="center" />
