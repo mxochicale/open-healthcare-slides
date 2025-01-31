@@ -64,10 +64,12 @@ git push origin gh-pages
 git checkout main
 #https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/
 ```
+See [hash for template](https://github.com/mxochicale/open-healthcare-slides/commit/185b5a53fdfe32f3ff98de0734f54cd2c471183c)
 
 * Select deploy from branch and select gh-pages
 
-## Preview slides
+
+## Edit and preview slides
 
 ### Dependencies
 * quarto installation (Reference https://quarto.org/docs/download/tarball.html).
@@ -90,7 +92,9 @@ quarto remove parmsam/subtitles
 #https://github.com/parmsam/quarto-subtitles
 ```
 
-### Preview slices
+### Edit and preview slices
+* Open [index.qmd](index.qmd) to edit slides. 
+* Then you can preview them:
 ```
 cd slides
 quarto preview index.qmd

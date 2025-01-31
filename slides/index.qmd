@@ -28,8 +28,8 @@ format:
 # {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
 
 ::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
-<span style="color:#939393; font-size:1.5em; font-weight: bold;">Can Open-Source Software</span>  
-<span style="color:#939393; font-size:1.5em; font-weight: bold;">Revolutionise Healthcare?</span>  
+<span style="color:#939393; font-size:1.5em; font-weight: bold;">How Open-Source Software is</span>  
+<span style="color:#939393; font-size:1.5em; font-weight: bold;">Shapping the Future of Healthcare?</span>  
 
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
 [{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, PhD     
@@ -43,9 +43,8 @@ format:
 
 # Overview {style="font-size: 90%;"} 
 
-* [My trajectory](#sec-mt)
 * [From bench to bedside](#sec-b2b)
-* Uses cases
+* Use cases
   * [Fetal Ultrasound Image Synthesis](#sec-fus)
   * [Real-time AI diagnosis](#sec-rtai)
     * [Endoscopy-based video](#sec-ps) 
@@ -53,28 +52,22 @@ format:
 * [Open-Source Software in Healthcare](#sec-ossh)
 * [Takeaways](#sec-ta)
 
-## My trajectory
-
-::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
-![](figures/mx.svg){fig-align="center" width="100%"}
-:::
-
 
 # :wrench: :hospital: From bench to bedside {#sec-b2b}
 
-## Regulation vs innovation in MedTech
+## Regulation vs innovation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
 
 ::: { style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/regulation-innovation/balance-between-regulation-innovation.svg){fig-align="center" width="100%"}
 :::
-
-## IEC 62304 standard for  software
+<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
+## IEC 62304 standard for software
 
 ::: { style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/regulation-innovation/iec62304.svg){fig-align="center" width="100%"}
 :::
 
-::: {style="font-size: 40%;"}
+::: {style="font-size: 30%;"}
 https://www.iso.org/standard/38421.html
 :::
 
@@ -85,8 +78,8 @@ https://www.iso.org/standard/38421.html
 ![](figures/regulation-innovation/goodALMLFDA.svg){fig-align="center" width="100%"}
 :::
 
-::: {style="font-size: 40%;"}
-US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper 
+::: {style="font-size: 30%;"}
+US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper: https://www.fda.gov/files/medical%20devices/published/US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper.pdf
 :::
 
 ::: {.notes}
@@ -120,17 +113,34 @@ Medical AI translational challenges between system development and routine clini
 Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. "Artificial intelligence in ophthalmology: The path to the real-world clinic." Cell Reports Medicine 4, no. 7 (2023).
 :::
 
-
 ::: {.notes}
 :wrench:  :recycle: :hospital:
 Software as a Medical Device (SaMD)
 :::
 
 
+## ISO/IEC quality standards in the AI landscape
+
+::: {#fig-template}
+![](figures/regulation-innovation/ai-standarization-landscape.svg){fig-align="center" width="100%"}
+
+AI standarisation landscape
+:::
+
+
+::: {style="font-size: 30%;"}
+Janaćković, G., Vasović, D. and Vasović, B., 2024. ARTIFICIAL INTELLIGENCE STANDARDISATION EFFORTS. ENGINEERING MANAGEMENT AND COMPETITIVENESS (EMC 2024), p.250.  
+Oviedo, Jesús, Moisés Rodriguez, Andrea Trenta, Dino Cannas, Domenico Natale, and Mario Piattini. "ISO/IEC quality standards for AI engineering." Computer Science Review 54 (2024): 100681.
+:::
+
+
+
+
 
 
 
 # Use cases: Fetal Ultrasound Image Synthesis {#sec-fus}
+<!-- this section (up to slide 25) seems very sciency and not very open - source softwarey. i.e. theres a lot of experiments and results, but it doesn't seem to be about open source software until you get to the last slide (xfetus). I think the audience at FOSDEM will be more interested in the software than the application. Can you simplify the science and significantly expand on the software? -->
 
 ## Dating Ultrasound Scan (12 week scan)
 
@@ -232,7 +242,7 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 
 
 ## Methods
-
+<!-- this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
 Diffusion-Super-Resolution-GAN (DSR-GAN)
 Transformer-based-GAN
 
@@ -323,7 +333,9 @@ TODO:
 
 
 # Developing real-time AI applications for diagnosis {#sec-rtai}
-
+<!-- can you expand on the open source ecosystem around Holoscan here? 
+Do you have any videos or results you could show for real time diagnoses?
+-->
 
 
 ## Real-time AI Applications for Surgery
@@ -546,7 +558,9 @@ Speaker notes go here.
 # Use cases: Real-time AI diagnosis for endoscopic pituitary surgery {#sec-ps}
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
-
+<!-- how much of this video to you plan to show? Is you talk only 20 minutes? in which case this video would take a significant chunk out of it.
+-->
+<!-- the slides in this section have a lot of text, I'm not sure your audience will know what to look at -->
 {{< video https://www.youtube.com/embed/EwlRdxokdGk
     start="11"
     width="85%" 
@@ -832,7 +846,7 @@ Nystagmus
 :::
 
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
-
+<!-- I like the animations here -->
 ![](figures/nystagmus/animation-2024-09-13 16-45.gif){fig-align=center}
 
 ::: {.notes}
@@ -912,14 +926,16 @@ industry and regulators can currently offer.
 
 # Key Takeaways{#sec-ta}
 
+. . .
+
 *  :wrench: :hospital: Challenges in translating research from bench to bedside.
 * :robot: :recycle: Use cases for synthetic data and real-time AI-driven diagnosis.
 
 . . .
 
+How to shape the future of Healthcare using Open-Source Software!!!*
 
-**YES!**
-*We can Revolutionise Healthcare with Open-Source Software!!!*
+. . .
 
 * :school_satchel: Contribute to the creation of high-quality educational and training materials.
 * {{< fa brands github >}} Release open-source code, data, and models in alignment with quality standards.
@@ -935,3 +951,12 @@ industry and regulators can currently offer.
   * NVIDIA Healthcare AI
 * Steve Thompson et al.
   * Advanced Research Computing Centre (ARC) at UCL
+
+
+# Additional slides
+
+## My trajectory
+
+::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
+![](figures/mx.svg){fig-align="center" width="100%"}
+:::
