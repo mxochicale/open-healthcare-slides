@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html#regulation-vs-innovation-in-surgmedai-tech",
-    "href": "index.html#regulation-vs-innovation-in-surgmedai-tech",
+    "objectID": "index.html#innovation-regulation-in-surgmedai-tech",
+    "href": "index.html#innovation-regulation-in-surgmedai-tech",
     "title": "",
-    "section": "Regulation vs innovation in Surg/Med/AI Tech ",
-    "text": "Regulation vs innovation in Surg/Med/AI Tech"
+    "section": "Innovation & regulation in Surg/Med/AI Tech ",
+    "text": "Innovation & regulation in Surg/Med/AI Tech"
+  },
+  {
+    "objectID": "index.html#challenges-in-the-ai-clinical-translation",
+    "href": "index.html#challenges-in-the-ai-clinical-translation",
+    "title": "",
+    "section": "🏥 Challenges in the AI clinical translation",
+    "text": "🏥 Challenges in the AI clinical translation\n\n\nFigure 1: Medical AI translational challenges between system development and routine clinical application\n\nLi, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).\n\n\n🔧 ♻️ 🏥 Software as a Medical Device (SaMD)"
   },
   {
     "objectID": "index.html#iec-62304-standard-for-software",
@@ -19,20 +26,6 @@
     "title": "",
     "section": "Good ML practices by FDA",
     "text": "Good ML practices by FDA\n\n\n\n\n\n\n\n\nUS-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper: https://www.fda.gov/files/medical%20devices/published/US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper.pdf\n\n\nRegulatory Framework for Modifications to (AI/ML)-Based Software as a Medical Device (SaMD)"
-  },
-  {
-    "objectID": "index.html#fda-approved-ai-based-medical-devices",
-    "href": "index.html#fda-approved-ai-based-medical-devices",
-    "title": "",
-    "section": "FDA-approved AI-based Medical Devices",
-    "text": "FDA-approved AI-based Medical Devices\n\n\n\n\n\n\n\n\nBenjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. npj Digit. Med. 3, 118 (2020)."
-  },
-  {
-    "objectID": "index.html#challenges-in-the-ai-clinical-translation",
-    "href": "index.html#challenges-in-the-ai-clinical-translation",
-    "title": "",
-    "section": "🏥 Challenges in the AI clinical translation",
-    "text": "🏥 Challenges in the AI clinical translation\n\n\nFigure 1: Medical AI translational challenges between system development and routine clinical application\n\nLi, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial intelligence in ophthalmology: The path to the real-world clinic.” Cell Reports Medicine 4, no. 7 (2023).\n\n\n🔧 ♻️ 🏥 Software as a Medical Device (SaMD)"
   },
   {
     "objectID": "index.html#isoiec-quality-standards-in-the-ai-landscape",
@@ -88,7 +81,7 @@
     "href": "index.html#gan-based-fetal-imaging",
     "title": "",
     "section": "GAN-based fetal imaging",
-    "text": "GAN-based fetal imaging\n\n\n\n\n\n\n\n\n\nBautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA https://github.com/budai4medtech/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775"
+    "text": "GAN-based fetal imaging\n\n\n\n\n\n\n\n\n\nBautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775"
   },
   {
     "objectID": "index.html#aiml-pipeline",
@@ -102,35 +95,35 @@
     "href": "index.html#image-quality-assessment",
     "title": "",
     "section": "Image Quality Assessment",
-    "text": "Image Quality Assessment\nQuaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance between distributions of synthetised and original images (Heusel et al., 2017).\nThe lower the FID number is, the more similar the synthetised images are to the original ones. FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+    "text": "Image Quality Assessment\nQuaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance between distributions of synthetised and original images (Heusel et al., 2017).\nThe lower the FID number is, the more similar the synthetised images are to the original ones. FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
   },
   {
     "objectID": "index.html#methods",
     "href": "index.html#methods",
     "title": "",
     "section": "Methods",
-    "text": "Methods\n\nDiffusion-Super-Resolution-GAN (DSR-GAN) Transformer-based-GAN\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+    "text": "Methods\n\nDiffusion-Super-Resolution-GAN (DSR-GAN) Transformer-based-GAN\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
   },
   {
     "objectID": "index.html#experiments-design-and-results",
     "href": "index.html#experiments-design-and-results",
     "title": "",
     "section": "Experiments: Design and results",
-    "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+    "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
   },
   {
     "objectID": "index.html#experiments-design-and-results-1",
     "href": "index.html#experiments-design-and-results-1",
     "title": "",
     "section": "Experiments: Design and results",
-    "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+    "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
   },
   {
-    "objectID": "index.html#github.combudai4medtechmidl2023",
-    "href": "index.html#github.combudai4medtechmidl2023",
+    "objectID": "index.html#github.comxfetusmidl2023",
+    "href": "index.html#github.comxfetusmidl2023",
     "title": "",
-    "section": " github.com/budai4medtech/midl2023",
-    "text": "github.com/budai4medtech/midl2023\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023"
+    "section": " github.com/xfetus/midl2023",
+    "text": "github.com/xfetus/midl2023\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
   },
   {
     "objectID": "index.html#fetal-us-imaging-with-diffusion-models",
@@ -144,7 +137,7 @@
     "href": "index.html#xfetus",
     "title": "",
     "section": "xfetus 👶 🧠 🤖",
-    "text": "xfetus 👶 🧠 🤖\nA library for ultrasound fetal imaging synthesis using:\n\nGANs,\n\ntransformers, and\n\ndiffusion models.\n\n\n https://github.com/budai4medtech/xfetus\n\n\nTODO: * Resolve PRs https://github.com/budai4medtech/xfetus/pulls * Show emojis in the main README"
+    "text": "xfetus 👶 🧠 🤖\nA library for ultrasound fetal imaging synthesis using:\n\nGANs,\n\ntransformers, and\n\ndiffusion models.\n\n\n https://github.com/xfetus/xfetus\n\n\nTODO: * Resolve PRs https://github.com/xfetus/xfetus/pulls * Show emojis in the main README"
   },
   {
     "objectID": "index.html#real-time-ai-applications-for-surgery",
@@ -259,11 +252,11 @@
     "text": "https://github.com/oss-for-surgtech/workshop-hamlyn2024"
   },
   {
-    "objectID": "index.html#the-first-regulatory-clearance-of-an-open-source-automated-insulin-delivery-algorithm",
-    "href": "index.html#the-first-regulatory-clearance-of-an-open-source-automated-insulin-delivery-algorithm",
+    "objectID": "index.html#healing-through-collaboration",
+    "href": "index.html#healing-through-collaboration",
     "title": "",
-    "section": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm",
-    "text": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm\n\nIn 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.\nBy late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.\nAfter 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.\n\n\nBraune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory clearance of an open-source automated insulin delivery algorithm.” Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141. DOI Citations\nhttps://www.tidepool.org/open\nhttps://github.com/tidepool-org\nhttps://github.com/LoopKit\n\n\n\nFood and Drug Administration (FDA\nThe #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than industry and regulators can currently offer. {.scrollable}\nOther examples Reimagining Public Healthcare with AI https://ohc.network/"
+    "section": "Healing Through Collaboration",
+    "text": "Healing Through Collaboration\n\n\n\n\n\n\n\n\n\nhttps://github.com/openregulatory/templates"
   },
   {
     "objectID": "index.html#acknowledgements",
@@ -271,6 +264,20 @@
     "title": "",
     "section": "🙌 Acknowledgements",
     "text": "🙌 Acknowledgements\n\nDiego Kaski\n\nUCL Queen Square Institute of Neurology\n\nZhehua Mao, Sophia Bano and Matt Clarkson\n\nWellcome / EPSRC Centre for Interventional and Surgical Sciences (WEISS) at UCL\n\nMikael Brudfors and Nadim Daher\n\nNVIDIA Healthcare AI\n\nSteve Thompson et al.\n\nAdvanced Research Computing Centre (ARC) at UCL"
+  },
+  {
+    "objectID": "index.html#the-first-regulatory-clearance-of-an-open-source-automated-insulin-delivery-algorithm",
+    "href": "index.html#the-first-regulatory-clearance-of-an-open-source-automated-insulin-delivery-algorithm",
+    "title": "",
+    "section": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm",
+    "text": "The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm\n\nIn 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.\nBy late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.\nAfter 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.\n\n\nBraune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory clearance of an open-source automated insulin delivery algorithm.” Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141. DOI Citations\nhttps://www.tidepool.org/open\nhttps://github.com/tidepool-org\nhttps://github.com/LoopKit\n\n\n\nFood and Drug Administration (FDA\nThe #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than industry and regulators can currently offer. {.scrollable}\nOther examples Reimagining Public Healthcare with AI https://ohc.network/"
+  },
+  {
+    "objectID": "index.html#fda-approved-ai-based-medical-devices",
+    "href": "index.html#fda-approved-ai-based-medical-devices",
+    "title": "",
+    "section": "FDA-approved AI-based Medical Devices",
+    "text": "FDA-approved AI-based Medical Devices\n\n\n\n\n\n\n\n\n\nBenjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. npj Digit. Med. 3, 118 (2020)."
   },
   {
     "objectID": "index.html#my-trajectory",

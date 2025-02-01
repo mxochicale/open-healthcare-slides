@@ -27,17 +27,17 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 # Overview
 
 - [From bench to bedside](#sec-b2b)
-- Use cases
+- Few Use cases
   - [Fetal Ultrasound Image Synthesis](#sec-fus)
   - [Real-time AI diagnosis](#sec-rtai)
-    - [Endoscopy-based video](#sec-ps)
-    - [Eye movement disorders](#sec-ed)
+    <!--  * [Endoscopy-based video](#sec-ps) -->
+    <!--  * [Eye movement disorders](#sec-ed) -->
 - [Open-Source Software in Healthcare](#sec-ossh)
 - [Takeaways](#sec-ta)
 
 # :wrench: :hospital: From bench to bedside
 
-## Regulation vs innovation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
+## Innovation & regulation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
 
 <div style="margin-top: 0px; font-size: 50%;">
 
@@ -47,7 +47,32 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
+## :hospital: Challenges in the AI clinical translation
+
+<div id="fig-template">
+
+<img src="figures/regulation-innovation/li2023-fig3.svg"
+style="width:100.0%" data-fig-align="center" />
+
+Figure 1: Medical AI translational challenges between system development
+and routine clinical application
+
+</div>
+
+<div style="font-size: 40%;">
+
+Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie,
+Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial
+intelligence in ophthalmology: The path to the real-world clinic.” Cell
+Reports Medicine 4, no. 7 (2023).
+
+</div>
+
+<div class="notes">
+
+:wrench: :recycle: :hospital: Software as a Medical Device (SaMD)
+
+</div>
 
 ## IEC 62304 standard for software
 
@@ -84,51 +109,6 @@ https://www.fda.gov/files/medical%20devices/published/US-FDA-Artificial-Intellig
 
 Regulatory Framework for Modifications to (AI/ML)-Based Software as a
 Medical Device (SaMD)
-
-</div>
-
-## FDA-approved AI-based Medical Devices
-
-<div style="margin-top: 0px; font-size: 50%;">
-
-<img
-src="figures/regulation-innovation/fda-approved-ai-based-med-devs.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
-
-<div style="font-size: 40%;">
-
-Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial
-intelligence-based FDA-approved medical devices and algorithms: an
-online database. npj Digit. Med. 3, 118 (2020).
-
-</div>
-
-## :hospital: Challenges in the AI clinical translation
-
-<div id="fig-template">
-
-<img src="figures/regulation-innovation/li2023-fig3.jpg"
-style="width:100.0%" data-fig-align="center" />
-
-Figure 1: Medical AI translational challenges between system development
-and routine clinical application
-
-</div>
-
-<div style="font-size: 40%;">
-
-Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie,
-Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. “Artificial
-intelligence in ophthalmology: The path to the real-world clinic.” Cell
-Reports Medicine 4, no. 7 (2023).
-
-</div>
-
-<div class="notes">
-
-:wrench: :recycle: :hospital: Software as a Medical Device (SaMD)
 
 </div>
 
@@ -273,9 +253,9 @@ style="width:100.0%" data-fig-align="center" />
 
 1)  Bautista et al. 2022, ”Empirical Study of Quality Image Assessment
     for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
-    https://github.com/budai4medtech/miua2022 (b) Liu et al. 2021
-    ”Towards Faster and Stabilized GAN Training for High-fidelity
-    Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775
+    https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards
+    Faster and Stabilized GAN Training for High-fidelity Few-shot Image
+    Synthesis” https://arxiv.org/abs/2101.04775
 
 </div>
 
@@ -302,7 +282,7 @@ compared to other metrics (Bautista et al., 2012).
 <div style="font-size: 40%;">
 
 M. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging
-Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023
+Synthesis” in MIDL2023. https://github.com/xfetus/midl2023
 
 </div>
 
@@ -323,7 +303,7 @@ style="width:100.0%" data-fig-align="center" />
 <div style="font-size: 40%;">
 
 M. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging
-Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023
+Synthesis” in MIDL2023. https://github.com/xfetus/midl2023
 
 </div>
 
@@ -340,7 +320,7 @@ style="width:100.0%" data-fig-align="center" />
 <div style="font-size: 40%;">
 
 M. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging
-Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023
+Synthesis” in MIDL2023. https://github.com/xfetus/midl2023
 
 </div>
 
@@ -356,11 +336,11 @@ style="width:100.0%" data-fig-align="center" />
 <div style="font-size: 40%;">
 
 M. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging
-Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023
+Synthesis” in MIDL2023. https://github.com/xfetus/midl2023
 
 </div>
 
-##  github.com/budai4medtech/midl2023
+##  github.com/xfetus/midl2023
 
 <div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
 
@@ -373,7 +353,7 @@ style="width:100.0%" data-fig-align="center" />
 <div style="font-size: 40%;">
 
 M. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging
-Synthesis” in MIDL2023. https://github.com/budai4medtech/midl2023
+Synthesis” in MIDL2023. https://github.com/xfetus/midl2023
 
 </div>
 
@@ -406,18 +386,18 @@ A library for ultrasound fetal imaging synthesis using:
 
 <div style="font-size: 50%;">
 
-<https://github.com/budai4medtech/xfetus>
+<https://github.com/xfetus/xfetus>
 
 </div>
 
 <div class="notes">
 
-TODO: \* Resolve PRs https://github.com/budai4medtech/xfetus/pulls \*
-Show emojis in the main README
+TODO: \* Resolve PRs https://github.com/xfetus/xfetus/pulls \* Show
+emojis in the main README
 
 </div>
 
-# Developing real-time AI applications for diagnosis
+# :wrench: Developing real-time AI applications for diagnosis
 
 <!-- can you expand on the open source ecosystem around Holoscan here? 
 Do you have any videos or results you could show for real time diagnoses?
@@ -1061,39 +1041,20 @@ https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-
 
 </div>
 
-## The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm
+## Healing Through Collaboration
 
-- In 2018, Tidepool launched the Tidepool Loop initiative to generate
-  real-world evidence and seek regulatory clearance for Loop.
-- By late 2020, Tidepool submitted an application to the FDA for an
-  interoperable automated glycemic controller (iAGC) based on Loop.
-- After 2 years, the FDA approved the Tidepool Loop iAGC on January 23,
-  2023.
+<!-- Open-Source Software in Surgical, Biomedical and AI Technologies -->
 
-<div style="font-size: 40%;">
+<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
 
-Braune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory
-clearance of an open-source automated insulin delivery algorithm.”
-Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
-[DOI](https://journals.sagepub.com/doi/10.1177/19322968231164166)
-[Citations](https://scholar.google.com/scholar?cites=11792880181049903500&as_sdt=2005&sciodt=0,5&hl=en)
-
-<https://www.tidepool.org/open>
-
-<https://github.com/tidepool-org>
-
-<https://github.com/LoopKit>
+<img src="figures/oss4surgmedaitech/open-source-for-smait.svg"
+style="width:100.0%" data-fig-align="center" />
 
 </div>
 
 <div class="notes">
 
-- Food and Drug Administration (FDA
-- The \#WeAreNotWaiting diabetes movement continues demanding safety and
-  innovation at a faster pace than industry and regulators can currently
-  offer. {.scrollable}
-- Other examples Reimagining Public Healthcare with AI
-  https://ohc.network/
+https://github.com/openregulatory/templates
 
 </div>
 
@@ -1130,6 +1091,62 @@ How to shape the future of Healthcare using Open-Source Software!!!\*
   - Advanced Research Computing Centre (ARC) at UCL
 
 # Additional slides
+
+## The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm
+
+- In 2018, Tidepool launched the Tidepool Loop initiative to generate
+  real-world evidence and seek regulatory clearance for Loop.
+- By late 2020, Tidepool submitted an application to the FDA for an
+  interoperable automated glycemic controller (iAGC) based on Loop.
+- After 2 years, the FDA approved the Tidepool Loop iAGC on January 23,
+  2023.
+
+<div style="font-size: 40%;">
+
+Braune, Katarina, Sufyan Hussain, and Rayhan Lal. “The first regulatory
+clearance of an open-source automated insulin delivery algorithm.”
+Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141.
+[DOI](https://journals.sagepub.com/doi/10.1177/19322968231164166)
+[Citations](https://scholar.google.com/scholar?cites=11792880181049903500&as_sdt=2005&sciodt=0,5&hl=en)
+
+<https://www.tidepool.org/open>
+
+<https://github.com/tidepool-org>
+
+<https://github.com/LoopKit>
+
+</div>
+
+<div class="notes">
+
+- Food and Drug Administration (FDA
+- The \#WeAreNotWaiting diabetes movement continues demanding safety and
+  innovation at a faster pace than industry and regulators can currently
+  offer. {.scrollable}
+- Other examples Reimagining Public Healthcare with AI
+  https://ohc.network/
+
+</div>
+
+## FDA-approved AI-based Medical Devices
+
+<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
+
+<div style="margin-top: 0px; font-size: 50%;">
+
+<img
+src="figures/regulation-innovation/fda-approved-ai-based-med-devs.svg"
+style="width:100.0%" data-fig-align="center" />
+
+</div>
+
+<div style="font-size: 40%;">
+
+Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial
+intelligence-based FDA-approved medical devices and algorithms: an
+online database. npj Digit. Med. 3, 118 (2020).
+
+</div>
 
 ## My trajectory
 
