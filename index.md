@@ -27,7 +27,7 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 # Overview
 
 - [From bench to bedside](#sec-b2b)
-- Few Use cases
+- Few use cases
   - [Fetal Ultrasound Image Synthesis](#sec-fus)
   - [Real-time AI diagnosis](#sec-rtai)
     <!--  * [Endoscopy-based video](#sec-ps) -->
@@ -134,8 +134,9 @@ engineering.” Computer Science Review 54 (2024): 100681.
 
 </div>
 
-# Use case: Fetal Ultrasound Image Synthesis
+# Use case
 
+Fetal Ultrasound Image Synthesis
 <!-- this section (up to slide 25) seems very sciency and not very open - source softwarey. i.e. theres a lot of experiments and results, but it doesn't seem to be about open source software until you get to the last slide (xfetus). I think the audience at FOSDEM will be more interested in the software than the application. Can you simplify the science and significantly expand on the software? -->
 
 ## Dating Ultrasound Scan (12 week scan)
@@ -397,8 +398,9 @@ emojis in the main README
 
 </div>
 
-# :wrench: Developing real-time AI applications for diagnosis
+# Use case
 
+:wrench: Developing real-time AI applications for diagnosis
 <!-- can you expand on the open source ecosystem around Holoscan here? 
 Do you have any videos or results you could show for real time diagnoses?
 -->
@@ -620,7 +622,9 @@ Speaker notes go here.
 
 </div>
 
-# Use case: Real-time AI diagnosis for endoscopic pituitary surgery
+# Use case
+
+Real-time AI diagnosis for endoscopic pituitary surgery
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
 
@@ -907,7 +911,10 @@ Speaker notes go here. {.scrollable}
 
 </div>
 
-# Use case: Real-time AI diagnosis for eye movement disorders
+# Use case
+
+0cular: Open-source Care Utilising Latest AI for Real-time monitoring
+and diagnosis
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
