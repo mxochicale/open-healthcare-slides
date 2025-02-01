@@ -35,6 +35,15 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 - [Open-Source Software in Healthcare](#sec-ossh)
 - [Takeaways](#sec-ta)
 
+## About me
+
+<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
+
+<img src="figures/mx.svg" style="width:100.0%"
+data-fig-align="center" />
+
+</div>
+
 # :wrench: :hospital: From bench to bedside
 
 ## Innovation & regulation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
@@ -1204,14 +1213,5 @@ style="width:100.0%" data-fig-align="center" />
     https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards
     Faster and Stabilized GAN Training for High-fidelity Few-shot Image
     Synthesis” https://arxiv.org/abs/2101.04775
-
-</div>
-
-## My trajectory
-
-<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
-
-<img src="figures/mx.svg" style="width:100.0%"
-data-fig-align="center" />
 
 </div>

@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "",
+    "section": "About me",
+    "text": "About me"
+  },
+  {
     "objectID": "index.html#innovation-regulation-in-surgmedai-tech",
     "href": "index.html#innovation-regulation-in-surgmedai-tech",
     "title": "",
@@ -292,12 +299,5 @@
     "title": "",
     "section": "GAN-based fetal imaging",
     "text": "GAN-based fetal imaging\n\n\n\n\n\n\n\n\n\nBautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775"
-  },
-  {
-    "objectID": "index.html#my-trajectory",
-    "href": "index.html#my-trajectory",
-    "title": "",
-    "section": "My trajectory",
-    "text": "My trajectory"
   }
 ]
