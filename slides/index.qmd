@@ -37,7 +37,7 @@ format:
 :::
 
 ::: footer
-[20-Oct-2024 [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+[1-Feb-2025; fosdem'25 [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
 :::
 
 

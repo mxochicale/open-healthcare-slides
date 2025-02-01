@@ -5,3 +5,4 @@
 .quarto/
 slides/.gitignore
 slides/docs
+slides/site_libs
