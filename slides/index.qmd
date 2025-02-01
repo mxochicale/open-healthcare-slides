@@ -263,10 +263,6 @@ A Python-based library for synthesising ultrasound images of fetal development
 {{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus)
 
 
-
-
-
-
 ::: {.notes}
 TODO:
 * Resolve PRs https://github.com/xfetus/xfetus/pulls
@@ -781,7 +777,7 @@ Speaker notes go here.
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
 ::: {#fig-template}
-![](figures/ophthalmology/li2023-fig2.jpg){fig-align=center}
+![](figures/ocular/li2023-fig2.jpg){fig-align=center}
 
 Practical application of AI in all common ophthalmic imaging modalities
 :::
@@ -808,7 +804,7 @@ Nystagmus
 
 ::: {.column width="50%"}
 
-![](figures/ophthalmology/nystagmus.gif)
+![](figures/ocular/nystagmus.gif)
 
 :::
 
@@ -824,9 +820,51 @@ Nystagmus
 {.scrollable}
 :::
 
+
+## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
+<!-- ST: I like the animations here -->
+
+
+::: {#fig-template}
+![](figures/ocular/ready.svg){fig-align=center}
+
+End-to-end workflow
+:::
+
+
+
+
+::: {.notes}
+Demo
+{.scrollable}
+:::
+
+
+## 🤖 👁️ READY
+
+A Python-based library for REal-time Ai Diagnosis for nYstagmus
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/ocular/ready-github-repo.svg){fig-align="center" width="100%"}
+:::
+
+{{< fa brands github >}}  [https://github.com/0cular/ready](https://github.com/0cular/ready)
+
+::: {.notes}
+
+...
+
+:::
+
+
+
+
+
+
+
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
 <!-- I like the animations here -->
-![](figures/nystagmus/animation-2024-09-13 16-45.gif){fig-align=center}
+![](figures/ocular/animation-2024-09-13_16-45.gif){fig-align=center}
 
 ::: {.notes}
 Demo
@@ -840,14 +878,16 @@ Future work
 :::: {.columns}
 
 ::: {.column width="50%"}
-* Real-time AI guidance for high-quality images (Liu et al. 2023)
-![](figures/ophthalmology/liu_2023_graphical_abstract.jpg){fig-align="center" width="50%"}
+Real-time AI guidance for high-quality images (Liu et al. 2023)
+![](figures/ocular/liu_2023_graphical_abstract.jpg){fig-align="center" width="50%"}
 
 :::
 
 ::: {.column width="50%"}
-* Implement UNET-Visual Transformer models (Yao et al. 2022)   
-![](figures/ophthalmology/yao2022_fig1.png){fig-align="center" width="80%"}
+Implement UNET-Visual Transformer models (Yao et al. 2022)   
+![](figures/ocular/yao2022_fig1.png){fig-align="center" width="80%"}
+
+{{< fa brands github >}}  [github.com/0cular/unetvit4sclera](https://github.com/0cular/unetvit4sclera)
 
 :::
 
