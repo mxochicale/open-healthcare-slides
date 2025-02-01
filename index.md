@@ -18,8 +18,8 @@ the Future of Healthcare?</span>
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">20-Oct-2024
-[(grid-worms-animation 2023 by
+<span class="dim-text" style="&quot;text-align:left;'">1-Feb-2025;
+fosdem’25 [(grid-worms-animation 2023 by
 saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 
 </div>
