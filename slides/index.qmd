@@ -44,23 +44,44 @@ format:
 # Overview {style="font-size: 90%;"} 
 
 * [From bench to bedside](#sec-b2b)
-* Use cases
+* Few use cases
   * [Fetal Ultrasound Image Synthesis](#sec-fus)
   * [Real-time AI diagnosis](#sec-rtai)
-    * [Endoscopy-based video](#sec-ps) 
-    * [Eye movement disorders](#sec-ed)
+  <!--  * [Endoscopy-based video](#sec-ps) -->
+  <!--  * [Eye movement disorders](#sec-ed) -->
 * [Open-Source Software in Healthcare](#sec-ossh)
 * [Takeaways](#sec-ta)
 
 
 # :wrench: :hospital: From bench to bedside {#sec-b2b}
 
-## Regulation vs innovation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
+## Innovation & regulation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
 
 ::: { style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/regulation-innovation/balance-between-regulation-innovation.svg){fig-align="center" width="100%"}
 :::
-<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
+
+
+## :hospital: Challenges in the AI clinical translation
+
+::: {#fig-template}
+![](figures/regulation-innovation/li2023-fig3.svg){fig-align="center" width="100%"}
+
+Medical AI translational challenges between system development and routine clinical application
+:::
+
+::: {style="font-size: 40%;"}
+Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. "Artificial intelligence in ophthalmology: The path to the real-world clinic." Cell Reports Medicine 4, no. 7 (2023).
+:::
+
+::: {.notes}
+:wrench:  :recycle: :hospital:
+Software as a Medical Device (SaMD)
+:::
+
+
+
+
 ## IEC 62304 standard for software
 
 ::: { style="margin-top: 0px; font-size: 50%;"} 
@@ -88,36 +109,6 @@ Regulatory Framework for Modifications to
 :::
 
 
-## FDA-approved AI-based Medical Devices
-
-::: { style="margin-top: 0px; font-size: 50%;"} 
-![](figures/regulation-innovation/fda-approved-ai-based-med-devs.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online
-database. npj Digit. Med. 3, 118 (2020). 
-:::
-
-
-
-## :hospital: Challenges in the AI clinical translation
-
-::: {#fig-template}
-![](figures/regulation-innovation/li2023-fig3.jpg){fig-align="center" width="100%"}
-
-Medical AI translational challenges between system development and routine clinical application
-:::
-
-::: {style="font-size: 40%;"}
-Li, Zhongwen, Lei Wang, Xuefang Wu, Jiewei Jiang, Wei Qiang, He Xie, Hongjian Zhou, Shanjun Wu, Yi Shao, and Wei Chen. "Artificial intelligence in ophthalmology: The path to the real-world clinic." Cell Reports Medicine 4, no. 7 (2023).
-:::
-
-::: {.notes}
-:wrench:  :recycle: :hospital:
-Software as a Medical Device (SaMD)
-:::
-
 
 ## ISO/IEC quality standards in the AI landscape
 
@@ -139,7 +130,11 @@ Oviedo, Jesús, Moisés Rodriguez, Andrea Trenta, Dino Cannas, Domenico Natale, 
 
 
 
-# Use cases: Fetal Ultrasound Image Synthesis {#sec-fus}
+
+
+
+# Use case
+Fetal Ultrasound Image Synthesis
 <!-- this section (up to slide 25) seems very sciency and not very open - source softwarey. i.e. theres a lot of experiments and results, but it doesn't seem to be about open source software until you get to the last slide (xfetus). I think the audience at FOSDEM will be more interested in the software than the application. Can you simplify the science and significantly expand on the software? -->
 
 ## Dating Ultrasound Scan (12 week scan)
@@ -160,65 +155,14 @@ edwards’ syndrome and patau’s syndrome. https://www.nhs.uk/pregnancy/your- p
 * Clinical system dependant,
 * Fetal position,
 * Similar morphological and echogenic characteristics in the US,
-* Few public datasets are available (we have only found two)
+* **Few public datasets are available (we have only found three)**
+  * Data masking: Anonymisation or pseudonymisation?
+  * Personal Data Protection Policy 
+
 
 ::: {style="font-size: 40%;"}
 Sciortino et al. in Computers in Biology and Medicine 2017 https://doi.org/10.1016/j.compbiomed.2017.01.008; He et al. in Front. Med. 2021
 https://doi.org/10.3389/fmed.2021.729978
-:::
-
-
-## TransThalamic
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## TransCerebellum Plain
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## TransVentricular Plane
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## Research Questions 
-
-* Research and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases, 
-* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
-
-## GAN-based fetal imaging
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
-https://github.com/budai4medtech/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
-Synthesis” https://arxiv.org/abs/2101.04775
 :::
 
 
@@ -228,17 +172,6 @@ Synthesis” https://arxiv.org/abs/2101.04775
 :::
 
 
-## Image Quality Assessment
-
-Quaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance 
-between distributions of synthetised and original images (Heusel et al., 2017).
-
-The lower the FID number is, the more similar the synthetised images are to the original ones. 
-FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).
-
-::: {style="font-size: 40%;"}
-M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
-:::
 
 
 ## Methods
@@ -251,7 +184,20 @@ Transformer-based-GAN
 :::
 
 ::: {style="font-size: 40%;"}
-M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/xfetus/midl2023
+:::
+
+
+## Image Quality Assessment
+
+Quaility of synthesised images are evaluated with Frechet inception distance (FID), measuring the distance 
+between distributions of synthetised and original images (Heusel et al., 2017).
+
+The lower the FID number is, the more similar the synthetised images are to the original ones. 
+FID metric showed to work well with fetal head US compared to other metrics (Bautista et al., 2012).
+
+::: {style="font-size: 40%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/xfetus/midl2023
 :::
 
 
@@ -263,7 +209,7 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 
 
 ::: {style="font-size: 40%;"}
-M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/xfetus/midl2023
 :::
 
 
@@ -275,18 +221,7 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 :::
 
 ::: {style="font-size: 40%;"}
-M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
-:::
-
-
-## {{< fa brands github >}} github.com/budai4medtech/midl2023
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/github-repository.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/budai4medtech/midl2023
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/xfetus/midl2023
 :::
 
 
@@ -302,7 +237,36 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 :::
 
 
+## {{< fa brands github >}} github.com/xfetus/midl2023
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/github-repository.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. 
+{{< fa brands github >}}  [https://github.com/xfetus/midl2023](https://github.com/xfetus/midl2023)
+
+:::
+
+
+
 ## xfetus :baby: :brain: :robot:
+
+A Python-based library for synthesising ultrasound images of fetal development
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/xfetus-project.svg){fig-align="center" width="100%"}
+:::
+
+
+{{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus)
+
+
+::: {.notes}
+TODO:
+* Resolve PRs https://github.com/xfetus/xfetus/pulls
+* Show emojis in the main README 
 
 A library for ultrasound fetal imaging synthesis using:  
 
@@ -311,17 +275,12 @@ A library for ultrasound fetal imaging synthesis using:
 * diffusion models.  
 
 ::: {style="font-size: 50%;"}
-{{< fa brands github >}}  [https://github.com/budai4medtech/xfetus](https://github.com/budai4medtech/xfetus)
-:::
-
-::: {.notes}
-TODO:
-* Resolve PRs https://github.com/budai4medtech/xfetus/pulls
-* Show emojis in the main README 
+{{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus)
 :::
 
 
 
+:::
 
 
 
@@ -332,7 +291,11 @@ TODO:
 
 
 
-# Developing real-time AI applications for diagnosis {#sec-rtai}
+
+
+
+# Use case
+:wrench: Developing real-time AI applications for diagnosis
 <!-- can you expand on the open source ecosystem around Holoscan here? 
 Do you have any videos or results you could show for real time diagnoses?
 -->
@@ -555,7 +518,8 @@ Speaker notes go here.
 
 
 
-# Use cases: Real-time AI diagnosis for endoscopic pituitary surgery {#sec-ps}
+# Use case
+Real-time AI diagnosis for endoscopic pituitary surgery
 
 ## :medical_symbol: Endoscopic Pituitary Surgery
 <!-- how much of this video to you plan to show? Is you talk only 20 minutes? in which case this video would take a significant chunk out of it.
@@ -797,12 +761,23 @@ Speaker notes go here.
 
 
 
-# Use cases: Real-time AI diagnosis for eye movement disorders {#sec-ed}
+
+
+
+
+
+
+
+
+
+# Use case
+0cular: Open-source Care Using SOTA AI for Real-time monitoring and diagnosis
+
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
 ::: {#fig-template}
-![](figures/ophthalmology/li2023-fig2.jpg){fig-align=center}
+![](figures/ocular/li2023-fig2.jpg){fig-align=center}
 
 Practical application of AI in all common ophthalmic imaging modalities
 :::
@@ -829,7 +804,7 @@ Nystagmus
 
 ::: {.column width="50%"}
 
-![](figures/ophthalmology/nystagmus.gif)
+![](figures/ocular/nystagmus.gif)
 
 :::
 
@@ -845,9 +820,51 @@ Nystagmus
 {.scrollable}
 :::
 
+
+## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
+<!-- ST: I like the animations here -->
+
+
+::: {#fig-template}
+![](figures/ocular/ready.svg){fig-align=center}
+
+End-to-end workflow
+:::
+
+
+
+
+::: {.notes}
+Demo
+{.scrollable}
+:::
+
+
+## 🤖 👁️ READY
+
+A Python-based library for REal-time Ai Diagnosis for nYstagmus
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/ocular/ready-github-repo.svg){fig-align="center" width="100%"}
+:::
+
+{{< fa brands github >}}  [https://github.com/0cular/ready](https://github.com/0cular/ready)
+
+::: {.notes}
+
+...
+
+:::
+
+
+
+
+
+
+
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
 <!-- I like the animations here -->
-![](figures/nystagmus/animation-2024-09-13 16-45.gif){fig-align=center}
+![](figures/ocular/animation-2024-09-13_16-45.gif){fig-align=center}
 
 ::: {.notes}
 Demo
@@ -861,14 +878,16 @@ Future work
 :::: {.columns}
 
 ::: {.column width="50%"}
-* Real-time AI guidance for high-quality images (Liu et al. 2023)
-![](figures/ophthalmology/liu_2023_graphical_abstract.jpg){fig-align="center" width="50%"}
+Real-time AI guidance for high-quality images (Liu et al. 2023)
+![](figures/ocular/liu_2023_graphical_abstract.jpg){fig-align="center" width="50%"}
 
 :::
 
 ::: {.column width="50%"}
-* Implement UNET-Visual Transformer models (Yao et al. 2022)   
-![](figures/ophthalmology/yao2022_fig1.png){fig-align="center" width="80%"}
+Implement UNET-Visual Transformer models (Yao et al. 2022)   
+![](figures/ocular/yao2022_fig1.png){fig-align="center" width="80%"}
+
+{{< fa brands github >}}  [github.com/0cular/unetvit4sclera](https://github.com/0cular/unetvit4sclera)
 
 :::
 
@@ -888,39 +907,22 @@ Plans
 
 # Open-Source Software in Healthcare {#sec-ossh}
 
-## {background-image="figures/oss4surgtech/oss4st-hsmr24-p00.svg" background-size="cover"  }  
+## {background-image="figures/oss4surgmedaitech/oss4st-hsmr24-p00.svg" background-size="cover"  }  
 
 ::: footer
 [{{< fa brands github >}} https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-for-surgtech/workshop-hamlyn2024)
 :::
 
 
-## The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm
+## Healing Through Collaboration
+<!-- Open-Source Software in Surgical, Biomedical and AI Technologies -->
 
-* In 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.
-* By late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.
-* After 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.
-
-
-::: {style="font-size: 40%;"}
-Braune, Katarina, Sufyan Hussain, and Rayhan Lal. "The first regulatory clearance of an open-source automated insulin delivery algorithm." 
-Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141. 
-[DOI](https://journals.sagepub.com/doi/10.1177/19322968231164166) 
-[Citations](https://scholar.google.com/scholar?cites=11792880181049903500&as_sdt=2005&sciodt=0,5&hl=en)
-
-[https://www.tidepool.org/open](https://www.tidepool.org/open)
-
-[https://github.com/tidepool-org](https://github.com/tidepool-org)
-
-[https://github.com/LoopKit](https://github.com/LoopKit)
+::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
+![](figures/oss4surgmedaitech/open-source-for-smait.svg){fig-align="center" width="100%"}
 :::
 
 ::: {.notes}
-* Food and Drug Administration (FDA
-* The #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than
-industry and regulators can currently offer.
-{.scrollable}
-* Other examples Reimagining Public Healthcare with AI https://ohc.network/ 
+https://github.com/openregulatory/templates
 :::
 
 
@@ -955,8 +957,120 @@ How to shape the future of Healthcare using Open-Source Software!!!*
 
 # Additional slides
 
+
+## The First Regulatory Clearance of an Open-Source Automated Insulin Delivery Algorithm
+
+* In 2018, Tidepool launched the Tidepool Loop initiative to generate real-world evidence and seek regulatory clearance for Loop.
+* By late 2020, Tidepool submitted an application to the FDA for an interoperable automated glycemic controller (iAGC) based on Loop.
+* After 2 years, the FDA approved the Tidepool Loop iAGC on January 23, 2023.
+
+
+::: {style="font-size: 40%;"}
+Braune, Katarina, Sufyan Hussain, and Rayhan Lal. "The first regulatory clearance of an open-source automated insulin delivery algorithm." 
+Journal of Diabetes Science and Technology 17, no. 5 (2023): 1139-1141. 
+[DOI](https://journals.sagepub.com/doi/10.1177/19322968231164166) 
+[Citations](https://scholar.google.com/scholar?cites=11792880181049903500&as_sdt=2005&sciodt=0,5&hl=en)
+
+[https://www.tidepool.org/open](https://www.tidepool.org/open)
+
+[https://github.com/tidepool-org](https://github.com/tidepool-org)
+
+[https://github.com/LoopKit](https://github.com/LoopKit)
+:::
+
+::: {.notes}
+* Food and Drug Administration (FDA
+* The #WeAreNotWaiting diabetes movement continues demanding safety and innovation at a faster pace than
+industry and regulators can currently offer.
+{.scrollable}
+* Other examples Reimagining Public Healthcare with AI https://ohc.network/ 
+:::
+
+
+
+## FDA-approved AI-based Medical Devices
+<!-- ST I find the 7 slides in this section very difficult to follow. It should be better when you're talking to them, but just reading them I'm not sure what you're trying to communicate -->
+
+::: { style="margin-top: 0px; font-size: 50%;"} 
+![](figures/regulation-innovation/fda-approved-ai-based-med-devs.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online
+database. npj Digit. Med. 3, 118 (2020). 
+:::
+
+
+
+
+
+## TransThalamic
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransCerebellum Plain
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransVentricular Plane
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## Research Questions 
+
+* Research and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases, 
+* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
+
+## GAN-based fetal imaging
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
+https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
+Synthesis” https://arxiv.org/abs/2101.04775
+:::
+
+
+
+
+
+
+
+
 ## My trajectory
 
 ::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/mx.svg){fig-align="center" width="100%"}
 :::
+
+
+
+
+
