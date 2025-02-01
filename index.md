@@ -840,8 +840,8 @@ Speaker notes go here. {.scrollable}
 
 # Use case
 
-0cular: Open-source Care Utilising Latest AI for Real-time monitoring
-and diagnosis
+0cular: Open-source Care Using SOTA AI for Real-time monitoring and
+diagnosis
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
 
