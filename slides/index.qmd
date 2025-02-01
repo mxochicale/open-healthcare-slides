@@ -53,6 +53,15 @@ format:
 * [Takeaways](#sec-ta)
 
 
+## About me
+
+::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
+![](figures/mx.svg){fig-align="center" width="100%"}
+:::
+
+
+
+
 # :wrench: :hospital: From bench to bedside {#sec-b2b}
 
 ## Innovation & regulation in Surg/Med/AI Tech <!-- ST - i'd argue that good regulation is a key driver of innovation. Without regulation you just have a bunch of people doing stuff they like, whereas with regulation you can drive innovation to achieve good societal impacts. So it's not one vs the other -->
@@ -1063,12 +1072,6 @@ Synthesis” https://arxiv.org/abs/2101.04775
 
 
 
-
-## My trajectory
-
-::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
-![](figures/mx.svg){fig-align="center" width="100%"}
-:::
 
 
 
