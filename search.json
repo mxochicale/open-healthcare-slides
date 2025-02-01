@@ -200,14 +200,28 @@
     "href": "index.html#real-time-ai-diagnosis-for-nystagmus",
     "title": "",
     "section": "🤖 👀 Real-time AI Diagnosis for Nystagmus",
-    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\n\n\n\nDemo {.scrollable}"
+    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\n\n\n\nFigure 9: End-to-end workflow\n\nDemo {.scrollable}"
+  },
+  {
+    "objectID": "index.html#ready",
+    "href": "index.html#ready",
+    "title": "",
+    "section": "🤖 👁️ READY",
+    "text": "🤖 👁️ READY\nA Python-based library for REal-time Ai Diagnosis for nYstagmus\n\n\n\n\n\n\n\n https://github.com/0cular/ready\n\n…"
   },
   {
     "objectID": "index.html#real-time-ai-diagnosis-for-nystagmus-1",
     "href": "index.html#real-time-ai-diagnosis-for-nystagmus-1",
     "title": "",
     "section": "🤖 👀 Real-time AI Diagnosis for Nystagmus",
-    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\n\nReal-time AI guidance for high-quality images (Liu et al. 2023) \n\n\n\nImplement UNET-Visual Transformer models (Yao et al. 2022)\n\n\n\n\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\n\n\nPlans {.scrollable}"
+    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\n\n\n\nDemo {.scrollable}"
+  },
+  {
+    "objectID": "index.html#real-time-ai-diagnosis-for-nystagmus-2",
+    "href": "index.html#real-time-ai-diagnosis-for-nystagmus-2",
+    "title": "",
+    "section": "🤖 👀 Real-time AI Diagnosis for Nystagmus",
+    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\nReal-time AI guidance for high-quality images (Liu et al. 2023) \n\nImplement UNET-Visual Transformer models (Yao et al. 2022)\n\n github.com/0cular/unetvit4sclera\n\n\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\n\n\nPlans {.scrollable}"
   },
   {
     "objectID": "index.html#section-1",

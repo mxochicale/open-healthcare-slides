@@ -847,8 +847,7 @@ and diagnosis
 
 <div id="fig-template">
 
-<img src="figures/ophthalmology/li2023-fig2.jpg"
-data-fig-align="center" />
+<img src="figures/ocular/li2023-fig2.jpg" data-fig-align="center" />
 
 Figure 8: Practical application of AI in all common ophthalmic imaging
 modalities
@@ -885,7 +884,7 @@ Nystagmus {.scrollable}
 
 <div class="column" width="50%">
 
-![](figures/ophthalmology/nystagmus.gif)
+![](figures/ocular/nystagmus.gif)
 
 </div>
 
@@ -909,9 +908,46 @@ Nystagmus {.scrollable}
 
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
 
+<!-- ST: I like the animations here -->
+
+<div id="fig-template">
+
+<img src="figures/ocular/ready.svg" data-fig-align="center" />
+
+Figure 9: End-to-end workflow
+
+</div>
+
+<div class="notes">
+
+Demo {.scrollable}
+
+</div>
+
+## 🤖 👁️ READY
+
+A Python-based library for REal-time Ai Diagnosis for nYstagmus
+
+<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
+
+<img src="figures/ocular/ready-github-repo.svg" style="width:100.0%"
+data-fig-align="center" />
+
+</div>
+
+<https://github.com/0cular/ready>
+
+<div class="notes">
+
+…
+
+</div>
+
+## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
+
 <!-- I like the animations here -->
 
-<img src="figures/nystagmus/animation-2024-09-13%2016-45.gif"
+<img src="figures/ocular/animation-2024-09-13_16-45.gif"
 data-fig-align="center" />
 
 <div class="notes">
@@ -928,17 +964,19 @@ Future work
 
 <div class="column" width="50%">
 
-- Real-time AI guidance for high-quality images (Liu et al. 2023)
-  <img src="figures/ophthalmology/liu_2023_graphical_abstract.jpg"
-  style="width:50.0%" data-fig-align="center" />
+Real-time AI guidance for high-quality images (Liu et al. 2023)
+<img src="figures/ocular/liu_2023_graphical_abstract.jpg"
+style="width:50.0%" data-fig-align="center" />
 
 </div>
 
 <div class="column" width="50%">
 
-- Implement UNET-Visual Transformer models (Yao et al. 2022)  
-  <img src="figures/ophthalmology/yao2022_fig1.png" style="width:80.0%"
-  data-fig-align="center" />
+Implement UNET-Visual Transformer models (Yao et al. 2022)  
+<img src="figures/ocular/yao2022_fig1.png" style="width:80.0%"
+data-fig-align="center" />
+
+[github.com/0cular/unetvit4sclera](https://github.com/0cular/unetvit4sclera)
 
 </div>
 
