@@ -10,7 +10,7 @@ Open-Source Software is</span>
 the Future of Healthcare?</span>
 
 <span style="padding-bottom: 0.5rem;"><br> </span>  
-[](http://mxochicale.github.io/) Miguel Xochicale, PhD  
+[](http://mxochicale.github.io/) Miguel Xochicale, Sr-RSE@ARC-UCL  
 <span style="font-size:0.8em;"><span style="border-bottom: 0.5px solid #00ccff;">[
 `mxochicale/`](https://github.com/mxochicale/)</span><span style="border-bottom: 0.5px solid #00ccff;">[`open-healthcare-slides`](https://github.com/mxochicale/open-healthcare-slides)</span></span>
 
