@@ -100,6 +100,14 @@ cd slides
 quarto preview index.qmd
 ```
 
+### Push changes
+* add feature_branch name to [publish-quarto.yml](https://github.com/mxochicale/open-healthcare-slides/blob/main/.github/workflows/publish-quarto.yml)
+```bash
+git add .
+git commmit -m '<add message> CI #ISSUE_NUMBER'
+git push origin <feature_branch>
+```
+
 ## References
 * https://quarto.org/docs/presentations/revealjs/
 * https://quarto.org/docs/presentations/revealjs/advanced.html
