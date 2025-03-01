@@ -18,8 +18,8 @@ the Future of Healthcare?</span>
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">1-Feb-2025;
-fosdem’25 [(grid-worms-animation 2023 by
+<span class="dim-text" style="&quot;text-align:left;'">7-March-2025;
+Guest lecture at University of Bristol [(grid-worms-animation 2023 by
 saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 
 </div>
@@ -184,6 +184,73 @@ Med. 2021 https://doi.org/10.3389/fmed.2021.729978
 
 </div>
 
+## Research Questions
+
+- Research and implement deep learning methods for generating synthetic
+  fetal ultrasound images for both normal and abnormal cases,
+- Propose and apply methods to evaluate quantitative and qualitative
+  images of fetal us image synthesis.
+
+## TransThalamic
+
+Fetal Brain Ultrasound Image Dataset
+
+<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
+
+<img
+src="figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg"
+style="width:100.0%" data-fig-align="center" />
+
+</div>
+
+<div style="font-size: 40%;">
+
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal
+ultrasound images \[Data set\]. In Nature Scientific Reports (1.0, Vol.
+10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+
+</div>
+
+## TransCerebellum Plain
+
+Fetal Brain Ultrasound Image Dataset
+
+<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
+
+<img
+src="figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg"
+style="width:100.0%" data-fig-align="center" />
+
+</div>
+
+<div style="font-size: 40%;">
+
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal
+ultrasound images \[Data set\]. In Nature Scientific Reports (1.0, Vol.
+10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+
+</div>
+
+## TransVentricular Plane
+
+Fetal Brain Ultrasound Image Dataset
+
+<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
+
+<img
+src="figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg"
+style="width:100.0%" data-fig-align="center" />
+
+</div>
+
+<div style="font-size: 40%;">
+
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal
+ultrasound images \[Data set\]. In Nature Scientific Reports (1.0, Vol.
+10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+
+</div>
+
 ## AI/ML pipeline
 
 <div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
@@ -196,7 +263,29 @@ style="width:100.0%" data-fig-align="center" />
 
 ## Methods
 
-<!-- this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
+GAN-based fetal imaging
+
+<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
+
+<img
+src="figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg"
+style="width:100.0%" data-fig-align="center" />
+
+</div>
+
+<div style="font-size: 40%;">
+
+1)  Bautista et al. 2022, ”Empirical Study of Quality Image Assessment
+    for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
+    https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards
+    Faster and Stabilized GAN Training for High-fidelity Few-shot Image
+    Synthesis” https://arxiv.org/abs/2101.04775
+
+</div>
+
+## Methods
+
+<!-- ST: this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
 
 Diffusion-Super-Resolution-GAN (DSR-GAN) Transformer-based-GAN
 
@@ -1126,92 +1215,5 @@ style="width:100.0%" data-fig-align="center" />
 Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial
 intelligence-based FDA-approved medical devices and algorithms: an
 online database. npj Digit. Med. 3, 118 (2020).
-
-</div>
-
-## TransThalamic
-
-Fetal Brain Ultrasound Image Dataset
-
-<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
-
-<img
-src="figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
-
-<div style="font-size: 40%;">
-
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal
-ultrasound images \[Data set\]. In Nature Scientific Reports (1.0, Vol.
-10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-
-</div>
-
-## TransCerebellum Plain
-
-Fetal Brain Ultrasound Image Dataset
-
-<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
-
-<img
-src="figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
-
-<div style="font-size: 40%;">
-
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal
-ultrasound images \[Data set\]. In Nature Scientific Reports (1.0, Vol.
-10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-
-</div>
-
-## TransVentricular Plane
-
-Fetal Brain Ultrasound Image Dataset
-
-<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
-
-<img
-src="figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
-
-<div style="font-size: 40%;">
-
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal
-ultrasound images \[Data set\]. In Nature Scientific Reports (1.0, Vol.
-10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-
-</div>
-
-## Research Questions
-
-- Research and implement deep learning methods for generating synthetic
-  fetal ultrasound images for both normal and abnormal cases,
-- Propose and apply methods to evaluate quantitative and qualitative
-  images of fetal us image synthesis.
-
-## GAN-based fetal imaging
-
-<div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
-
-<img
-src="figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
-
-<div style="font-size: 40%;">
-
-1)  Bautista et al. 2022, ”Empirical Study of Quality Image Assessment
-    for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
-    https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards
-    Faster and Stabilized GAN Training for High-fidelity Few-shot Image
-    Synthesis” https://arxiv.org/abs/2101.04775
 
 </div>

@@ -56,6 +56,34 @@
     "text": "Challenges of US biometric measurements\n\nOperator dependant,\nClinical system dependant,\nFetal position,\nSimilar morphological and echogenic characteristics in the US,\nFew public datasets are available (we have only found three)\n\nData masking: Anonymisation or pseudonymisation?\nPersonal Data Protection Policy\n\n\n\nSciortino et al. in Computers in Biology and Medicine 2017 https://doi.org/10.1016/j.compbiomed.2017.01.008; He et al. in Front. Med. 2021 https://doi.org/10.3389/fmed.2021.729978"
   },
   {
+    "objectID": "index.html#research-questions",
+    "href": "index.html#research-questions",
+    "title": "",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nResearch and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases,\nPropose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis."
+  },
+  {
+    "objectID": "index.html#transthalamic",
+    "href": "index.html#transthalamic",
+    "title": "",
+    "section": "TransThalamic",
+    "text": "TransThalamic\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
+  },
+  {
+    "objectID": "index.html#transcerebellum-plain",
+    "href": "index.html#transcerebellum-plain",
+    "title": "",
+    "section": "TransCerebellum Plain",
+    "text": "TransCerebellum Plain\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
+  },
+  {
+    "objectID": "index.html#transventricular-plane",
+    "href": "index.html#transventricular-plane",
+    "title": "",
+    "section": "TransVentricular Plane",
+    "text": "TransVentricular Plane\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
+  },
+  {
     "objectID": "index.html#aiml-pipeline",
     "href": "index.html#aiml-pipeline",
     "title": "",
@@ -65,6 +93,13 @@
   {
     "objectID": "index.html#methods",
     "href": "index.html#methods",
+    "title": "",
+    "section": "Methods",
+    "text": "Methods\nGAN-based fetal imaging\n\n\n\n\n\n\n\n\n\nBautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775"
+  },
+  {
+    "objectID": "index.html#methods-1",
+    "href": "index.html#methods-1",
     "title": "",
     "section": "Methods",
     "text": "Methods\n\nDiffusion-Super-Resolution-GAN (DSR-GAN) Transformer-based-GAN\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
@@ -264,40 +299,5 @@
     "title": "",
     "section": "FDA-approved AI-based Medical Devices",
     "text": "FDA-approved AI-based Medical Devices\n\n\n\n\n\n\n\n\n\nBenjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. npj Digit. Med. 3, 118 (2020)."
-  },
-  {
-    "objectID": "index.html#transthalamic",
-    "href": "index.html#transthalamic",
-    "title": "",
-    "section": "TransThalamic",
-    "text": "TransThalamic\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
-  },
-  {
-    "objectID": "index.html#transcerebellum-plain",
-    "href": "index.html#transcerebellum-plain",
-    "title": "",
-    "section": "TransCerebellum Plain",
-    "text": "TransCerebellum Plain\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
-  },
-  {
-    "objectID": "index.html#transventricular-plane",
-    "href": "index.html#transventricular-plane",
-    "title": "",
-    "section": "TransVentricular Plane",
-    "text": "TransVentricular Plane\nFetal Brain Ultrasound Image Dataset\n\n\n\n\n\n\n\n\nBurgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0, Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280"
-  },
-  {
-    "objectID": "index.html#research-questions",
-    "href": "index.html#research-questions",
-    "title": "",
-    "section": "Research Questions",
-    "text": "Research Questions\n\nResearch and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases,\nPropose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis."
-  },
-  {
-    "objectID": "index.html#gan-based-fetal-imaging",
-    "href": "index.html#gan-based-fetal-imaging",
-    "title": "",
-    "section": "GAN-based fetal imaging",
-    "text": "GAN-based fetal imaging\n\n\n\n\n\n\n\n\n\nBautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image Synthesis” https://arxiv.org/abs/2101.04775"
   }
 ]
