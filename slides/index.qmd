@@ -37,7 +37,7 @@ format:
 :::
 
 ::: footer
-[1-Feb-2025; fosdem'25 [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+[7-March-2025; Guest lecture at University of Bristol [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
 :::
 
 
@@ -175,6 +175,51 @@ https://doi.org/10.3389/fmed.2021.729978
 :::
 
 
+## Research Questions 
+
+* Research and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases, 
+* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
+
+
+
+## TransThalamic
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransCerebellum Plain
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransVentricular Plane
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+
+
 ## AI/ML pipeline
 ::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
 ![](figures/fetal-ultrasound-image-synthesis/ai-pipeline-gans-based-pipeline-fetal-imaging.svg){fig-align="center" width="100%"}
@@ -183,8 +228,25 @@ https://doi.org/10.3389/fmed.2021.729978
 
 
 
+
 ## Methods
-<!-- this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
+GAN-based fetal imaging
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
+https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
+Synthesis” https://arxiv.org/abs/2101.04775
+:::
+
+
+
+
+## Methods
+<!-- ST: this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
 Diffusion-Super-Resolution-GAN (DSR-GAN)
 Transformer-based-GAN
 
@@ -195,6 +257,7 @@ Transformer-based-GAN
 ::: {style="font-size: 40%;"}
 M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/xfetus/midl2023
 :::
+
 
 
 ## Image Quality Assessment
@@ -1009,62 +1072,6 @@ Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-b
 database. npj Digit. Med. 3, 118 (2020). 
 :::
 
-
-
-
-
-## TransThalamic
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## TransCerebellum Plain
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## TransVentricular Plane
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## Research Questions 
-
-* Research and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases, 
-* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
-
-## GAN-based fetal imaging
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
-https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
-Synthesis” https://arxiv.org/abs/2101.04775
-:::
 
 
 
