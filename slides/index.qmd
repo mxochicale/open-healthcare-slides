@@ -32,7 +32,7 @@ format:
 <span style="color:#939393; font-size:1.5em; font-weight: bold;">Shapping the Future of Healthcare?</span>  
 
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
-[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, Sr-RSE@ARC-UCL     
+[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, sr-rse@arc-ucl   
 [[[{{< fa brands github >}} `mxochicale/`](https://github.com/mxochicale/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`open-healthcare-slides`](https://github.com/mxochicale/open-healthcare-slides)]{style="border-bottom: 0.5px solid #00ccff;"}]{style="font-size:0.8em;"}
 :::
 
@@ -53,7 +53,7 @@ format:
 * [Takeaways](#sec-ta)
 
 
-## About me
+## My Journey
 
 ::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/mx.svg){fig-align="center" width="100%"}
@@ -297,16 +297,6 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 :::
 
 
-## Fetal US imaging with Diffusion models
-
-::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
-![](figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-(a) Ho et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239 
-(b) Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260
-:::
 
 
 ## {{< fa brands github >}} github.com/xfetus/midl2023
@@ -355,6 +345,16 @@ A library for ultrasound fetal imaging synthesis using:
 :::
 
 
+## Fetal US imaging with Diffusion models
+
+::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
+![](figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+(a) Ho et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239 
+(b) Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260
+:::
 
 
 
