@@ -32,12 +32,12 @@ format:
 <span style="color:#939393; font-size:1.5em; font-weight: bold;">Shapping the Future of Healthcare?</span>  
 
 [<br>&nbsp;]{style="padding-bottom: 0.5rem;"}  
-[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, Sr-RSE@ARC-UCL     
+[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale, sr-rse@arc-ucl   
 [[[{{< fa brands github >}} `mxochicale/`](https://github.com/mxochicale/)]{style="border-bottom: 0.5px solid #00ccff;"}[[`open-healthcare-slides`](https://github.com/mxochicale/open-healthcare-slides)]{style="border-bottom: 0.5px solid #00ccff;"}]{style="font-size:0.8em;"}
 :::
 
 ::: footer
-[1-Feb-2025; fosdem'25 [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+[7-March-2025; Guest lecture at University of Bristol [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
 :::
 
 
@@ -53,7 +53,7 @@ format:
 * [Takeaways](#sec-ta)
 
 
-## About me
+## My Journey
 
 ::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/mx.svg){fig-align="center" width="100%"}
@@ -175,6 +175,51 @@ https://doi.org/10.3389/fmed.2021.729978
 :::
 
 
+## Research Questions 
+
+* Research and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases, 
+* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
+
+
+
+## TransThalamic
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransCerebellum Plain
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+## TransVentricular Plane
+Fetal Brain Ultrasound Image Dataset
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
+Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
+:::
+
+
+
 ## AI/ML pipeline
 ::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
 ![](figures/fetal-ultrasound-image-synthesis/ai-pipeline-gans-based-pipeline-fetal-imaging.svg){fig-align="center" width="100%"}
@@ -183,8 +228,25 @@ https://doi.org/10.3389/fmed.2021.729978
 
 
 
+
 ## Methods
-<!-- this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
+GAN-based fetal imaging
+
+::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
+![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
+https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
+Synthesis” https://arxiv.org/abs/2101.04775
+:::
+
+
+
+
+## Methods
+<!-- ST: this slide has a lot of copy paste text. Are you expecting the audience to read or understand it. What's the message you want to communicate here -->
 Diffusion-Super-Resolution-GAN (DSR-GAN)
 Transformer-based-GAN
 
@@ -195,6 +257,7 @@ Transformer-based-GAN
 ::: {style="font-size: 40%;"}
 M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. https://github.com/xfetus/midl2023
 :::
+
 
 
 ## Image Quality Assessment
@@ -234,16 +297,6 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 :::
 
 
-## Fetal US imaging with Diffusion models
-
-::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
-![](figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-(a) Ho et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239 
-(b) Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260
-:::
 
 
 ## {{< fa brands github >}} github.com/xfetus/midl2023
@@ -254,7 +307,7 @@ M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" 
 
 ::: {style="font-size: 40%;"}
 M. Iskandar et al. "Towards Realistic Ultrasound Fetal Brain Imaging Synthesis" in MIDL2023. 
-{{< fa brands github >}}  [https://github.com/xfetus/midl2023](https://github.com/xfetus/midl2023)
+{{< fa brands github >}}  [https://github.com/xfetus/midl2023](https://github.com/xfetus/midl2023){target="_blank"}
 
 :::
 
@@ -269,7 +322,7 @@ A Python-based library for synthesising ultrasound images of fetal development
 :::
 
 
-{{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus)
+{{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus){target="_blank"}
 
 
 ::: {.notes}
@@ -284,7 +337,7 @@ A library for ultrasound fetal imaging synthesis using:
 * diffusion models.  
 
 ::: {style="font-size: 50%;"}
-{{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus)
+{{< fa brands github >}}  [https://github.com/xfetus/xfetus](https://github.com/xfetus/xfetus){target="_blank"}
 :::
 
 
@@ -292,6 +345,17 @@ A library for ultrasound fetal imaging synthesis using:
 :::
 
 
+## Fetal US imaging with Diffusion models
+
+Future work
+
+::: {#sec-hp style="margin-top: 0px; font-size: 50%;"} 
+![](figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg){fig-align="center" width="100%"}
+:::
+
+::: {style="font-size: 40%;"}
+(a) Ho et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239 (b) Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260
+:::
 
 
 
@@ -304,7 +368,7 @@ A library for ultrasound fetal imaging synthesis using:
 
 
 # Use case
-:wrench: Developing real-time AI applications for diagnosis
+:wrench: Developing real-time AI applications for diagnosis using Open-source software
 <!-- can you expand on the open source ecosystem around Holoscan here? 
 Do you have any videos or results you could show for real time diagnoses?
 -->
@@ -315,7 +379,7 @@ Do you have any videos or results you could show for real time diagnoses?
 ::: { style="margin-top: 0px; font-size: 80%;"} 
 ![](figures/holoscan-platform/rtai4spipeline.svg){fig-align="center" width="100%"}
 :::
-Development and deployment pipeline for real-time AI apps for surgery
+End-to-end pipeline of development and deployment of real-time AI apps for surgery
 :::
 
 ::: {.notes}
@@ -341,11 +405,11 @@ Holoscan-SDK
 
 [{{< fa brands github >}} `holoscan-sdk`](
 https://github.com/nvidia-holoscan/holoscan-sdk/tree/main
-)
+){target="_blank"}
 
 [{{< fa brands github >}} `holohub`](
 https://github.com/nvidia-holoscan/holohub
-)
+){target="_blank"}
 
 :::
 
@@ -356,11 +420,11 @@ Clara-AGX
 
 [{{< fa brands github >}} `Clara-AGX DevKit`](
 https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/clara-agx/clara_agx_user_guide.md
-)
+){target="_blank"}
 
 [{{< fa brands github >}} `Orin-IGX DevKit`](
 https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/nvidia-igx-orin/nvidia_igx_orin_user_guide.md
-)
+){target="_blank"}
 
 :::
 
@@ -780,7 +844,7 @@ Speaker notes go here.
 
 
 # Use case
-0cular: Open-source Care Using SOTA AI for Real-time monitoring and diagnosis
+oocular: Open-source Care Using SOTA AI for Real-time monitoring and diagnosis
 
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
@@ -857,7 +921,7 @@ A Python-based library for REal-time Ai Diagnosis for nYstagmus
 ![](figures/ocular/ready-github-repo.svg){fig-align="center" width="100%"}
 :::
 
-{{< fa brands github >}}  [https://github.com/0cular/ready](https://github.com/0cular/ready)
+{{< fa brands github >}}  [https://github.com/oocular/ready](https://github.com/oocular/ready){target="_blank"}
 
 ::: {.notes}
 
@@ -882,30 +946,37 @@ Demo
 
 
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
-Future work
+**Future work**
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-Real-time AI guidance for high-quality images (Liu et al. 2023)
-![](figures/ocular/liu_2023_graphical_abstract.jpg){fig-align="center" width="50%"}
+
+::: {#fig-template}
+![](figures/ocular/yao2022_fig1.png){fig-align="center" width="90%"}
+
+UNET-Visual Transformer models (Yao et al. 2022)  {{< fa brands github >}}  [github.com/oocular/unetvit4sclera](https://github.com/oocular/unetvit4sclera){target="_blank"}
+:::
 
 :::
 
-::: {.column width="50%"}
-Implement UNET-Visual Transformer models (Yao et al. 2022)   
-![](figures/ocular/yao2022_fig1.png){fig-align="center" width="80%"}
 
-{{< fa brands github >}}  [github.com/0cular/unetvit4sclera](https://github.com/0cular/unetvit4sclera)
+
+::: {.column width="50%"}
+
+::: {#fig-template}
+![](figures/ocular/liu_2023_graphical_abstract.jpg){fig-align="center" width="60%"}
+
+Real-time AI guidance for high-quality images (Liu et al. 2023)
+:::
 
 :::
 
 ::::
 
-::: {style="font-size: 40%;"}
+::: {style="font-size: 25%;"}
+Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. "Transclaw u-net: claw u-net with transformers for medical image segmentation." In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.  
 Liu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).
-
-Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. "Transclaw u-net: claw u-net with transformers for medical image segmentation." In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022. 
 :::
 
 ::: {.notes}
@@ -914,17 +985,17 @@ Plans
 :::
 
 
-# Open-Source Software in Healthcare {#sec-ossh}
+# Open-Source Software Innovations in Surgical, Medical and AI Technologies {#sec-ossh}
 
-## {background-image="figures/oss4surgmedaitech/oss4st-hsmr24-p00.svg" background-size="cover"  }  
+## {background-image="figures/oss4surgmedaitech/oss4st-hsmr24-p00.svg" background-size="75%" background-opacity="0.99"}  
 
 ::: footer
-[{{< fa brands github >}} https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-for-surgtech/workshop-hamlyn2024)
+[{{< fa brands github >}} https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-for-surgtech/workshop-hamlyn2024){target="_blank"}
 :::
 
 
 ## Healing Through Collaboration
-<!-- Open-Source Software in Surgical, Biomedical and AI Technologies -->
+
 
 ::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
 ![](figures/oss4surgmedaitech/open-source-for-smait.svg){fig-align="center" width="100%"}
@@ -935,21 +1006,52 @@ https://github.com/openregulatory/templates
 :::
 
 
+
+## Hamlyn Workshop 2025
+Open-Source Software in Surgical, Biomedical and AI Technologies
+
+::: {style="font-size: 65%;"}
+
+A full-day workshop featuring 12 speakers and 6 panelists from industry, academia, and clinical practice, along with poster and abstract submissions.
+
+**Key dates**
+
+* **Call for Posters Opens**: April 2025
+* **Poster & Abstract Submission Deadline**: Third Week of May 2025
+* **Notification of outcome of submission **: Four Week of May 2025
+* **Workshop Event**: Friday, June 27, 2025
+
+**Connect with us**
+
+* Join our discord server [https://discord.gg/P6wB44Ftft](https://discord.gg/P6wB44Ftft){target="_blank"}
+* Follow our organisation [{{< fa brands github >}} https://github.com/oss-for-surg-med-ai-tech](https://github.com/oss-for-surg-med-ai-tech){target="_blank"}
+* Start our repositories
+  [{{< fa brands github >}} https://github.com/orgs/oss-for-surg-med-ai-tech/repositories](https://github.com/orgs/oss-for-surg-med-ai-tech/repositories){target="_blank"}
+
+:::
+
+
 # Key Takeaways{#sec-ta}
 
 . . .
 
 *  :wrench: :hospital: Challenges in translating research from bench to bedside.
+
+. . .
+
 * :robot: :recycle: Use cases for synthetic data and real-time AI-driven diagnosis.
 
 . . .
 
-How to shape the future of Healthcare using Open-Source Software!!!*
+How to shape the future of Healthcare using Open-Source Software?
+
+. . .
+
+* {{< fa brands github >}} Release open-source code, data, and models in alignment with quality standards.
 
 . . .
 
 * :school_satchel: Contribute to the creation of high-quality educational and training materials.
-* {{< fa brands github >}} Release open-source code, data, and models in alignment with quality standards.
 
 
 ## 🙌 Acknowledgements
@@ -1009,62 +1111,6 @@ Benjamens, S., Dhunnoo, P. and Meskó, B. The state of artificial intelligence-b
 database. npj Digit. Med. 3, 118 (2020). 
 :::
 
-
-
-
-
-## TransThalamic
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransThalami.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## TransCerebellum Plain
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransCerebellum.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## TransVentricular Plane
-Fetal Brain Ultrasound Image Dataset
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/fetal-planes-dataset-TransVentricular.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-Burgos-Artizzu, X et al. (2020). FETAL PLANES DB: Common maternal-fetal ultrasound images [Data set]. In Nature Scientific Reports (1.0,
-Vol. 10, p. 10200). Zenodo. https://doi.org/10.5281/zenodo.3904280
-:::
-
-## Research Questions 
-
-* Research and implement deep learning methods for generating synthetic fetal ultrasound images for both normal and abnormal cases, 
-* Propose and apply methods to evaluate quantitative and qualitative images of fetal us image synthesis.
-
-## GAN-based fetal imaging
-
-::: {#sec-hp style="margin-top: 0px; font-size: 10%;"} 
-![](figures/fetal-ultrasound-image-synthesis/gan-based-fetal-imaging.svg){fig-align="center" width="100%"}
-:::
-
-::: {style="font-size: 40%;"}
-(a) Bautista et al. 2022, ”Empirical Study of Quality Image Assessment for Synthesis of Fetal Head Ultrasound Imaging with DCGANs” MIUA
-https://github.com/xfetus/miua2022 (b) Liu et al. 2021 ”Towards Faster and Stabilized GAN Training for High-fidelity Few-shot Image
-Synthesis” https://arxiv.org/abs/2101.04775
-:::
 
 
 

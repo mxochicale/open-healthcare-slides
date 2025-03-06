@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - 5-fosdem-slides
+      - 11-draft-slides
   workflow_dispatch:
 
 jobs:
