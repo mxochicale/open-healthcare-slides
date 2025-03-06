@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
+    "objectID": "index.html#my-journey",
+    "href": "index.html#my-journey",
     "title": "",
-    "section": "About me",
-    "text": "About me"
+    "section": "My Journey",
+    "text": "My Journey"
   },
   {
     "objectID": "index.html#innovation-regulation-in-surgmedai-tech",
@@ -126,13 +126,6 @@
     "text": "Experiments: Design and results\n\n\n\n\n\n\n\n\nM. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging Synthesis” in MIDL2023. https://github.com/xfetus/midl2023"
   },
   {
-    "objectID": "index.html#fetal-us-imaging-with-diffusion-models",
-    "href": "index.html#fetal-us-imaging-with-diffusion-models",
-    "title": "",
-    "section": "Fetal US imaging with Diffusion models",
-    "text": "Fetal US imaging with Diffusion models\n\n\n\n\n\n\n\n\n\nHo et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239\nFiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260"
-  },
-  {
     "objectID": "index.html#github.comxfetusmidl2023",
     "href": "index.html#github.comxfetusmidl2023",
     "title": "",
@@ -147,11 +140,18 @@
     "text": "xfetus 👶 🧠 🤖\nA Python-based library for synthesising ultrasound images of fetal development\n\n\n\n\n\n\n\n https://github.com/xfetus/xfetus\n\nTODO: * Resolve PRs https://github.com/xfetus/xfetus/pulls * Show emojis in the main README\nA library for ultrasound fetal imaging synthesis using:\n\nGANs,\n\ntransformers, and\n\ndiffusion models.\n\n\n https://github.com/xfetus/xfetus"
   },
   {
+    "objectID": "index.html#fetal-us-imaging-with-diffusion-models",
+    "href": "index.html#fetal-us-imaging-with-diffusion-models",
+    "title": "",
+    "section": "Fetal US imaging with Diffusion models",
+    "text": "Fetal US imaging with Diffusion models\nFuture work\n\n\n\n\n\n\n\n\n\nHo et al. 2020 ”Denoising Diffusion Probabilistic Models” https://arxiv.org/abs/2006.11239 (b) Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260"
+  },
+  {
     "objectID": "index.html#real-time-ai-applications-for-surgery",
     "href": "index.html#real-time-ai-applications-for-surgery",
     "title": "",
     "section": "Real-time AI Applications for Surgery",
-    "text": "Real-time AI Applications for Surgery\n\n\nFigure 3: Development and deployment pipeline for real-time AI apps for surgery\n\nPipeline with development and deployment of real-time AI apps for surgery\n{fig-align=center} {fig-pos=‘b’} b(bottom) h(here) p(page) t(top)"
+    "text": "Real-time AI Applications for Surgery\n\n\nFigure 3: End-to-end pipeline of development and deployment of real-time AI apps for surgery\n\nPipeline with development and deployment of real-time AI apps for surgery\n{fig-align=center} {fig-pos=‘b’} b(bottom) h(here) p(page) t(top)"
   },
   {
     "objectID": "index.html#nvidia-holoscan-platform",
@@ -249,7 +249,7 @@
     "href": "index.html#ready",
     "title": "",
     "section": "🤖 👁️ READY",
-    "text": "🤖 👁️ READY\nA Python-based library for REal-time Ai Diagnosis for nYstagmus\n\n\n\n\n\n\n\n https://github.com/0cular/ready\n\n…"
+    "text": "🤖 👁️ READY\nA Python-based library for REal-time Ai Diagnosis for nYstagmus\n\n\n\n\n\n\n\n https://github.com/oocular/ready\n\n…"
   },
   {
     "objectID": "index.html#real-time-ai-diagnosis-for-nystagmus-1",
@@ -263,7 +263,7 @@
     "href": "index.html#real-time-ai-diagnosis-for-nystagmus-2",
     "title": "",
     "section": "🤖 👀 Real-time AI Diagnosis for Nystagmus",
-    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\nReal-time AI guidance for high-quality images (Liu et al. 2023) \n\nImplement UNET-Visual Transformer models (Yao et al. 2022)\n\n github.com/0cular/unetvit4sclera\n\n\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\n\n\nPlans {.scrollable}"
+    "text": "🤖 👀 Real-time AI Diagnosis for Nystagmus\nFuture work\n\n\n\n\n\n\n\n\nFigure 10: UNET-Visual Transformer models (Yao et al. 2022)  github.com/oocular/unetvit4sclera\n\n\n\n\n\n\n\n\n\n\nFigure 11: Real-time AI guidance for high-quality images (Liu et al. 2023)\n\n\n\n\n\nYao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang. “Transclaw u-net: claw u-net with transformers for medical image segmentation.” In 2022 5th International Conference on Information Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.\nLiu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J., Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like image quality classifier for boosting the whole life cycle of medical artificial intelligence. Cell Reports Medicine, 4(2).\n\n\nPlans {.scrollable}"
   },
   {
     "objectID": "index.html#section-1",
@@ -277,7 +277,14 @@
     "href": "index.html#healing-through-collaboration",
     "title": "",
     "section": "Healing Through Collaboration",
-    "text": "Healing Through Collaboration\n\n\n\n\n\n\n\n\n\nhttps://github.com/openregulatory/templates"
+    "text": "Healing Through Collaboration\n\n\n\n\n\n\n\n\nhttps://github.com/openregulatory/templates"
+  },
+  {
+    "objectID": "index.html#hamlyn-workshop-2025",
+    "href": "index.html#hamlyn-workshop-2025",
+    "title": "",
+    "section": "Hamlyn Workshop 2025",
+    "text": "Hamlyn Workshop 2025\nOpen-Source Software in Surgical, Biomedical and AI Technologies\n\nA full-day workshop featuring 12 speakers and 6 panelists from industry, academia, and clinical practice, along with poster and abstract submissions.\nKey dates\n\nCall for Posters Opens: April 2025\nPoster & Abstract Submission Deadline: Third Week of May 2025\nNotification of outcome of submission : Four Week of May 2025\nWorkshop Event: Friday, June 27, 2025\n\nConnect with us\n\nJoin our discord server https://discord.gg/P6wB44Ftft\nFollow our organisation  https://github.com/oss-for-surg-med-ai-tech\nStart our repositories  https://github.com/orgs/oss-for-surg-med-ai-tech/repositories"
   },
   {
     "objectID": "index.html#acknowledgements",

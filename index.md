@@ -10,7 +10,7 @@ Open-Source Software is</span>
 the Future of Healthcare?</span>
 
 <span style="padding-bottom: 0.5rem;"><br> </span>  
-[](http://mxochicale.github.io/) Miguel Xochicale, Sr-RSE@ARC-UCL  
+[](http://mxochicale.github.io/) Miguel Xochicale, sr-rse@arc-ucl  
 <span style="font-size:0.8em;"><span style="border-bottom: 0.5px solid #00ccff;">[
 `mxochicale/`](https://github.com/mxochicale/)</span><span style="border-bottom: 0.5px solid #00ccff;">[`open-healthcare-slides`](https://github.com/mxochicale/open-healthcare-slides)</span></span>
 
@@ -35,7 +35,7 @@ saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 - [Open-Source Software in Healthcare](#sec-ossh)
 - [Takeaways](#sec-ta)
 
-## About me
+## My Journey
 
 <div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
 
@@ -354,25 +354,6 @@ Synthesis” in MIDL2023. https://github.com/xfetus/midl2023
 
 </div>
 
-## Fetal US imaging with Diffusion models
-
-<div id="sec-hp" style="margin-top: 0px; font-size: 50%;">
-
-<img
-src="figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg"
-style="width:100.0%" data-fig-align="center" />
-
-</div>
-
-<div style="font-size: 40%;">
-
-1)  Ho et al. 2020 ”Denoising Diffusion Probabilistic Models”
-    https://arxiv.org/abs/2006.11239
-2)  Fiorentino et al. 2022 ”A Review on Deep Learning Algorithms for
-    Fetal Ultrasound-Image Analysis” https://arxiv.org/abs/2201.12260
-
-</div>
-
 ##  github.com/xfetus/midl2023
 
 <div id="sec-hp" style="margin-top: 0px; font-size: 10%;">
@@ -386,7 +367,8 @@ style="width:100.0%" data-fig-align="center" />
 <div style="font-size: 40%;">
 
 M. Iskandar et al. “Towards Realistic Ultrasound Fetal Brain Imaging
-Synthesis” in MIDL2023. <https://github.com/xfetus/midl2023>
+Synthesis” in MIDL2023. <a href="https://github.com/xfetus/midl2023"
+target="_blank">https://github.com/xfetus/midl2023</a>
 
 </div>
 
@@ -402,7 +384,8 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-<https://github.com/xfetus/xfetus>
+<a href="https://github.com/xfetus/xfetus"
+target="_blank">https://github.com/xfetus/xfetus</a>
 
 <div class="notes">
 
@@ -417,15 +400,38 @@ A library for ultrasound fetal imaging synthesis using:
 
 <div style="font-size: 50%;">
 
-<https://github.com/xfetus/xfetus>
+<a href="https://github.com/xfetus/xfetus"
+target="_blank">https://github.com/xfetus/xfetus</a>
 
 </div>
+
+</div>
+
+## Fetal US imaging with Diffusion models
+
+Future work
+
+<div id="sec-hp" style="margin-top: 0px; font-size: 50%;">
+
+<img
+src="figures/fetal-ultrasound-image-synthesis/diffusion-based-generative-model.svg"
+style="width:100.0%" data-fig-align="center" />
+
+</div>
+
+<div style="font-size: 40%;">
+
+1)  Ho et al. 2020 ”Denoising Diffusion Probabilistic Models”
+    https://arxiv.org/abs/2006.11239 (b) Fiorentino et al. 2022 ”A
+    Review on Deep Learning Algorithms for Fetal Ultrasound-Image
+    Analysis” https://arxiv.org/abs/2201.12260
 
 </div>
 
 # Use case
 
-:wrench: Developing real-time AI applications for diagnosis
+:wrench: Developing real-time AI applications for diagnosis using
+Open-source software
 <!-- can you expand on the open source ecosystem around Holoscan here? 
 Do you have any videos or results you could show for real time diagnoses?
 -->
@@ -441,8 +447,8 @@ style="width:100.0%" data-fig-align="center" />
 
 </div>
 
-Figure 3: Development and deployment pipeline for real-time AI apps for
-surgery
+Figure 3: End-to-end pipeline of development and deployment of real-time
+AI apps for surgery
 
 </div>
 
@@ -465,10 +471,11 @@ Holoscan-SDK
 
 ![](figures/holoscan-platform/holohub.svg)
 
-[
-`holoscan-sdk`](https://github.com/nvidia-holoscan/holoscan-sdk/tree/main)
+<a href="https://github.com/nvidia-holoscan/holoscan-sdk/tree/main"
+target="_blank"> <code>holoscan-sdk</code></a>
 
-[ `holohub`](https://github.com/nvidia-holoscan/holohub)
+<a href="https://github.com/nvidia-holoscan/holohub" target="_blank">
+<code>holohub</code></a>
 
 </div>
 
@@ -478,11 +485,13 @@ Clara-AGX
 
 ![](figures/holoscan-platform/clara_agx_dev_kit_components.svg)
 
-[
-`Clara-AGX DevKit`](https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/clara-agx/clara_agx_user_guide.md)
+<a
+href="https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/clara-agx/clara_agx_user_guide.md"
+target="_blank"> <code>Clara-AGX DevKit</code></a>
 
-[
-`Orin-IGX DevKit`](https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/nvidia-igx-orin/nvidia_igx_orin_user_guide.md)
+<a
+href="https://github.com/nvidia-holoscan/holoscan-docs/blob/main/devkits/nvidia-igx-orin/nvidia_igx_orin_user_guide.md"
+target="_blank"> <code>Orin-IGX DevKit</code></a>
 
 </div>
 
@@ -938,7 +947,7 @@ Speaker notes go here. {.scrollable}
 
 # Use case
 
-0cular: Open-source Care Using SOTA AI for Real-time monitoring and
+oocular: Open-source Care Using SOTA AI for Real-time monitoring and
 diagnosis
 
 ## :robot: :eyes: AI in ophthalmic imaging modalities
@@ -1033,7 +1042,8 @@ data-fig-align="center" />
 
 </div>
 
-<https://github.com/0cular/ready>
+<a href="https://github.com/oocular/ready"
+target="_blank">https://github.com/oocular/ready</a>
 
 <div class="notes">
 
@@ -1056,41 +1066,51 @@ Demo {.scrollable}
 
 ## :robot: :eyes: Real-time AI Diagnosis for Nystagmus
 
-Future work
+**Future work**
 
 <div class="columns">
 
 <div class="column" width="50%">
 
-Real-time AI guidance for high-quality images (Liu et al. 2023)
-<img src="figures/ocular/liu_2023_graphical_abstract.jpg"
-style="width:50.0%" data-fig-align="center" />
+<div id="fig-template">
+
+<img src="figures/ocular/yao2022_fig1.png" style="width:90.0%"
+data-fig-align="center" />
+
+Figure 10: UNET-Visual Transformer models (Yao et al. 2022)
+<a href="https://github.com/oocular/unetvit4sclera"
+target="_blank">github.com/oocular/unetvit4sclera</a>
+
+</div>
 
 </div>
 
 <div class="column" width="50%">
 
-Implement UNET-Visual Transformer models (Yao et al. 2022)  
-<img src="figures/ocular/yao2022_fig1.png" style="width:80.0%"
-data-fig-align="center" />
+<div id="fig-template">
 
-[github.com/0cular/unetvit4sclera](https://github.com/0cular/unetvit4sclera)
+<img src="figures/ocular/liu_2023_graphical_abstract.jpg"
+style="width:60.0%" data-fig-align="center" />
+
+Figure 11: Real-time AI guidance for high-quality images (Liu et
+al. 2023)
 
 </div>
 
 </div>
 
-<div style="font-size: 40%;">
+</div>
 
-Liu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J.,
-Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like
-image quality classifier for boosting the whole life cycle of medical
-artificial intelligence. Cell Reports Medicine, 4(2).
+<div style="font-size: 25%;">
 
 Yao, Chang, Menghan Hu, Qingli Li, Guangtao Zhai, and Xiao-Ping Zhang.
 “Transclaw u-net: claw u-net with transformers for medical image
 segmentation.” In 2022 5th International Conference on Information
-Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.
+Communication and Signal Processing (ICICSP), pp. 280-284. IEEE, 2022.  
+Liu, L., Wu, X., Lin, D., Zhao, L., Li, M., Yun, D., Lin, Z., Pang, J.,
+Li, L., Wu, Y. and Lai, W., 2023. DeepFundus: a flow-cytometry-like
+image quality classifier for boosting the whole life cycle of medical
+artificial intelligence. Cell Reports Medicine, 4(2).
 
 </div>
 
@@ -1100,20 +1120,19 @@ Plans {.scrollable}
 
 </div>
 
-# Open-Source Software in Healthcare
+# Open-Source Software Innovations in Surgical, Medical and AI Technologies
 
 ## 
 
 <div class="footer">
 
-[
-https://github.com/oss-for-surgtech/workshop-hamlyn2024](https://github.com/oss-for-surgtech/workshop-hamlyn2024)
+<a href="https://github.com/oss-for-surgtech/workshop-hamlyn2024"
+target="_blank">
+https://github.com/oss-for-surgtech/workshop-hamlyn2024</a>
 
 </div>
 
 ## Healing Through Collaboration
-
-<!-- Open-Source Software in Surgical, Biomedical and AI Technologies -->
 
 <div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
 
@@ -1128,25 +1147,62 @@ https://github.com/openregulatory/templates
 
 </div>
 
+## Hamlyn Workshop 2025
+
+Open-Source Software in Surgical, Biomedical and AI Technologies
+
+<div style="font-size: 65%;">
+
+A full-day workshop featuring 12 speakers and 6 panelists from industry,
+academia, and clinical practice, along with poster and abstract
+submissions.
+
+**Key dates**
+
+- **Call for Posters Opens**: April 2025
+- **Poster & Abstract Submission Deadline**: Third Week of May 2025
+- **Notification of outcome of submission **: Four Week of May 2025
+- **Workshop Event**: Friday, June 27, 2025
+
+**Connect with us**
+
+- Join our discord server <a href="https://discord.gg/P6wB44Ftft"
+  target="_blank">https://discord.gg/P6wB44Ftft</a>
+- Follow our organisation
+  <a href="https://github.com/oss-for-surg-med-ai-tech" target="_blank">
+  https://github.com/oss-for-surg-med-ai-tech</a>
+- Start our repositories
+  <a href="https://github.com/orgs/oss-for-surg-med-ai-tech/repositories"
+  target="_blank">
+  https://github.com/orgs/oss-for-surg-med-ai-tech/repositories</a>
+
+</div>
+
 # Key Takeaways
 
 . . .
 
 - :wrench: :hospital: Challenges in translating research from bench to
   bedside.
+
+. . .
+
 - :robot: :recycle: Use cases for synthetic data and real-time AI-driven
   diagnosis.
 
 . . .
 
-How to shape the future of Healthcare using Open-Source Software!!!\*
+How to shape the future of Healthcare using Open-Source Software?
+
+. . .
+
+-  Release open-source code, data, and models in alignment with quality
+  standards.
 
 . . .
 
 - :school_satchel: Contribute to the creation of high-quality
   educational and training materials.
--  Release open-source code, data, and models in alignment with quality
-  standards.
 
 ## 🙌 Acknowledgements
 
