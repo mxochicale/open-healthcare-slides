@@ -18,8 +18,9 @@ the Future of Healthcare?</span>
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">7-March-2025;
-Guest lecture at University of Bristol [(grid-worms-animation 2023 by
+<span class="dim-text" style="&quot;text-align:left;'">13-March-2026;
+Guest lecture MSc MSHDS at University of Bristol [(grid-worms-animation
+2023 by
 saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
 
 </div>
