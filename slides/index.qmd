@@ -1007,28 +1007,88 @@ https://github.com/openregulatory/templates
 
 
 
-## Hamlyn Workshop 2025
-Open-Source Software in Surgical, Biomedical and AI Technologies
 
-::: {style="font-size: 65%;"}
+<!-- *********************** NEW SLIDE *********************** -->
+## Future events: Hamlyn Workshop 2025
+:::: {.columns}
 
-A full-day workshop featuring 12 speakers and 6 panelists from industry, academia, and clinical practice, along with poster and abstract submissions.
+::: {.column width="30%"}
 
-**Key dates**
-
-* **Call for Posters Opens**: April 2025
-* **Poster & Abstract Submission Deadline**: Third Week of May 2025
-* **Notification of outcome of submission **: Four Week of May 2025
-* **Workshop Event**: Friday, June 27, 2025
-
-**Connect with us**
-
-* Join our discord server [https://discord.gg/P6wB44Ftft](https://discord.gg/P6wB44Ftft){target="_blank"}
-* Follow our organisation [{{< fa brands github >}} https://github.com/oss-for-surg-med-ai-tech](https://github.com/oss-for-surg-med-ai-tech){target="_blank"}
-* Start our repositories
-  [{{< fa brands github >}} https://github.com/orgs/oss-for-surg-med-ai-tech/repositories](https://github.com/orgs/oss-for-surg-med-ai-tech/repositories){target="_blank"}
+* 50 partcipants, 10 speakers, 6 posters presenters and sold out event!
+* _Open-Source development in Medical Robotics_
+**Late June 2026 at London, UK** 
 
 :::
+
+::: {.column width="65%"}
+
+::: {#fig-template}
+
+![](figures/hamlyn-workshop-2025.png){fig-align=center}
+
+Participants of our 2025 event, [details here](https://www.hamlynsymposium.org/events/healing-through-collaboration-open-source-software-in-surgical-biomedical-and-ai-technologies/)
+:::
+
+:::
+
+::::
+
+
+::: {style="font-size: 30%;"}
+
+**Open@UCL Blog**, Sep 2025, _Shaping Tomorrow’s Healthcare: Unlocking the Power of Open-Source AI and Robotics_
+[link](https://blogs.ucl.ac.uk/open-access/2025/09/17/unlocking-the-power-of-open-source-ai-and-robotics/).
+
+:::
+
+
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Future events: Hacking cyber-physical systems in real-time
+:::: {.columns}
+
+::: {.column style="width: 35%; font-size: 80%;"}
+
+* Hackathon 1: Preliminary Small Hackathon for Feasibility and Idea Generation. **Monday, 2 March 2026 at UCL Here East (G40).**
+* Hackathon 2: Larger Hackathon to Explore Ideas and Create Projects. **Q3-2026**
+
+:::
+
+::: {.column width="65%"}
+
+::: {#fig-template}
+
+
+![](figures/cyber-physical-hackathon-network.svg){fig-align=center}
+
+[https://github.com/UCL-CyberPhysicalSystems/hackathon-01](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
+
+:::
+
+:::
+
+::::
+
+
+
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+
+
+
 
 
 # Key Takeaways{#sec-ta}
